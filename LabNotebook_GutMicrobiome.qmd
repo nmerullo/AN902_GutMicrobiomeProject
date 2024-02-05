@@ -1,0 +1,16 @@
+---
+title: "LabNotebook_GutMicrobiome"
+author: "Jess Martin, Reese Hotten-Somers, Nicole Merullo, Brooke Rothamer"
+format: html
+editor: visual
+---
+
+## Key
+
+Initials of lab group member will be used to denote who wrote the entries <br> JM - Jess Martin <br> RHS - Reese Hotten-Somers <br> NM - Nicole Merullo <br> BR - Brooke Rothamer
+
+## Background
+
+## Project Specific Papers
+
+## Extraction Protocol

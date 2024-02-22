@@ -9,6 +9,33 @@ editor: visual
 
 Initials of lab group member will be used to denote who wrote the entries <br> JM - Jess Martin <br> RHS - Reese Hotten-Somers <br> NM - Nicole Merullo <br> BR - Brooke Rothamer
 
+## Schedules of Group Members
+
+### Nicole
+
+#### Monday
+- 9-10: Carolyn/Luke Lab meeting
+- 10-12: AN902
+- 1:25-2:15: AN730
+- 2:30-5:15: AN704
+
+#### Tuesday
+- 10-10:30 Meeting w/Chris
+
+#### Wednesday
+- 10-12: AN701
+- 12:20-1:10: Anthro Dept Event of the Week
+- 1:25-2:15: AN730
+- 2:30-3:30: Meeting with Carolyn (Tentative)
+
+#### Thursday
+Open usually
+
+#### Friday
+- 10-11: AN730 Seminar
+- 1:25-2:15: AN730
+- 2:30-3:30: Meeting with RA
+
 ## Background
 
 ## Project Specific Papers
@@ -90,3 +117,13 @@ c. Third Wash: Pipette 675 𝜇l of the supernatant to the same *Spin Filter* an
 Your DNA is ready for use! <br>
 22. Measure the dsDNA concentration using the **Quantus**, and sample A260/A280 using the **NanoDrop** **[Quantitation Workstation]**. Record these details in your lab notebook. <br>
 Place the properly labeled DNA elutions in the **-20ºC freezer**. Be sure to record where in the freezer you’ve placed them, and that they are all together in a single, clearly labeled container/rack.
+
+## Extractions
+
+NOTES: Please record by each step, above, who has done which step and when. Check with Prof. Schmitt prior to beginning regarding which samples should be extracted. ALWAYS make sure that there are sufficient reagents and equipment before beginning a protocol!
+
+Sample ID
+Label
+Final concentration (ng/uL)
+A260/A280 value
+Notes

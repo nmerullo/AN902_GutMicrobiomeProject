@@ -21,6 +21,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -73,57 +107,270 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="schedules-of-group-members" class="level2">
 <h2 class="anchored" data-anchor-id="schedules-of-group-members">Schedules of Group Members</h2>
-<section id="nicole" class="level3">
-<h3 class="anchored" data-anchor-id="nicole">Nicole</h3>
-<section id="monday" class="level4">
-<h4 class="anchored" data-anchor-id="monday">Monday</h4>
-<ul>
-<li>9-10: Carolyn/Luke Lab meeting</li>
-<li>10-12: AN902</li>
-<li>1:25-2:15: AN730</li>
-<li>2:30-5:15: AN704</li>
-</ul>
-</section>
-<section id="tuesday" class="level4">
-<h4 class="anchored" data-anchor-id="tuesday">Tuesday</h4>
-<ul>
-<li>10-10:30 Meeting w/Chris</li>
-</ul>
-</section>
-<section id="wednesday" class="level4">
-<h4 class="anchored" data-anchor-id="wednesday">Wednesday</h4>
-<ul>
-<li>10-12: AN701</li>
-<li>12:20-1:10: Anthro Dept Event of the Week</li>
-<li>1:25-2:15: AN730</li>
-<li>2:30-3:30: Meeting with Carolyn (Tentative)</li>
-</ul>
-</section>
-<section id="thursday" class="level4">
-<h4 class="anchored" data-anchor-id="thursday">Thursday</h4>
-<p>Open usually</p>
-</section>
-<section id="friday" class="level4">
-<h4 class="anchored" data-anchor-id="friday">Friday</h4>
-<ul>
-<li>10-11: AN730 Seminar</li>
-<li>1:25-2:15: AN730</li>
-<li>2:30-3:30: Meeting with RA</li>
-</ul>
-</section>
-</section>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load library</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">suppressWarnings</span>(<span class="fu">library</span>(knitr))</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Create Nicole's schedule data frame</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>Nicole_schedule <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">Day =</span> <span class="fu">c</span>(<span class="st">"Monday"</span>, <span class="st">"Monday"</span>, <span class="st">"Monday"</span>, <span class="st">"Monday"</span>, </span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>          <span class="st">"Tuesday"</span>, <span class="st">"Wednesday"</span>, <span class="st">"Wednesday"</span>, <span class="st">"Wednesday"</span>, </span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>          <span class="st">"Thursday"</span>, <span class="st">"Friday"</span>, <span class="st">"Friday"</span>, <span class="st">"Friday"</span>),</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">Time =</span> <span class="fu">c</span>(<span class="st">"9:00a-10:00a"</span>, <span class="st">"10:00a-12:00p"</span>, <span class="st">"1:25p-2:15p"</span>, <span class="st">"2:30p-5:15p"</span>, </span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>           <span class="st">"10:00a-10:30a"</span>, <span class="st">"10:00a-12:00p"</span>, <span class="st">"12:20p-1:10p"</span>, <span class="st">"1:25p-2:15p"</span>, </span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>           <span class="st">"2:30p-3:30p"</span>, <span class="st">"10:00a-11:00a"</span>, <span class="st">"1:25p-2:15p"</span>, <span class="st">"2:30p-3:30p"</span>),</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>  <span class="at">Event =</span> <span class="fu">c</span>(<span class="st">"Carolyn/Luke Lab Meeting"</span>, <span class="st">"AN902 Class"</span>, <span class="st">"AN730 Class"</span>, <span class="st">"AN704 Class"</span>, </span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>            <span class="st">"Meeting w/ Chris"</span>, <span class="st">"AN701 Class"</span>, <span class="st">"Anthro Dept Event of the Week"</span>, <span class="st">"AN730 Class"</span>, </span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>            <span class="st">"Meeting w/ Carolyn (Tentative)"</span>, <span class="st">"AN730 Seminar"</span>, <span class="st">"AN730 Class"</span>, <span class="st">"Meeting w/ RA"</span>)</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Print Nicole's table</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(Nicole_schedule, <span class="at">align =</span> <span class="fu">c</span>(<span class="st">'l'</span>, <span class="st">'l'</span>, <span class="st">'l'</span>), <span class="at">caption =</span> <span class="st">"&lt;b style='font-size: 20px;'&gt;Nicole's Weekly Schedule&lt;/b&gt;"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<table class="table table-sm table-striped small">
+<caption><b style="font-size: 20px;">Nicole’s Weekly Schedule</b></caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Day</th>
+<th style="text-align: left;">Time</th>
+<th style="text-align: left;">Event</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Monday</td>
+<td style="text-align: left;">9:00a-10:00a</td>
+<td style="text-align: left;">Carolyn/Luke Lab Meeting</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Monday</td>
+<td style="text-align: left;">10:00a-12:00p</td>
+<td style="text-align: left;">AN902 Class</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Monday</td>
+<td style="text-align: left;">1:25p-2:15p</td>
+<td style="text-align: left;">AN730 Class</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Monday</td>
+<td style="text-align: left;">2:30p-5:15p</td>
+<td style="text-align: left;">AN704 Class</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Tuesday</td>
+<td style="text-align: left;">10:00a-10:30a</td>
+<td style="text-align: left;">Meeting w/ Chris</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Wednesday</td>
+<td style="text-align: left;">10:00a-12:00p</td>
+<td style="text-align: left;">AN701 Class</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Wednesday</td>
+<td style="text-align: left;">12:20p-1:10p</td>
+<td style="text-align: left;">Anthro Dept Event of the Week</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Wednesday</td>
+<td style="text-align: left;">1:25p-2:15p</td>
+<td style="text-align: left;">AN730 Class</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Thursday</td>
+<td style="text-align: left;">2:30p-3:30p</td>
+<td style="text-align: left;">Meeting w/ Carolyn (Tentative)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Friday</td>
+<td style="text-align: left;">10:00a-11:00a</td>
+<td style="text-align: left;">AN730 Seminar</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Friday</td>
+<td style="text-align: left;">1:25p-2:15p</td>
+<td style="text-align: left;">AN730 Class</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Friday</td>
+<td style="text-align: left;">2:30p-3:30p</td>
+<td style="text-align: left;">Meeting w/ RA</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create Jess's schedule data frame</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>Jess_schedule <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">Day =</span> <span class="fu">c</span>(<span class="st">"Monday"</span>, <span class="st">"Monday"</span>, <span class="st">"Monday"</span>, </span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>          <span class="st">"Tuesday"</span>, <span class="st">"Tuesday"</span>, </span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>          <span class="st">"Wednesday"</span>, <span class="st">"Wednesday"</span>, </span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>          <span class="st">"Thursday"</span>, <span class="st">"Thursday"</span>, <span class="st">"Thursday"</span>, </span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>          <span class="st">"Friday"</span>, <span class="st">"Friday"</span>, <span class="st">"Friday"</span>, <span class="st">"Friday"</span>, <span class="st">"Friday"</span>),</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">Time =</span> <span class="fu">c</span>(<span class="st">"10:00a-12:00p"</span>, <span class="st">"2:30p-3:00p"</span>, <span class="st">"4:00p-5:00p"</span>, </span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>           <span class="st">"2:00p-3:15p"</span>, <span class="st">"3:00p-4:45p"</span>, </span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>           <span class="st">"8:00a-10:45a"</span>, <span class="st">"12:20p-1:10p"</span>, </span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>           <span class="st">"10:00a-12:00p"</span>, <span class="st">"2:00p-3:15p"</span>, <span class="st">"3:30p-6:00p"</span>, </span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>           <span class="st">"9:05a-9:55a"</span>, <span class="st">"12:00p-1:00p"</span>, <span class="st">"1:25p-2:15p"</span>, <span class="st">"2:30p-3:30p"</span>, <span class="st">"3:30p-5:00p"</span>),</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>  <span class="at">Event =</span> <span class="fu">c</span>(<span class="st">"AN902 Class"</span>, <span class="st">"Meeting w/ Chris"</span>, <span class="st">"SMAGL Lab Meeting"</span>, </span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>            <span class="st">"AN263 TF Lecture"</span>, <span class="st">"BI611 Class"</span>, </span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>            <span class="st">"AN510 Class"</span>, <span class="st">"Anthro Dept Event of the Week"</span>, </span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>            <span class="st">"TF Office Hours"</span>, <span class="st">"AN263 TF Lecture"</span>, <span class="st">"BI611 Class"</span>, </span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>            <span class="st">"TF Discussion Section"</span>, <span class="st">"Cheryl’s Lab Meeting"</span>, <span class="st">"TF Discussion Section"</span>, <span class="st">"AN902 Class (Cheryl)"</span>, <span class="st">"TF Meeting"</span>)</span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a><span class="co"># Print Jess's Table</span></span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(Jess_schedule, <span class="at">align =</span> <span class="fu">c</span>(<span class="st">'l'</span>, <span class="st">'l'</span>, <span class="st">'l'</span>), <span class="at">caption =</span> <span class="st">"&lt;b style='font-size: 20px;'&gt;Jess's Weekly Schedule&lt;/b&gt;"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<table class="table table-sm table-striped small">
+<caption><b style="font-size: 20px;">Jess’s Weekly Schedule</b></caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Day</th>
+<th style="text-align: left;">Time</th>
+<th style="text-align: left;">Event</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Monday</td>
+<td style="text-align: left;">10:00a-12:00p</td>
+<td style="text-align: left;">AN902 Class</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Monday</td>
+<td style="text-align: left;">2:30p-3:00p</td>
+<td style="text-align: left;">Meeting w/ Chris</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Monday</td>
+<td style="text-align: left;">4:00p-5:00p</td>
+<td style="text-align: left;">SMAGL Lab Meeting</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Tuesday</td>
+<td style="text-align: left;">2:00p-3:15p</td>
+<td style="text-align: left;">AN263 TF Lecture</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Tuesday</td>
+<td style="text-align: left;">3:00p-4:45p</td>
+<td style="text-align: left;">BI611 Class</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Wednesday</td>
+<td style="text-align: left;">8:00a-10:45a</td>
+<td style="text-align: left;">AN510 Class</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Wednesday</td>
+<td style="text-align: left;">12:20p-1:10p</td>
+<td style="text-align: left;">Anthro Dept Event of the Week</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Thursday</td>
+<td style="text-align: left;">10:00a-12:00p</td>
+<td style="text-align: left;">TF Office Hours</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Thursday</td>
+<td style="text-align: left;">2:00p-3:15p</td>
+<td style="text-align: left;">AN263 TF Lecture</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Thursday</td>
+<td style="text-align: left;">3:30p-6:00p</td>
+<td style="text-align: left;">BI611 Class</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Friday</td>
+<td style="text-align: left;">9:05a-9:55a</td>
+<td style="text-align: left;">TF Discussion Section</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Friday</td>
+<td style="text-align: left;">12:00p-1:00p</td>
+<td style="text-align: left;">Cheryl’s Lab Meeting</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Friday</td>
+<td style="text-align: left;">1:25p-2:15p</td>
+<td style="text-align: left;">TF Discussion Section</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Friday</td>
+<td style="text-align: left;">2:30p-3:30p</td>
+<td style="text-align: left;">AN902 Class (Cheryl)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Friday</td>
+<td style="text-align: left;">3:30p-5:00p</td>
+<td style="text-align: left;">TF Meeting</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 </section>
 <section id="background" class="level2">
 <h2 class="anchored" data-anchor-id="background">Background</h2>
 </section>
 <section id="project-specific-papers" class="level2">
 <h2 class="anchored" data-anchor-id="project-specific-papers">Project Specific Papers</h2>
-<p>Listed in alphabetical order, not in reading order.</p>
-<p>Clayton et al.&nbsp;2018. The gut microbiome of nonhuman primates: Lessons in ecology and evolution. American Journal of Primatology 80(6): e22867.</p>
-<p>Elie et al.&nbsp;2023. Comparison of DNA extraction methods for 16S rRNA gene sequencing in the analysis of the human gut microbiome. Scientific Reports 13: 10279.</p>
-<p>Hayakawa et al.&nbsp;2018. Improving the standards for gut microbiome analysis of fecal samples: insights from the field biology of Japanese macaques on Yakushima Island. Primates 59: 423–436.</p>
-<p>Song et al.&nbsp;2016. Preservation Methods Differ in Fecal Microbiome Stability, Affecting Suitability for Field Studies. mSystems 1(3): 10.1128/msystems.00021-16.</p>
-<p>Videnska et al.&nbsp;2019. Stool sampling and DNA isolation kits affect DNA quality and bacterial composition following 16S rRNA gene sequencing using MiSeq Illumina platform. Scientific Reports 9: 13837.</p>
+<p>Note: Listed in alphabetical order, not in reading order.</p>
+<section id="the-gut-microbiome-of-nonhuman-primates-lessons-in-ecology-and-evolution" class="level3">
+<h3 class="anchored" data-anchor-id="the-gut-microbiome-of-nonhuman-primates-lessons-in-ecology-and-evolution"><strong>The gut microbiome of nonhuman primates: Lessons in ecology and evolution</strong></h3>
+<p><strong>Clayton, J.B., Gomez, A., Amato, K., Knights, D., Travis, D.A., Blekhman, R., Knight, R., Leigh, S., Stumpf, R., Wolf, T., Glander, K.E., Cabana, F., Johnson, T.J. (2018). The gut microbiome of nonhuman primates: Lessons in ecology and evolution. <em>Am J Primatol</em>, 80(6).</strong></p>
+<p><strong>Introduction to Host-Microbiome Relationship:</strong> The relationship between animals and their microbiomes is ancient, beginning when multicellular organisms evolved in a biosphere dominated by microbes. This relationship is particularly notable in the gastrointestinal tract, where microbial populations are abundant, diverse, and crucial for host health. The gut microbiome aids hosts in various functions, such as extracting energy from food and maintaining immune responses.</p>
+<p><strong>Advancements in Microbiome Research:</strong> Research on host-associated microbes traditionally relied on culture-dependent methods, which have limitations in identifying diverse microbial taxa. Culture-independent methods, such as DNA sequencing, have since revolutionized microbial ecology by providing a more comprehensive view of microbial communities. High-throughput sequencing platforms enable the analysis of large numbers of samples simultaneously, advancing our understanding of microbial diversity.</p>
+<p><strong>Challenges in Microbiome Research:</strong> Despite these advances, challenges persist in gut microbiome research, including biases introduced during sample collection, DNA extraction, and PCR amplification. Additionally, the choice of sequencing region and bioinformatics methods can influence results. Shotgun metagenomics offers an alternative approach that sequences all genetic material present in a sample, providing insights into the functional capabilities of gut microbial communities.</p>
+<p><strong>Regional Variations in Microbiota Composition:</strong> Feces are the most used material for studying the gut microbiome, but they may not fully represent microbial communities throughout the GI tract. Regional variations in microbiota composition have been observed, suggesting that fecal samples may not accurately reflect microbial populations in other gut regions.</p>
+<p><strong>Importance of Studying Primate Gut Microbiome:</strong> Understanding the primate gastrointestinal microbiome is essential for advancing knowledge of primate ecology, evolution, and health. Improved methodologies and interdisciplinary approaches will continue to enhance our understanding of host-microbiome interactions and their implications for animal biology and human health.</p>
+<p>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <em>Evolutionary Significance</em>: NHPs are crucial for understanding human evolution due to their genetic similarity to humans. The gut microbiota’s symbiotic relationship with the host likely played a significant role in dietary adaptations, influencing primate specialization and gut physiology.</p>
+<p>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <em>Behavioral Implications</em>: There is evidence suggesting a link between gut microbiota and nervous system function, with potential implications for stress-related behavior and psychiatric disorders. However, understanding gut-brain communication in NHPs remains limited.</p>
+<p>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <em>Conservation Concerns</em>: Human population growth and activities such as deforestation pose significant threats to NHP habitats and populations, affecting their ranging patterns and increasing the risk of disease transmission. Rescue centers aim to rehabilitate and release NHPs affected by habitat loss, but captive diets may negatively impact gastrointestinal microbiomes, affecting health and welfare.</p>
+<p><strong>Future Directions:</strong> Large-scale studies with both cross-sectional and longitudinal samples are needed to further advance our understanding of primate gut microbiomes. Functional assessments of microbial communities and collaboration among researchers are crucial for establishing standard procedures and sharing comparable datasets across multiple species and ecological niches.</p>
+</section>
+<section id="comparison-of-dna-extraction-methods-for-16s-rrna-gene-sequencing-in-the-analysis-of-the-human-gut-microbiome" class="level3">
+<h3 class="anchored" data-anchor-id="comparison-of-dna-extraction-methods-for-16s-rrna-gene-sequencing-in-the-analysis-of-the-human-gut-microbiome"><strong>Comparison&nbsp;of&nbsp;DNA extraction methods&nbsp;for&nbsp;16S rRNA gene sequencing&nbsp;in the&nbsp;analysis&nbsp;of the&nbsp;human gut microbiome</strong></h3>
+<p><strong>Elie, C., Perret, M., Hage, H., Sentausa, E., Hesketh, A., Louis, K., Fritah-Lafont, A., Leissner, P., Vachon, C., Rostaing, H., Reynier, F., Gervasi, G., &amp; Saliou, A. (2023). Comparison of DNA extraction methods for 16S rRNA gene sequencing in the analysis of the human gut microbiome.&nbsp;<em>Scientific Reports</em>,&nbsp;13(1), 10279.</strong></p>
+<p>The reliability of metagenomics methods crucial for studying these microbial communities is often compromised by errors at various workflow stages, including sample collection, DNA extraction, library preparation, sequencing, and data analysis. To overcome these challenges and facilitate the integration of metagenomics methods into clinical practice, standardized procedures are urgently needed. Although some standardized protocols exist, the field of nucleic acid preparation is rapidly evolving, requiring regular protocol benchmarking. The choice of DNA extraction method significantly impacts bacterial community detection, making it a pivotal step in metagenomic studies.</p>
+<p>This study evaluated four commercially available DNA extraction methods using 16S rRNA amplicon sequencing. These protocols underwent assessment based on both wet-lab and dry-lab criteria, including DNA yield, fragment size, purity, observed microbial diversity, accuracy in extracting Gram-positive bacteria, protocol repeatability, and overall performance. The study encompassed fecal samples from healthy volunteers, patients with Clostridium difficile infection (CDI), and a defined mixture of bacterial species (mock community) for accuracy assessment.</p>
+<p>Results revealed significant variability in DNA extraction yield, fragment size, and purity among the tested protocols. Notably, the use of an upstream stool preprocessing device (SPD) improved DNA yield for some protocols and enhanced DNA purity for most. Additionally, combining SPD with DNA extraction protocols increased microbial diversity, particularly in recovering Gram-positive bacteria, as indicated by the <em>Firmicutes</em>/<em>Bacteroidetes</em> ratio. The accuracy of extraction protocols was further validated using a mock community, with improved predictions observed when SPD was employed. Protocol repeatability was also enhanced with SPD integration.</p>
+<p>Overall, the study identified the DNeasy PowerLyzer PowerSoil kit (S-DQ) as the top-performing protocol, demonstrating superior performance across multiple criteria. While other protocols showed similarly good results for specific criteria, S-DQ consistently stood out as the most effective. These findings underscore the critical role of protocol selection in metagenomic studies and highlight the potential benefits of incorporating standardized preprocessing methods, such as SPD, to enhance DNA extraction efficiency and microbial community analysis.</p>
+</section>
+<section id="improving-the-standards-for-gut-microbiome-analysis-of-fecal-samples-insights-from-the-field-biology-of-japanese-macaques-on-yakushima-island" class="level3">
+<h3 class="anchored" data-anchor-id="improving-the-standards-for-gut-microbiome-analysis-of-fecal-samples-insights-from-the-field-biology-of-japanese-macaques-on-yakushima-island"><strong>Improving&nbsp;the&nbsp;standards&nbsp;for&nbsp;gut microbiome analysis&nbsp;of&nbsp;fecal samples:&nbsp;insights&nbsp;from the&nbsp;field biology&nbsp;of&nbsp;Japanese macaques&nbsp;on&nbsp;Yakushima Island</strong></h3>
+<p><strong>Hayakawa, T., Sawada, A., Tanabe, A. S., Fukuda, S., Kishida, T., Kurihara, Y., Matsushima, K., Liu, J., Akomo-Okoue, E.-F., Gravena, W., Kashima, M., Suzuki, M., Kadowaki, K., Suzumura, T., Inoue, E., Sugiura, H., Hanya, G., &amp; Agata, K. (2018). Improving the standards for gut microbiome analysis of fecal samples: insights from the field biology of Japanese macaques on Yakushima Island.&nbsp;<em>Primates</em>,&nbsp;59(5), 423-436.</strong></p>
+<p>The study explores optimizing the analysis of gut microbiomes in wild Japanese macaques (<em>Macaca fuscata</em>) and captive ones, recognizing the significant impact of gut microbiome adaptation on various aspects of host biology. Employing next-generation sequencing based on the bacterial 16S ribosomal RNA (rRNA) gene, the research aimed to address the challenges posed by traditional fecal microbiome analysis techniques, which may not be directly applicable to wild nonhuman primates due to sample degradation, bacterial growth, and lack of laboratory facilities in remote habitats.</p>
+<p>To tackle these challenges, the study explored various methods of sample storage, including freezing, stabilization solutions like RNAlater, and lysis buffer, to preserve fecal DNA effectively. By collecting fecal samples from both captive and wild Japanese macaques, the study compared different storage methods’ effectiveness in preserving fecal DNA. DNA extraction, purification, library preparation, and amplicon sequencing were conducted following established protocols, with operational taxonomic unit (OTU) picking and taxonomic identification characterizing the gut microbiome composition.</p>
+<p><strong>Results:</strong></p>
+<p>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <em>Experiment 1</em>: Evaluated the effects of various sample storage and DNA extraction methods on captive Japanese macaque fecal samples, revealing some differences in OTU numbers and alpha diversity between storage methods but overall consistency in bacterial composition.</p>
+<p>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <em>Experiment 2</em>: Extended these findings to wild Japanese macaque fecal samples, observing slight variations across different storage methods but consistent microbiome profiles overall.</p>
+<p>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <em>Experiment 3</em>: Focused on comparing microbiome analysis results obtained from sequencing different regions of the 16S rRNA gene (V1-V2 vs.&nbsp;V3-V4), showing that the choice of sequencing region influenced the number of OTUs obtained. However, the Shannon index, a measure of alpha diversity, remained similar between the two regions, underscoring the importance of primer selection in microbiome studies.</p>
+<p>This study provides valuable insights into methodological considerations for studying gut microbiomes in wild primates, emphasizing the need for optimizing sample processing methods and careful primer selection for accurate microbiome analysis. These findings contribute to our understanding of host-microbiome interactions in natural habitats and pave the way for future research to explore the effects of environmental factors on microbiome composition in wild primate populations.</p>
+</section>
+<section id="preservation-methods-differ-in-fecal-microbiome-stability-affecting-suitability-for-field-studies" class="level3">
+<h3 class="anchored" data-anchor-id="preservation-methods-differ-in-fecal-microbiome-stability-affecting-suitability-for-field-studies"><strong>Preservation Methods Differ&nbsp;in&nbsp;Fecal Microbiome Stability,&nbsp;Affecting Suitability&nbsp;for&nbsp;Field Studies</strong></h3>
+<p><strong>Song, S. J., Amir, A., Metcalf, J. L., Amato, K. R., Xu, Z. Z., Humphrey, G., &amp; Knight, R. (2016). Preservation Methods Differ in Fecal Microbiome Stability, Affecting Suitability for Field Studies.&nbsp;<em>mSystems</em>,&nbsp;1(3).</strong></p>
+<p>This study aimed to investigate the effects of different storage methods on fecal microbiota composition over 8 weeks using 10 human and 5 dog donors. Four common preservatives (ethanol at 70% and 95% concentrations, RNAlater, OMNIgene Gut, and FTA cards) were tested under various temperature conditions, and the microbial communities were analyzed using 16S rRNA amplicon sequencing.</p>
+<p><strong>Small Storage Effects:</strong> Despite variations introduced by storage methods, these effects were small compared to differences between species and individuals. The variation between species (human and dog) and among individuals explained a significant portion of the total variation in microbial communities.</p>
+<p><strong>Preservation Methods and Community Shifts:</strong> Certain preservation methods, such as freezing and the use of FTA cards, OMNIgene Gut, and 95% ethanol, resulted in minimal changes in microbial community composition and diversity, even after 8 weeks. Unstabilized samples and those preserved with 70% ethanol showed larger changes, especially under heat or freeze-thaw conditions.</p>
+<p><strong>Stability of Preservation Methods:</strong> FTA cards and OMNIgene Gut showed minimal changes in microbial community composition and diversity over time, similar to fresh samples. RNAlater and 95% ethanol also performed well, although RNAlater showed slightly more changes under non-freezing temperatures over longer periods.</p>
+<p><strong>Taxonomic Biases Introduced by Preservation:</strong> Different preservation methods introduced biases in specific taxa. For example, FTA cards resulted in increased diversity of Firmicutes taxa, while 70% ethanol led to increases in Streptococcus and Haemophilus taxa. OMNIgene Gut showed the smallest immediate changes in taxa abundance.</p>
+<p><strong>Recommendations:</strong> This study recommends using 95% ethanol, OMNIgene Gut, or FTA cards for long-term storage, cautioning against the use of 70% ethanol or unfixed samples for extended periods. The recommended methods showed minimal changes in microbial communities, comparable to technical replicates, making them suitable for microbiome analysis even over several weeks.</p>
+<p>Overall, this study highlights the importance of selecting appropriate preservation methods for fecal samples in microbiome research, especially for long-term storage and field trials, to ensure minimal alterations in microbial community composition and accurate interpretation of results.</p>
+</section>
+<section id="stool-sampling-and-dna-isolation-kits-affect-dna-quality-and-bacterial-composition-following-16s-rrna-gene-sequencing-using-miseq-illumina-platform" class="level3">
+<h3 class="anchored" data-anchor-id="stool-sampling-and-dna-isolation-kits-affect-dna-quality-and-bacterial-composition-following-16s-rrna-gene-sequencing-using-miseq-illumina-platform"><strong>Stool sampling&nbsp;and&nbsp;DNA isolation kits affect DNA quality&nbsp;and&nbsp;bacterial composition following 16S rRNA gene sequencing using MiSeq Illumina platform</strong></h3>
+<p><strong>Videnska, P., Smerkova, K., Zwinsova, B., Popovici, V., Micenkova, L., Sedlar, K., &amp; Budinska, E. (2019). Stool sampling and DNA isolation kits affect DNA quality and bacterial composition following 16S rRNA gene sequencing using MiSeq Illumina platform.&nbsp;<em>Scientific Reports</em>,&nbsp;9(1), 13837.</strong></p>
+<p>Large cohort studies are essential for comprehensively understanding the microbiome’s role, but they encounter obstacles related to sampling procedures and methodological variability. User-friendly sampling protocols are crucial for participant compliance, while methodological differences across studies can hinder cross-study comparisons.</p>
+<p>To address these challenges, this study systematically assessed the effects of sampling and DNA isolation kits on bacterial DNA quality, diversity, and composition while considering user acceptance. Sixteen volunteers used three different sampling kits: stool container, flocked swabs, and cotton swabs. DNA was extracted using two isolation kits: PowerLyzer PowerSoil DNA Isolation Kit (PS) and QIAamp DNA Stool Mini Kit (QS).</p>
+<p>The stool container emerged as the most acceptable sampling option, while the QS kit yielded significantly higher DNA yields compared to the PS kit. However, the PS kit produced DNA of better integrity. The addition of a bead-beating step to the QS protocol did not improve DNA integrity, suggesting other factors at play.</p>
+<p>Presence of PCR inhibitors persisted in DNA samples after isolation with both kits, with stool container samples exhibiting lower proportions, indicating potential advantages for certain applications. Bacterial diversity analysis revealed that the PS kit yielded a higher number of observed OTUs, particularly when combined with the stool container sampling kit.</p>
+<p>Final bacterial composition was more influenced by the DNA isolation kit than the sampling kit, with the PS kit showing a preference for Gram-positive bacteria. This study underscores the importance of considering batch effects arising from the choice of isolation and sampling kits when comparing results between studies.</p>
+<p>This study highlights significant effects of DNA isolation and sampling kits on DNA quality and bacterial composition, emphasizing the need for standardized methodologies and careful consideration of batch effects in microbiome research.</p>
+</section>
 </section>
 <section id="extraction-protocol" class="level2">
 <h2 class="anchored" data-anchor-id="extraction-protocol">Extraction Protocol</h2>
@@ -214,6 +461,7 @@ ul.task-list li input[type="checkbox"] {
 <ol start="15" type="1">
 <li>Three washes of supernatant in <em>Spin Filter</em> <br></li>
 </ol>
+<!-- -->
 <ol type="a">
 <li>First wash: Pipette 675 𝜇l of the supernatant to a <em>Spin Filter</em> and <strong>centrifuge</strong> at 10,000 g (rcf) for 1 min. Discard the liquid flow through. Repeat until all supernatant has passed through the column. (This will take 3x washes through the column). <br></li>
 </ol>
@@ -224,6 +472,7 @@ ul.task-list li input[type="checkbox"] {
 <li>Second Wash: Pipette 675 𝜇l of the supernatant to the same <em>Spin Filter</em> and <strong>centrifuge</strong> at 10,000 g (rcf) for 1 min. Discard the liquid flow through. <br></li>
 <li>Third Wash: Pipette 675 𝜇l of the supernatant to the same <em>Spin Filter</em> and <strong>centrifuge</strong> at 10,000 g (rcf) for 1 min. Discard the liquid flow through. <br></li>
 </ol>
+<!-- -->
 <ol start="16" type="1">
 <li>Add 500 𝜇l of <em>Solution C5</em> to the filter and <strong>centrifuge</strong> at 10,000 g (rcf) for 30 s. Discard the liquid flow through. <br></li>
 </ol>

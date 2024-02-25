@@ -11,119 +11,242 @@ Initials of lab group member will be used to denote who wrote the entries <br> J
 
 ## Schedules of Group Members
 
-### Nicole
+```{r}
 
-#### Monday
-- 9-10: Carolyn/Luke Lab meeting
-- 10-12: AN902
-- 1:25-2:15: AN730
-- 2:30-5:15: AN704
+# Load library
+suppressWarnings(library(knitr))
 
-#### Tuesday
-- 10-10:30 Meeting w/Chris
+# Create Nicole's schedule data frame
+Nicole_schedule <- data.frame(
+  Day = c("Monday", "Monday", "Monday", "Monday", 
+          "Tuesday", "Wednesday", "Wednesday", "Wednesday", 
+          "Thursday", "Friday", "Friday", "Friday"),
+  Time = c("9:00a-10:00a", "10:00a-12:00p", "1:25p-2:15p", "2:30p-5:15p", 
+           "10:00a-10:30a", "10:00a-12:00p", "12:20p-1:10p", "1:25p-2:15p", 
+           "2:30p-3:30p", "10:00a-11:00a", "1:25p-2:15p", "2:30p-3:30p"),
+  Event = c("Carolyn/Luke Lab Meeting", "AN902 Class", "AN730 Class", "AN704 Class", 
+            "Meeting w/ Chris", "AN701 Class", "Anthro Dept Event of the Week", "AN730 Class", 
+            "Meeting w/ Carolyn (Tentative)", "AN730 Seminar", "AN730 Class", "Meeting w/ RA")
+)
 
-#### Wednesday
-- 10-12: AN701
-- 12:20-1:10: Anthro Dept Event of the Week
-- 1:25-2:15: AN730
-- 2:30-3:30: Meeting with Carolyn (Tentative)
+# Print Nicole's table
+kable(Nicole_schedule, align = c('l', 'l', 'l'), caption = "<b style='font-size: 20px;'>Nicole's Weekly Schedule</b>")
 
-#### Thursday
-Open usually
+# Create Jess's schedule data frame
+Jess_schedule <- data.frame(
+  Day = c("Monday", "Monday", "Monday", 
+          "Tuesday", "Tuesday", 
+          "Wednesday", "Wednesday", 
+          "Thursday", "Thursday", "Thursday", 
+          "Friday", "Friday", "Friday", "Friday", "Friday"),
+  Time = c("10:00a-12:00p", "2:30p-3:00p", "4:00p-5:00p", 
+           "2:00p-3:15p", "3:00p-4:45p", 
+           "8:00a-10:45a", "12:20p-1:10p", 
+           "10:00a-12:00p", "2:00p-3:15p", "3:30p-6:00p", 
+           "9:05a-9:55a", "12:00p-1:00p", "1:25p-2:15p", "2:30p-3:30p", "3:30p-5:00p"),
+  Event = c("AN902 Class", "Meeting w/ Chris", "SMAGL Lab Meeting", 
+            "AN263 TF Lecture", "BI611 Class", 
+            "AN510 Class", "Anthro Dept Event of the Week", 
+            "TF Office Hours", "AN263 TF Lecture", "BI611 Class", 
+            "TF Discussion Section", "Cheryl’s Lab Meeting", "TF Discussion Section", "AN902 Class (Cheryl)", "TF Meeting")
+)
 
-#### Friday
-- 10-11: AN730 Seminar
-- 1:25-2:15: AN730
-- 2:30-3:30: Meeting with RA
+# Print Jess's Table
+kable(Jess_schedule, align = c('l', 'l', 'l'), caption = "<b style='font-size: 20px;'>Jess's Weekly Schedule</b>")
+```
 
 ## Background
 
 ## Project Specific Papers
-Listed in alphabetical order, not in reading order.
 
-Clayton et al. 2018. The gut microbiome of nonhuman primates: Lessons in ecology and evolution. American Journal of Primatology 80(6): e22867.
+Note: Listed in alphabetical order, not in reading order.
 
-Elie et al. 2023. Comparison of DNA extraction methods for 16S rRNA gene sequencing in the analysis of the human gut microbiome. Scientific Reports 13: 10279.
+### **The gut microbiome of nonhuman primates: Lessons in ecology and evolution**
 
-Hayakawa et al. 2018. Improving the standards for gut microbiome analysis of fecal samples: insights from the field biology of Japanese macaques on Yakushima Island. Primates 59: 423–436.
+**Clayton, J.B., Gomez, A., Amato, K., Knights, D., Travis, D.A., Blekhman, R., Knight, R., Leigh, S., Stumpf, R., Wolf, T., Glander, K.E., Cabana, F., Johnson, T.J. (2018). The gut microbiome of nonhuman primates: Lessons in ecology and evolution. *Am J Primatol*, 80(6).**
 
-Song et al. 2016. Preservation Methods Differ in Fecal Microbiome Stability, Affecting Suitability for Field Studies. mSystems 1(3): 10.1128/msystems.00021-16.
+**Introduction to Host-Microbiome Relationship:** The relationship between animals and their microbiomes is ancient, beginning when multicellular organisms evolved in a biosphere dominated by microbes. This relationship is particularly notable in the gastrointestinal tract, where microbial populations are abundant, diverse, and crucial for host health. The gut microbiome aids hosts in various functions, such as extracting energy from food and maintaining immune responses.
 
-Videnska et al. 2019. Stool sampling and DNA isolation kits affect DNA quality and bacterial composition following 16S rRNA gene sequencing using MiSeq Illumina platform. Scientific Reports 9: 13837.
+**Advancements in Microbiome Research:** Research on host-associated microbes traditionally relied on culture-dependent methods, which have limitations in identifying diverse microbial taxa. Culture-independent methods, such as DNA sequencing, have since revolutionized microbial ecology by providing a more comprehensive view of microbial communities. High-throughput sequencing platforms enable the analysis of large numbers of samples simultaneously, advancing our understanding of microbial diversity.
+
+**Challenges in Microbiome Research:** Despite these advances, challenges persist in gut microbiome research, including biases introduced during sample collection, DNA extraction, and PCR amplification. Additionally, the choice of sequencing region and bioinformatics methods can influence results. Shotgun metagenomics offers an alternative approach that sequences all genetic material present in a sample, providing insights into the functional capabilities of gut microbial communities.
+
+**Regional Variations in Microbiota Composition:** Feces are the most used material for studying the gut microbiome, but they may not fully represent microbial communities throughout the GI tract. Regional variations in microbiota composition have been observed, suggesting that fecal samples may not accurately reflect microbial populations in other gut regions.
+
+**Importance of Studying Primate Gut Microbiome:** Understanding the primate gastrointestinal microbiome is essential for advancing knowledge of primate ecology, evolution, and health. Improved methodologies and interdisciplinary approaches will continue to enhance our understanding of host-microbiome interactions and their implications for animal biology and human health.
+
+·       *Evolutionary Significance*: NHPs are crucial for understanding human evolution due to their genetic similarity to humans. The gut microbiota's symbiotic relationship with the host likely played a significant role in dietary adaptations, influencing primate specialization and gut physiology.
+
+·       *Behavioral Implications*: There is evidence suggesting a link between gut microbiota and nervous system function, with potential implications for stress-related behavior and psychiatric disorders. However, understanding gut-brain communication in NHPs remains limited.
+
+·       *Conservation Concerns*: Human population growth and activities such as deforestation pose significant threats to NHP habitats and populations, affecting their ranging patterns and increasing the risk of disease transmission. Rescue centers aim to rehabilitate and release NHPs affected by habitat loss, but captive diets may negatively impact gastrointestinal microbiomes, affecting health and welfare.
+
+**Future Directions:** Large-scale studies with both cross-sectional and longitudinal samples are needed to further advance our understanding of primate gut microbiomes. Functional assessments of microbial communities and collaboration among researchers are crucial for establishing standard procedures and sharing comparable datasets across multiple species and ecological niches.
+
+### **Comparison of DNA extraction methods for 16S rRNA gene sequencing in the analysis of the human gut microbiome**
+
+**Elie, C., Perret, M., Hage, H., Sentausa, E., Hesketh, A., Louis, K., Fritah-Lafont, A., Leissner, P., Vachon, C., Rostaing, H., Reynier, F., Gervasi, G., & Saliou, A. (2023). Comparison of DNA extraction methods for 16S rRNA gene sequencing in the analysis of the human gut microbiome. *Scientific Reports*, 13(1), 10279.**
+
+The reliability of metagenomics methods crucial for studying these microbial communities is often compromised by errors at various workflow stages, including sample collection, DNA extraction, library preparation, sequencing, and data analysis. To overcome these challenges and facilitate the integration of metagenomics methods into clinical practice, standardized procedures are urgently needed. Although some standardized protocols exist, the field of nucleic acid preparation is rapidly evolving, requiring regular protocol benchmarking. The choice of DNA extraction method significantly impacts bacterial community detection, making it a pivotal step in metagenomic studies.
+
+This study evaluated four commercially available DNA extraction methods using 16S rRNA amplicon sequencing. These protocols underwent assessment based on both wet-lab and dry-lab criteria, including DNA yield, fragment size, purity, observed microbial diversity, accuracy in extracting Gram-positive bacteria, protocol repeatability, and overall performance. The study encompassed fecal samples from healthy volunteers, patients with Clostridium difficile infection (CDI), and a defined mixture of bacterial species (mock community) for accuracy assessment.
+
+Results revealed significant variability in DNA extraction yield, fragment size, and purity among the tested protocols. Notably, the use of an upstream stool preprocessing device (SPD) improved DNA yield for some protocols and enhanced DNA purity for most. Additionally, combining SPD with DNA extraction protocols increased microbial diversity, particularly in recovering Gram-positive bacteria, as indicated by the *Firmicutes*/*Bacteroidetes* ratio. The accuracy of extraction protocols was further validated using a mock community, with improved predictions observed when SPD was employed. Protocol repeatability was also enhanced with SPD integration.
+
+Overall, the study identified the DNeasy PowerLyzer PowerSoil kit (S-DQ) as the top-performing protocol, demonstrating superior performance across multiple criteria. While other protocols showed similarly good results for specific criteria, S-DQ consistently stood out as the most effective. These findings underscore the critical role of protocol selection in metagenomic studies and highlight the potential benefits of incorporating standardized preprocessing methods, such as SPD, to enhance DNA extraction efficiency and microbial community analysis.
+
+### **Improving the standards for gut microbiome analysis of fecal samples: insights from the field biology of Japanese macaques on Yakushima Island**
+
+**Hayakawa, T., Sawada, A., Tanabe, A. S., Fukuda, S., Kishida, T., Kurihara, Y., Matsushima, K., Liu, J., Akomo-Okoue, E.-F., Gravena, W., Kashima, M., Suzuki, M., Kadowaki, K., Suzumura, T., Inoue, E., Sugiura, H., Hanya, G., & Agata, K. (2018). Improving the standards for gut microbiome analysis of fecal samples: insights from the field biology of Japanese macaques on Yakushima Island. *Primates*, 59(5), 423-436.**
+
+The study explores optimizing the analysis of gut microbiomes in wild Japanese macaques (*Macaca fuscata*) and captive ones, recognizing the significant impact of gut microbiome adaptation on various aspects of host biology. Employing next-generation sequencing based on the bacterial 16S ribosomal RNA (rRNA) gene, the research aimed to address the challenges posed by traditional fecal microbiome analysis techniques, which may not be directly applicable to wild nonhuman primates due to sample degradation, bacterial growth, and lack of laboratory facilities in remote habitats.
+
+To tackle these challenges, the study explored various methods of sample storage, including freezing, stabilization solutions like RNAlater, and lysis buffer, to preserve fecal DNA effectively. By collecting fecal samples from both captive and wild Japanese macaques, the study compared different storage methods' effectiveness in preserving fecal DNA. DNA extraction, purification, library preparation, and amplicon sequencing were conducted following established protocols, with operational taxonomic unit (OTU) picking and taxonomic identification characterizing the gut microbiome composition.
+
+**Results:**
+
+·       *Experiment 1*: Evaluated the effects of various sample storage and DNA extraction methods on captive Japanese macaque fecal samples, revealing some differences in OTU numbers and alpha diversity between storage methods but overall consistency in bacterial composition.
+
+·       *Experiment 2*: Extended these findings to wild Japanese macaque fecal samples, observing slight variations across different storage methods but consistent microbiome profiles overall.
+
+·       *Experiment 3*: Focused on comparing microbiome analysis results obtained from sequencing different regions of the 16S rRNA gene (V1-V2 vs. V3-V4), showing that the choice of sequencing region influenced the number of OTUs obtained. However, the Shannon index, a measure of alpha diversity, remained similar between the two regions, underscoring the importance of primer selection in microbiome studies.
+
+This study provides valuable insights into methodological considerations for studying gut microbiomes in wild primates, emphasizing the need for optimizing sample processing methods and careful primer selection for accurate microbiome analysis. These findings contribute to our understanding of host-microbiome interactions in natural habitats and pave the way for future research to explore the effects of environmental factors on microbiome composition in wild primate populations.
+
+### **Preservation Methods Differ in Fecal Microbiome Stability, Affecting Suitability for Field Studies**
+
+**Song, S. J., Amir, A., Metcalf, J. L., Amato, K. R., Xu, Z. Z., Humphrey, G., & Knight, R. (2016). Preservation Methods Differ in Fecal Microbiome Stability, Affecting Suitability for Field Studies. *mSystems*, 1(3).**
+
+This study aimed to investigate the effects of different storage methods on fecal microbiota composition over 8 weeks using 10 human and 5 dog donors. Four common preservatives (ethanol at 70% and 95% concentrations, RNAlater, OMNIgene Gut, and FTA cards) were tested under various temperature conditions, and the microbial communities were analyzed using 16S rRNA amplicon sequencing.
+
+**Small Storage Effects:** Despite variations introduced by storage methods, these effects were small compared to differences between species and individuals. The variation between species (human and dog) and among individuals explained a significant portion of the total variation in microbial communities.
+
+**Preservation Methods and Community Shifts:** Certain preservation methods, such as freezing and the use of FTA cards, OMNIgene Gut, and 95% ethanol, resulted in minimal changes in microbial community composition and diversity, even after 8 weeks. Unstabilized samples and those preserved with 70% ethanol showed larger changes, especially under heat or freeze-thaw conditions.
+
+**Stability of Preservation Methods:** FTA cards and OMNIgene Gut showed minimal changes in microbial community composition and diversity over time, similar to fresh samples. RNAlater and 95% ethanol also performed well, although RNAlater showed slightly more changes under non-freezing temperatures over longer periods.
+
+**Taxonomic Biases Introduced by Preservation:** Different preservation methods introduced biases in specific taxa. For example, FTA cards resulted in increased diversity of Firmicutes taxa, while 70% ethanol led to increases in Streptococcus and Haemophilus taxa. OMNIgene Gut showed the smallest immediate changes in taxa abundance.
+
+**Recommendations:** This study recommends using 95% ethanol, OMNIgene Gut, or FTA cards for long-term storage, cautioning against the use of 70% ethanol or unfixed samples for extended periods. The recommended methods showed minimal changes in microbial communities, comparable to technical replicates, making them suitable for microbiome analysis even over several weeks.
+
+Overall, this study highlights the importance of selecting appropriate preservation methods for fecal samples in microbiome research, especially for long-term storage and field trials, to ensure minimal alterations in microbial community composition and accurate interpretation of results.
+
+### **Stool sampling and DNA isolation kits affect DNA quality and bacterial composition following 16S rRNA gene sequencing using MiSeq Illumina platform**
+
+**Videnska, P., Smerkova, K., Zwinsova, B., Popovici, V., Micenkova, L., Sedlar, K., & Budinska, E. (2019). Stool sampling and DNA isolation kits affect DNA quality and bacterial composition following 16S rRNA gene sequencing using MiSeq Illumina platform. *Scientific Reports*, 9(1), 13837.**
+
+Large cohort studies are essential for comprehensively understanding the microbiome's role, but they encounter obstacles related to sampling procedures and methodological variability. User-friendly sampling protocols are crucial for participant compliance, while methodological differences across studies can hinder cross-study comparisons.
+
+To address these challenges, this study systematically assessed the effects of sampling and DNA isolation kits on bacterial DNA quality, diversity, and composition while considering user acceptance. Sixteen volunteers used three different sampling kits: stool container, flocked swabs, and cotton swabs. DNA was extracted using two isolation kits: PowerLyzer PowerSoil DNA Isolation Kit (PS) and QIAamp DNA Stool Mini Kit (QS).
+
+The stool container emerged as the most acceptable sampling option, while the QS kit yielded significantly higher DNA yields compared to the PS kit. However, the PS kit produced DNA of better integrity. The addition of a bead-beating step to the QS protocol did not improve DNA integrity, suggesting other factors at play.
+
+Presence of PCR inhibitors persisted in DNA samples after isolation with both kits, with stool container samples exhibiting lower proportions, indicating potential advantages for certain applications. Bacterial diversity analysis revealed that the PS kit yielded a higher number of observed OTUs, particularly when combined with the stool container sampling kit.
+
+Final bacterial composition was more influenced by the DNA isolation kit than the sampling kit, with the PS kit showing a preference for Gram-positive bacteria. This study underscores the importance of considering batch effects arising from the choice of isolation and sampling kits when comparing results between studies.
+
+This study highlights significant effects of DNA isolation and sampling kits on DNA quality and bacterial composition, emphasizing the need for standardized methodologies and careful consideration of batch effects in microbiome research.
 
 ## Extraction Protocol
 
-### Important Notes							 	
-- When conducting this protocol, always wear a suitable lab coat, disposable acrylamide gloves and protective goggles/glasses. For more information, consult the appropriate safety data sheets (SDSs) available from the product supplier. <br>
-- To ensure proper sample identification, label sides and tops of the tubes. Processes used in this protocol may rub the labels off of the tubes, so it’s important to duplicate! <br>
-- Always include a control sample of sterile/DNAse free water for every extraction so that you can detect potential contamination! <br>
-- Perform all centrifugation steps at room temperature (15–25°C). <br>
-- If Solution C1 has precipitated, heat at 60°C until the precipitate dissolves. 
-Shake to mix Solution C4 before use. <br>
+### Important Notes
 
-### Protocol 
+-   When conducting this protocol, always wear a suitable lab coat, disposable acrylamide gloves and protective goggles/glasses. For more information, consult the appropriate safety data sheets (SDSs) available from the product supplier. <br>
+-   To ensure proper sample identification, label sides and tops of the tubes. Processes used in this protocol may rub the labels off of the tubes, so it's important to duplicate! <br>
+-   Always include a control sample of sterile/DNAse free water for every extraction so that you can detect potential contamination! <br>
+-   Perform all centrifugation steps at room temperature (15--25°C). <br>
+-   If Solution C1 has precipitated, heat at 60°C until the precipitate dissolves. Shake to mix Solution C4 before use. <br>
+
+### Protocol
+
 Last updated 18FEB24 by CAS
 
 #### Required Equipment and Reagents
 
-- In this protocol, equipment available in the *DNeasy PowerLyzer PowerSoil Kit* will be marked in *italics*. Equipment available in the **SMAGL** will be in **bold**. <br>
-- Biosafety cabinet (BSC) - remember to prepare it before getting started! **[BSC]**. Unless otherwise specified, all steps of this protocol should be performed in the BSC. <br>
-- Microcentrifuge set to 10,000 rcf (not rpm) **[Centrifuge Workstation]** <br>
-- Pipettes and pipette tips (sterile filter tips), prepare ahead to make sure you don’t run out! [Use filter tips; available on shelving above **PCR** and **Quantitation Workstations**; you should ONLY use the pipettes in the **BSC** and/or **Extraction Workstation** for extractions. **The Quantitation Station** has its own set of pipettes.] <br>
-- Heat block or water bath set at 65C (this takes time to heat up; get it ready before starting the protocol) **[Extraction Workstation]** <br>
-- Vortexer **[Extraction Workstation or BSC]** <br>
-- Bead-beater (we use an alternative to the PowerLyzer homogenizer) **[BSC]** <br>
+-   In this protocol, equipment available in the *DNeasy PowerLyzer PowerSoil Kit* will be marked in *italics*. Equipment available in the **SMAGL** will be in **bold**. <br>
+-   Biosafety cabinet (BSC) - remember to prepare it before getting started! **\[BSC\]**. Unless otherwise specified, all steps of this protocol should be performed in the BSC. <br>
+-   Microcentrifuge set to 10,000 rcf (not rpm) **\[Centrifuge Workstation\]** <br>
+-   Pipettes and pipette tips (sterile filter tips), prepare ahead to make sure you don't run out! \[Use filter tips; available on shelving above **PCR** and **Quantitation Workstations**; you should ONLY use the pipettes in the **BSC** and/or **Extraction Workstation** for extractions. **The Quantitation Station** has its own set of pipettes.\] <br>
+-   Heat block or water bath set at 65C (this takes time to heat up; get it ready before starting the protocol) **\[Extraction Workstation\]** <br>
+-   Vortexer **\[Extraction Workstation or BSC\]** <br>
+-   Bead-beater (we use an alternative to the PowerLyzer homogenizer) **\[BSC\]** <br>
 
 Prior to starting, UV all tubes, pipettes, tips, etc. in the PCR or BSC for 10 minutes <br>
 
 #### Protocol step by step
 
-1. Add 0.25 g of fecal matter to the *PowerBead Tubes*. <br>
-2. Add 750 𝜇l of *PowerBead Solution* to the *PowerBead Tubes*. <br>
-3. Add 60 𝜇l of *Solution C1* to tubes and **vortex** briefly. If Solution C1 has precipitated, heat to 60ºC until precipitate has dissolved (in heat block or water bath). <br>
-- Note: Vortexing mixes the components in the *PowerBead Tube* and begins to disperse the sample.
-4. Incubate *PowerBead Tubes* at 65ºC for 30 min in **heat block** or **water bath**. <br>
-- This may be done by adding the **Extraction Workstation** dry block to the **BSC**; if you choose to do this, please clean it and add it to the BSC while preparing the BSC prior to beginning the protocol]. <br>
-5. Secure tubes in the **Bead Beater** **[BSC]** and run for 5 minutes at 2000 RPM, pause for 30 seconds, and run again for 5 minutes at 2000 RPM. You may run these in evenly divided batches to initiate the subsequent centrifuge step with balanced samples. <br>
-6. **Centrifuge** tubes at 10,000 g (rcf) for 30 s. Make sure the *PowerBead Tubes* rotate freely in the centrifuge without rubbing. <br>
-- If 30 s is not long enough to pellet the sample, you may run for 3 min at the same speed. <br>
-7. Transfer supernatant (~400-500 𝜇l) to clean *2 ml Collection Tube* (you may still have chunks of poo at this point in the supernatant). <br>
-8. Add 250 𝜇l of *Solution C2* to tubes and **vortex** for 5 s. Incubate at 4ºC for 10 min. <br>
-- Note: *Solution C2* has Inhibitor Removal Technology (IRT). It contains a reagent that can precipitate non-DNA organic and inorganic material, including humic substances, cell debris and proteins. It is important to remove contaminating organic and inorganic matter that may reduce DNA purity and inhibit downstream DNA applications. <br>
-9. **Centrifuge** the tubes at 10,000 g (rcf) for 1 min. <br>
-10. Transfer up to 600 𝜇l of supernatant to a clean *2 ml Collection Tube* (make sure to only transfer the liquid – none of the pellet here!). <br>
-- Note: The pellet at this point contains non-DNA organic and inorganic material, including humic acid, cell debris and proteins. For best DNA yields and quality, avoid transferring any of the pellet. <br>
+1.  Add 0.25 g of fecal matter to the *PowerBead Tubes*. <br>
+2.  Add 750 𝜇l of *PowerBead Solution* to the *PowerBead Tubes*. <br>
+3.  Add 60 𝜇l of *Solution C1* to tubes and **vortex** briefly. If Solution C1 has precipitated, heat to 60ºC until precipitate has dissolved (in heat block or water bath). <br>
+
+-   Note: Vortexing mixes the components in the *PowerBead Tube* and begins to disperse the sample.
+
+4.  Incubate *PowerBead Tubes* at 65ºC for 30 min in **heat block** or **water bath**. <br>
+
+-   This may be done by adding the **Extraction Workstation** dry block to the **BSC**; if you choose to do this, please clean it and add it to the BSC while preparing the BSC prior to beginning the protocol\]. <br>
+
+5.  Secure tubes in the **Bead Beater** **\[BSC\]** and run for 5 minutes at 2000 RPM, pause for 30 seconds, and run again for 5 minutes at 2000 RPM. You may run these in evenly divided batches to initiate the subsequent centrifuge step with balanced samples. <br>
+6.  **Centrifuge** tubes at 10,000 g (rcf) for 30 s. Make sure the *PowerBead Tubes* rotate freely in the centrifuge without rubbing. <br>
+
+-   If 30 s is not long enough to pellet the sample, you may run for 3 min at the same speed. <br>
+
+7.  Transfer supernatant (\~400-500 𝜇l) to clean *2 ml Collection Tube* (you may still have chunks of poo at this point in the supernatant). <br>
+8.  Add 250 𝜇l of *Solution C2* to tubes and **vortex** for 5 s. Incubate at 4ºC for 10 min. <br>
+
+-   Note: *Solution C2* has Inhibitor Removal Technology (IRT). It contains a reagent that can precipitate non-DNA organic and inorganic material, including humic substances, cell debris and proteins. It is important to remove contaminating organic and inorganic matter that may reduce DNA purity and inhibit downstream DNA applications. <br>
+
+9.  **Centrifuge** the tubes at 10,000 g (rcf) for 1 min. <br>
+10. Transfer up to 600 𝜇l of supernatant to a clean *2 ml Collection Tube* (make sure to only transfer the liquid -- none of the pellet here!). <br>
+
+-   Note: The pellet at this point contains non-DNA organic and inorganic material, including humic acid, cell debris and proteins. For best DNA yields and quality, avoid transferring any of the pellet. <br>
+
 11. Add 200 𝜇l of *Solution C3* to the tubes and **vortex** briefly. Incubate at 4ºC for 10 min (use the old mini-fridge for this step, below the PCR Workstation). <br>
-- Note: *Solution C3* has Inhibitor Removal Technology (IRT) and is a second reagent to precipitate additional non-DNA organic and inorganic material including humic acid, cell debris and proteins. It is important to remove contaminating organic and inorganic matter that may reduce DNA purity and inhibit downstream DNA applications. <br>
+
+-   Note: *Solution C3* has Inhibitor Removal Technology (IRT) and is a second reagent to precipitate additional non-DNA organic and inorganic material including humic acid, cell debris and proteins. It is important to remove contaminating organic and inorganic matter that may reduce DNA purity and inhibit downstream DNA applications. <br>
+
 12. **Centrifuge** the tubes at 10,000 g (rcf) for 1 min. <br>
 13. Transfer up to 750 𝜇l of supernatant to a clean *2 ml Collection Tube*. Once again, be careful to avoid the pellet! <br>
-- Note: The pellet at this point contains non-DNA organic and inorganic material including humic acid, cell debris and proteins. For best DNA yields and quality, avoid transferring any of the pellet. <br>	
+
+-   Note: The pellet at this point contains non-DNA organic and inorganic material including humic acid, cell debris and proteins. For best DNA yields and quality, avoid transferring any of the pellet. <br>\
+
 14. Add 1.2 ml of *Solution C4* to the supernatant and **vortex** for 5 s. Shake *Solution C4* by hand to mix prior to adding. Also, this will fill the *Collection Tube* to the brim, so be prepared. <br>
-- Note: This contains guanidine salts, which is highly reactive. Do not mix or clean with bleach!!! <br>
-- Note: *Solution C4* is a high-concentration salt solution. Since DNA binds tightly to silica at high salt concentrations, this will adjust the DNA solution salt concentrations to allow binding of DNA, but not non-DNA organic and inorganic material that may still be present at low levels, to the *Spin Filter*. <br>
+
+-   Note: This contains guanidine salts, which is highly reactive. Do not mix or clean with bleach!!! <br>
+-   Note: *Solution C4* is a high-concentration salt solution. Since DNA binds tightly to silica at high salt concentrations, this will adjust the DNA solution salt concentrations to allow binding of DNA, but not non-DNA organic and inorganic material that may still be present at low levels, to the *Spin Filter*. <br>
+
 15. Three washes of supernatant in *Spin Filter* <br>
-a. First wash: Pipette 675 𝜇l of the supernatant to a *Spin Filter* and **centrifuge** at 10,000 g (rcf) for 1 min. Discard the liquid flow through. Repeat until all supernatant has passed through the column. (This will take 3x washes through the column). <br>
-- Note: DNA is selectively bound to the silica membrane in the *MB Spin Column* device in the high salt solution. Contaminants pass through the filter membrane, leaving only DNA bound to the membrane. <br>
-b. Second Wash: Pipette 675 𝜇l of the supernatant to the same *Spin Filter* and **centrifuge** at 10,000 g (rcf) for 1 min. Discard the liquid flow through. <br>
-c. Third Wash: Pipette 675 𝜇l of the supernatant to the same *Spin Filter* and **centrifuge** at 10,000 g (rcf) for 1 min. Discard the liquid flow through. <br>
+
+```{=html}
+<!-- -->
+```
+a.  First wash: Pipette 675 𝜇l of the supernatant to a *Spin Filter* and **centrifuge** at 10,000 g (rcf) for 1 min. Discard the liquid flow through. Repeat until all supernatant has passed through the column. (This will take 3x washes through the column). <br>
+
+-   Note: DNA is selectively bound to the silica membrane in the *MB Spin Column* device in the high salt solution. Contaminants pass through the filter membrane, leaving only DNA bound to the membrane. <br>
+
+b.  Second Wash: Pipette 675 𝜇l of the supernatant to the same *Spin Filter* and **centrifuge** at 10,000 g (rcf) for 1 min. Discard the liquid flow through. <br>
+c.  Third Wash: Pipette 675 𝜇l of the supernatant to the same *Spin Filter* and **centrifuge** at 10,000 g (rcf) for 1 min. Discard the liquid flow through. <br>
+
+```{=html}
+<!-- -->
+```
 16. Add 500 𝜇l of *Solution C5* to the filter and **centrifuge** at 10,000 g (rcf) for 30 s. Discard the liquid flow through. <br>
-- Note: *Solution C5* is an ethanol-based wash solution used to further clean the DNA that is bound to the silica filter membrane in the *Spin Filter*. This wash solution removes residual salt, humic acid, and other contaminants while allowing the DNA to stay bound to the silica membrane. <br>
+
+-   Note: *Solution C5* is an ethanol-based wash solution used to further clean the DNA that is bound to the silica filter membrane in the *Spin Filter*. This wash solution removes residual salt, humic acid, and other contaminants while allowing the DNA to stay bound to the silica membrane. <br>
+
 17. **Centrifuge** the *Spin Filter* column a second time at 10,000 g (rcf) for 1 min. <br>
-- Note: This flow-through fraction is non-DNA organic and inorganic waste removed from the silica *Spin Filter* membrane by the ethanol wash solution. The second spin removes residual *Solution C5* (ethanol wash solution). It is critical to remove all traces of wash solution because the ethanol in *Solution C5* can interfere with many downstream DNA applications, such as PCR and gel electrophoresis. <br>
-18. Place *Spin Filter* into a clean and labeled *2 ml Collection Tube* (this is the tube going into the freezer, so make sure it’s labeled appropriately). Avoid splashing any *Solution C5* onto the *Spin Filter*.<br>
+
+-   Note: This flow-through fraction is non-DNA organic and inorganic waste removed from the silica *Spin Filter* membrane by the ethanol wash solution. The second spin removes residual *Solution C5* (ethanol wash solution). It is critical to remove all traces of wash solution because the ethanol in *Solution C5* can interfere with many downstream DNA applications, such as PCR and gel electrophoresis. <br>
+
+18. Place *Spin Filter* into a clean and labeled *2 ml Collection Tube* (this is the tube going into the freezer, so make sure it's labeled appropriately). Avoid splashing any *Solution C5* onto the *Spin Filter*.<br>
 19. Incubate *Solution C6* for 5 minutes at 65ºC. Then, add 100 𝜇l of *Solution C6* to the center of the filter membrane. <br>
-- Note: Placing *Solution C6* in the center of the small white membrane will make sure the entire membrane is wet. This will result in a more efficient and complete release of the DNA from the Spin Filter membrane. As *Solution C6* passes through the silica membrane, DNA that was bound in the presence of high salt is selectively released by *Solution C6* (which is actually 10 mM Tris), which lacks salt.	<br>
-20. Incubate samples at room temperature for 25 minutes. Then **centrifuge** at 10,000 g (rcf) for 30 sec, and finally discard the spin filter. <br>
-Your DNA is ready for use! <br>
-22. Measure the dsDNA concentration using the **Quantus**, and sample A260/A280 using the **NanoDrop** **[Quantitation Workstation]**. Record these details in your lab notebook. <br>
-Place the properly labeled DNA elutions in the **-20ºC freezer**. Be sure to record where in the freezer you’ve placed them, and that they are all together in a single, clearly labeled container/rack.
+
+-   Note: Placing *Solution C6* in the center of the small white membrane will make sure the entire membrane is wet. This will result in a more efficient and complete release of the DNA from the Spin Filter membrane. As *Solution C6* passes through the silica membrane, DNA that was bound in the presence of high salt is selectively released by *Solution C6* (which is actually 10 mM Tris), which lacks salt. <br>
+
+20. Incubate samples at room temperature for 25 minutes. Then **centrifuge** at 10,000 g (rcf) for 30 sec, and finally discard the spin filter. <br> Your DNA is ready for use! <br>
+21. Measure the dsDNA concentration using the **Quantus**, and sample A260/A280 using the **NanoDrop** **\[Quantitation Workstation\]**. Record these details in your lab notebook. <br> Place the properly labeled DNA elutions in the **-20ºC freezer**. Be sure to record where in the freezer you've placed them, and that they are all together in a single, clearly labeled container/rack.
 
 ## Extractions
 
 NOTES: Please record by each step, above, who has done which step and when. Check with Prof. Schmitt prior to beginning regarding which samples should be extracted. ALWAYS make sure that there are sufficient reagents and equipment before beginning a protocol!
 
-Sample ID
-Label
-Final concentration (ng/uL)
-A260/A280 value
-Notes
+Sample ID Label Final concentration (ng/uL) A260/A280 value Notes

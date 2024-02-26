@@ -53,6 +53,28 @@ Jess_schedule <- data.frame(
 
 # Print Jess's Table
 kable(Jess_schedule, align = c('l', 'l', 'l'), caption = "<b style='font-size: 20px;'>Jess's Weekly Schedule</b>")
+
+#Create Reese's schedule data frame
+Reese_schedule <- data.frame(
+  Day = c("Monday", "Monday", "Monday", "Monday",
+          "Tuesday", "Tuesday", "Tuesday", "Tuesday", "Tuesday",
+          "Wednesday", "Wednesday", 
+          "Thursday", "Thursday",  
+          "Friday", "Friday"),
+  Time = c("10:00a-12:00p", "2:30p-3:20p", "4:00p-5:00p", "5:15p-6:00p",
+           "9:30a-10:45a", "11:00a-12:15p", "1:30p-2:00p", "3:35p-4:25p", "5:00p-7:00p",
+           "12:00p-1:00a", "2:30p-3:20p", 
+           "9:30a-10:45a", "11:00a-12:15p",  
+           "11:15a-2:00p", "2:30p-3:20p"),
+  Event = c("Genetic Internship", "LS211 Class", "SMAGL Lab Meeting", "WM Eboard Meeting",
+            "AR210 Class", "WS233 Class", "Meeting with Chris", "WS233 Discussion", "Rehearsal",
+            "Meeting", "LS211 Class", 
+            "AR210 Class", "WS233 Class",  
+            "AN555 Class", "LS211 Class")
+)
+
+# Print Reese's Table
+kable(Reese_schedule, align = c('l', 'l', 'l'), caption = "<b style='font-size: 20px;'>Reese's Weekly Schedule</b>")
 ```
 
 ## Background
@@ -216,9 +238,8 @@ Prior to starting, UV all tubes, pipettes, tips, etc. in the PCR or BSC for 10 m
 
 15. Three washes of supernatant in *Spin Filter* <br>
 
-```{=html}
 <!-- -->
-```
+
 a.  First wash: Pipette 675 𝜇l of the supernatant to a *Spin Filter* and **centrifuge** at 10,000 g (rcf) for 1 min. Discard the liquid flow through. Repeat until all supernatant has passed through the column. (This will take 3x washes through the column). <br>
 
 -   Note: DNA is selectively bound to the silica membrane in the *MB Spin Column* device in the high salt solution. Contaminants pass through the filter membrane, leaving only DNA bound to the membrane. <br>
@@ -226,9 +247,8 @@ a.  First wash: Pipette 675 𝜇l of the supernatant to a *Spin Filter* and **ce
 b.  Second Wash: Pipette 675 𝜇l of the supernatant to the same *Spin Filter* and **centrifuge** at 10,000 g (rcf) for 1 min. Discard the liquid flow through. <br>
 c.  Third Wash: Pipette 675 𝜇l of the supernatant to the same *Spin Filter* and **centrifuge** at 10,000 g (rcf) for 1 min. Discard the liquid flow through. <br>
 
-```{=html}
 <!-- -->
-```
+
 16. Add 500 𝜇l of *Solution C5* to the filter and **centrifuge** at 10,000 g (rcf) for 30 s. Discard the liquid flow through. <br>
 
 -   Note: *Solution C5* is an ethanol-based wash solution used to further clean the DNA that is bound to the silica filter membrane in the *Spin Filter*. This wash solution removes residual salt, humic acid, and other contaminants while allowing the DNA to stay bound to the silica membrane. <br>

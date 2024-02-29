@@ -310,6 +310,116 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tbody>
 </table>
 </div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Create Reese's schedule data frame</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>Reese_schedule <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">Day =</span> <span class="fu">c</span>(<span class="st">"Monday"</span>, <span class="st">"Monday"</span>, <span class="st">"Monday"</span>, <span class="st">"Monday"</span>,</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>          <span class="st">"Tuesday"</span>, <span class="st">"Tuesday"</span>, <span class="st">"Tuesday"</span>, <span class="st">"Tuesday"</span>, <span class="st">"Tuesday"</span>,</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>          <span class="st">"Wednesday"</span>, <span class="st">"Wednesday"</span>, </span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>          <span class="st">"Thursday"</span>, <span class="st">"Thursday"</span>,  </span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>          <span class="st">"Friday"</span>, <span class="st">"Friday"</span>),</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">Time =</span> <span class="fu">c</span>(<span class="st">"10:00a-12:00p"</span>, <span class="st">"2:30p-3:20p"</span>, <span class="st">"4:00p-5:00p"</span>, <span class="st">"5:15p-6:00p"</span>,</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>           <span class="st">"9:30a-10:45a"</span>, <span class="st">"11:00a-12:15p"</span>, <span class="st">"1:30p-2:00p"</span>, <span class="st">"3:35p-4:25p"</span>, <span class="st">"5:00p-7:00p"</span>,</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>           <span class="st">"12:00p-1:00a"</span>, <span class="st">"2:30p-3:20p"</span>, </span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>           <span class="st">"9:30a-10:45a"</span>, <span class="st">"11:00a-12:15p"</span>,  </span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>           <span class="st">"11:15a-2:00p"</span>, <span class="st">"2:30p-3:20p"</span>),</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>  <span class="at">Event =</span> <span class="fu">c</span>(<span class="st">"Genetic Internship"</span>, <span class="st">"LS211 Class"</span>, <span class="st">"SMAGL Lab Meeting"</span>, <span class="st">"WM Eboard Meeting"</span>,</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>            <span class="st">"AR210 Class"</span>, <span class="st">"WS233 Class"</span>, <span class="st">"Meeting with Chris"</span>, <span class="st">"WS233 Discussion"</span>, <span class="st">"Rehearsal"</span>,</span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>            <span class="st">"Meeting"</span>, <span class="st">"LS211 Class"</span>, </span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>            <span class="st">"AR210 Class"</span>, <span class="st">"WS233 Class"</span>,  </span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>            <span class="st">"AN555 Class"</span>, <span class="st">"LS211 Class"</span>)</span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a><span class="co"># Print Reese's Table</span></span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(Reese_schedule, <span class="at">align =</span> <span class="fu">c</span>(<span class="st">'l'</span>, <span class="st">'l'</span>, <span class="st">'l'</span>), <span class="at">caption =</span> <span class="st">"&lt;b style='font-size: 20px;'&gt;Reese's Weekly Schedule&lt;/b&gt;"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<table class="table table-sm table-striped small">
+<caption><b style="font-size: 20px;">Reese’s Weekly Schedule</b></caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Day</th>
+<th style="text-align: left;">Time</th>
+<th style="text-align: left;">Event</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Monday</td>
+<td style="text-align: left;">10:00a-12:00p</td>
+<td style="text-align: left;">Genetic Internship</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Monday</td>
+<td style="text-align: left;">2:30p-3:20p</td>
+<td style="text-align: left;">LS211 Class</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Monday</td>
+<td style="text-align: left;">4:00p-5:00p</td>
+<td style="text-align: left;">SMAGL Lab Meeting</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Monday</td>
+<td style="text-align: left;">5:15p-6:00p</td>
+<td style="text-align: left;">WM Eboard Meeting</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Tuesday</td>
+<td style="text-align: left;">9:30a-10:45a</td>
+<td style="text-align: left;">AR210 Class</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Tuesday</td>
+<td style="text-align: left;">11:00a-12:15p</td>
+<td style="text-align: left;">WS233 Class</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Tuesday</td>
+<td style="text-align: left;">1:30p-2:00p</td>
+<td style="text-align: left;">Meeting with Chris</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Tuesday</td>
+<td style="text-align: left;">3:35p-4:25p</td>
+<td style="text-align: left;">WS233 Discussion</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Tuesday</td>
+<td style="text-align: left;">5:00p-7:00p</td>
+<td style="text-align: left;">Rehearsal</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Wednesday</td>
+<td style="text-align: left;">12:00p-1:00a</td>
+<td style="text-align: left;">Meeting</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Wednesday</td>
+<td style="text-align: left;">2:30p-3:20p</td>
+<td style="text-align: left;">LS211 Class</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Thursday</td>
+<td style="text-align: left;">9:30a-10:45a</td>
+<td style="text-align: left;">AR210 Class</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Thursday</td>
+<td style="text-align: left;">11:00a-12:15p</td>
+<td style="text-align: left;">WS233 Class</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Friday</td>
+<td style="text-align: left;">11:15a-2:00p</td>
+<td style="text-align: left;">AN555 Class</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Friday</td>
+<td style="text-align: left;">2:30p-3:20p</td>
+<td style="text-align: left;">LS211 Class</td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 </section>
 <section id="background" class="level2">
@@ -487,6 +597,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ul>
 <ol start="18" type="1">
 <li>Place <em>Spin Filter</em> into a clean and labeled <em>2 ml Collection Tube</em> (this is the tube going into the freezer, so make sure it’s labeled appropriately). Avoid splashing any <em>Solution C5</em> onto the <em>Spin Filter</em>.<br></li>
+</ol>
+<ul>
+<li>This is the final tube so it should be a low bind tube</li>
+</ul>
+<ol start="19" type="1">
 <li>Incubate <em>Solution C6</em> for 5 minutes at 65ºC. Then, add 100 𝜇l of <em>Solution C6</em> to the center of the filter membrane. <br></li>
 </ol>
 <ul>
@@ -503,6 +618,345 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="extractions">Extractions</h2>
 <p>NOTES: Please record by each step, above, who has done which step and when. Check with Prof.&nbsp;Schmitt prior to beginning regarding which samples should be extracted. ALWAYS make sure that there are sufficient reagents and equipment before beginning a protocol!</p>
 <p>Sample ID Label Final concentration (ng/uL) A260/A280 value Notes</p>
+</section>
+<section id="extraction-done-28feb2024" class="level2">
+<h2 class="anchored" data-anchor-id="extraction-done-28feb2024">Extraction Done 28Feb2024</h2>
+<ul>
+<li>Group members present: JM, BR, NM</li>
+<li>Documented by NM</li>
+</ul>
+<section id="prep-at-1350" class="level3">
+<h3 class="anchored" data-anchor-id="prep-at-1350">Prep at 13:50</h3>
+<ul>
+<li>500 mL bleach spray (with DI water) prepared by BR</li>
+<li>Heat block turned on</li>
+<li>Centrifuge cleaned by JM</li>
+<li>Bleach water alcohol the BSC by BR and JM</li>
+<li>Made sure there were enough tubes (NM)</li>
+<li>UV light tubes and tips in PCR hood started at 14:25</li>
+<li>UV light pipettes in PCR hood started 14:40 (JM)</li>
+</ul>
+</section>
+<section id="sample-reconciliation-at-1540" class="level3">
+<h3 class="anchored" data-anchor-id="sample-reconciliation-at-1540">Sample reconciliation at 15:40</h3>
+<ul>
+<li>Chris entering the original sample labels into the protocol table. Samples are on ice</li>
+<li>Jess and Brooke thawed the samples in hand and vortexed them. All samples were thawed as of 16:05. Nicole labeled the first collection tubes. Jess double checked that the tubes were lined up in order.</li>
+</ul>
+</section>
+<section id="reminders" class="level3">
+<h3 class="anchored" data-anchor-id="reminders">Reminders:</h3>
+<ul>
+<li>Do not reach over open tubes</li>
+<li>Work from clean to dirty</li>
+<li>Do not swing dirty pipettes over tubes</li>
+<li>Hold sample tube cap in your hand and do not touch inside of cap</li>
+<li>close solution bottles in between samples</li>
+<li>do not put anything down without putting the cap back</li>
+<li>Put caps on kimwipes if setting them down</li>
+<li>Write sample name on side of the tube before bead beater step</li>
+</ul>
+</section>
+<section id="protocol-step-1" class="level3">
+<h3 class="anchored" data-anchor-id="protocol-step-1">Protocol Step 1:</h3>
+<ul>
+<li><p>Add 0.25 g of fecal matter to the <em>PowerBead Tubes</em></p>
+<ul>
+<li>16:18 JM and Chris added 250 ul of water to the control Powerbead Tube</li>
+<li>16:20 JM added 250 ul of sample 01 to the 01 Powerbead Tube</li>
+<li>16:31 Rearranged the BSC for the direction of dirty to clean right to left.</li>
+<li>16:33 For sample 02, it was coming up chunky. Discarded tip. Tip missed discard. Clean up initiated.</li>
+<li>16:36 cleaned a razor blade with bleach in the BSC and Chris trimmed a pipette tip</li>
+<li>16:38 Chris added 250 ul of sample 02 to the 02 powerbead tube using the trimmed pipette tip</li>
+<li>16:42 Jess added ~250 ul sample 03 to the 03 powerbead tube</li>
+<li>Voyt-18-017 (sample MB03) full volume was not drawn in so less starting volume than the other samples</li>
+<li>16:44 Sample 04 was chunky. discarded tip. Will now trim all tips</li>
+<li>16:45 cleaned razor blade with bleach and trimmed tip. Jess added 250 ul of sample 04 to powerbead tube *Samples are being returned to ice after being aliquoted.</li>
+<li>16:47 Blade cleaned w/bleach, trimmed tip, JM added 250 ul of sample 05 to the 05 powerbead tube. Sample 05 is the one that looks a little red</li>
+<li>16:48 Blade cleaned w/bleach, trimmed tip, JM added 250 ul of sample 06 to the 06 powerbead tube.</li>
+<li>16:49 Blade cleaned w/bleach, trimmed tip, JM added 250 ul of sample 07 to the 07 powerbead tube.</li>
+<li>16:51 Blade cleaned w/bleach, trimmed tip, JM added 250 ul of sample 08 to the 08 powerbead tube.</li>
+<li>16:52 Blade cleaned w/bleach, trimmed tip, JM added 250 ul of sample 09 to the 09 powerbead tube.</li>
+<li>16:53 Blade cleaned w/bleach, trimmed tip, JM added 250 ul of sample 10 to the 10 powerbead tube.</li>
+<li>16:54 Blade cleaned w/bleach, trimmed tip, JM added 250 ul of sample 11 to the 11 powerbead tube.</li>
+</ul></li>
+<li><p>Original samples went back into the bottom shelf of the -20 freezer at 16:50. They were at room temperature from 16:05 to 16:50.</p></li>
+</ul>
+</section>
+<section id="protocol-step-2" class="level3">
+<h3 class="anchored" data-anchor-id="protocol-step-2">Protocol Step 2:</h3>
+<ul>
+<li><p>Add 750 𝜇l of <em>PowerBead Solution</em> to the <em>PowerBead Tubes</em>.</p>
+<ul>
+<li>17:00 put Solution C1 on the heat block to warm up in anticipaton of step 3</li>
+<li>17:00 JM put 750 ul of powerbead solution into sample CL</li>
+<li>17:01 JM put 750 ul of powerbead solution into sample 01</li>
+<li>17:02 JM put 750 ul of powerbead solution into sample 02</li>
+<li>17:02 JM put 750 ul of powerbead solution into sample 03</li>
+<li>17:03 JM put 750 ul of powerbead solution into sample 04</li>
+<li>17:03 JM put 750 ul of powerbead solution into sample 05</li>
+<li>17:04 JM put 750 ul of powerbead solution into sample 06</li>
+<li>17:05 JM put 750 ul of powerbead solution into sample 07</li>
+<li>17:05 JM glove ripped, NM stepped in to screw sample 08 cap back on while JM regloved</li>
+<li>17:06 JM put 750 ul of powerbead solution into sample 08</li>
+<li>17:06 JM put 750 ul of powerbead solution into sample 09</li>
+<li>17:07 JM put 750 ul of powerbead solution into sample 10</li>
+<li>17:07 JM put 750 ul of powerbead solution into sample 11</li>
+</ul></li>
+</ul>
+</section>
+<section id="protocol-step-3" class="level3">
+<h3 class="anchored" data-anchor-id="protocol-step-3">Protocol Step 3</h3>
+<ul>
+<li><p>Add 60 𝜇l of <em>Solution C1</em> to tubes and <strong>vortex</strong> briefly. If Solution C1 has precipitated, heat to 60ºC until precipitate has dissolved (in heat block or water bath). <br></p></li>
+<li><p>Note: Vortexing mixes the components in the <em>PowerBead Tube</em> and begins to disperse the sample.</p>
+<ul>
+<li>17:11 BR put 60 ul of Solution C1 into sample CL and vortexed</li>
+<li>17:13 BR put 60 ul of Solution C1 into sample 01 and JM vortexed</li>
+<li>17:14 BR put 60 ul of Solution C1 into sample 02 and JM vortexed</li>
+<li>17:15 BR put 60 ul of Solution C1 into sample 03 and JM vortexed</li>
+<li>17:16 BR put 60 ul of Solution C1 into sample 04 and JM vortexed</li>
+<li>17:17 BR put 60 ul of Solution C1 into sample 05 and JM vortexed</li>
+<li>17:18 BR put 60 ul of Solution C1 into sample 06 and JM vortexed</li>
+<li>17:19 BR put 60 ul of Solution C1 into sample 07 and JM vortexed</li>
+<li>17:20 BR put 60 ul of Solution C1 into sample 08 and JM vortexed</li>
+<li>17:21 BR put 60 ul of Solution C1 into sample 09 and JM vortexed</li>
+<li>BR cleaned surface with bleach, water, alcohol after sample 09 cap made contact with surface</li>
+<li>17:22 BR put 60 ul of Solution C1 into sample 10 and JM vortexed</li>
+<li>17:23 BR put 60 ul of Solution C1 into sample 11 and JM vortexed</li>
+</ul></li>
+</ul>
+</section>
+<section id="protocol-step-4" class="level3">
+<h3 class="anchored" data-anchor-id="protocol-step-4">Protocol Step 4</h3>
+<ul>
+<li><p>Incubate <em>PowerBead Tubes</em> at 65ºC for 30 min in <strong>heat block</strong> or <strong>water bath</strong>.</p></li>
+<li><p>This may be done by adding the <strong>Extraction Workstation</strong> dry block to the <strong>BSC</strong>; if you choose to do this, please clean it and add it to the BSC while preparing the BSC prior to beginning the protocol].</p>
+<ul>
+<li>17:26 tubes added to heat block and set a 30 minute timer</li>
+<li>17:56 tubes pulled from hear block</li>
+</ul></li>
+</ul>
+</section>
+<section id="protocol-step-5" class="level3">
+<h3 class="anchored" data-anchor-id="protocol-step-5">Protocol Step 5</h3>
+<ul>
+<li><p>Secure tubes in the <strong>Bead Beater</strong> <strong>[BSC]</strong> and run for 5 minutes at 2000 RPM, pause for 30 seconds, and run again for 5 minutes at 2000 RPM. You may run these in evenly divided batches to initiate the subsequent centrifuge step with balanced samples.</p>
+<ul>
+<li>17:58 All samples start in the Bead Beater</li>
+<li>18:03 All samples rest for 30 seconds</li>
+<li>18:04 All samples start in the Bead Beater</li>
+</ul>
+<p>*Sample 08 looked odd because it had more foam and less liquid than the other samples.</p></li>
+</ul>
+</section>
+<section id="protocol-step-6" class="level3">
+<h3 class="anchored" data-anchor-id="protocol-step-6">Protocol Step 6</h3>
+<ul>
+<li><p><strong>Centrifuge</strong> tubes at 10,000 g (rcf) for 30 s. Make sure the <em>PowerBead Tubes</em> rotate freely in the centrifuge without rubbing.</p></li>
+<li><p>If 30 s is not long enough to pellet the sample, you may run for 3 min at the same speed.</p>
+<ul>
+<li>18:12 All samples spun in the centrifuge for 30 seconds</li>
+<li>Check for pellet showed that 30 seconds was not long enough</li>
+<li>18:13 All samples spun in the centrifuge for 2 more minutes</li>
+<li>Check for pellet showed that 2 minutes was not long enough (The solids were at the bottom but beads still appeared to move freely)</li>
+<li>18:16 All samples spun in the centrifuge for 1 more minute</li>
+</ul></li>
+</ul>
+</section>
+<section id="protocol-step-7" class="level3">
+<h3 class="anchored" data-anchor-id="protocol-step-7">Protocol Step 7</h3>
+<ul>
+<li><p>Transfer supernatant (~400-500 𝜇l) to clean <em>2 ml Collection Tube</em> (you may still have chunks of poo at this point in the supernatant). <br></p>
+<ul>
+<li><p>Using a pipet set to 500 ul</p></li>
+<li><p>18:26 NM transferred supernatant from CL (400 + 100 pipet)</p></li>
+<li><p>18:27 NM transferred supernatant from 01</p></li>
+<li><p>18:29 NM transferred supernatant from 02</p></li>
+<li><p>18:30 NM transferred supernatant from 03</p></li>
+<li><p>18:31 NM transferred supernatant from 04</p></li>
+<li><p>18:32 NM transferred supernatant from 05</p></li>
+<li><p>18:33 NM transferred supernatant from 06</p></li>
+<li><p>18:34 NM transferred supernatant from 07</p></li>
+<li><p>18:35 NM transferred supernatant from 08</p></li>
+<li><p>18:36 NM transferred supernatant from 09</p></li>
+<li><p>18:37 NM transferred supernatant from 10</p></li>
+<li><p>18:38 NM transferred supernatant from 11</p></li>
+<li><p>11 looked like the pellet was a little broken up before supernatant was taken up</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="protocol-step-8" class="level3">
+<h3 class="anchored" data-anchor-id="protocol-step-8">Protocol Step 8</h3>
+<ul>
+<li><p>Add 250 𝜇l of <em>Solution C2</em> to tubes and <strong>vortex</strong> for 5 s. Incubate at 4ºC for 10 min. <br></p></li>
+<li><p>Note: <em>Solution C2</em> has Inhibitor Removal Technology (IRT). It contains a reagent that can precipitate non-DNA organic and inorganic material, including humic substances, cell debris and proteins. It is important to remove contaminating organic and inorganic matter that may reduce DNA purity and inhibit downstream DNA applications. <br></p>
+<ul>
+<li>18:42 JM added 250 ul solution C2 to the sample CL and BR vortexed for 5 sec</li>
+<li>18:43 JM added 250 ul solution C2 to the sample 1 and BR vortexed for 5 sec</li>
+<li>18:43 JM added 250 ul solution C2 to the sample 2 and BR vortexed for 5 sec</li>
+<li>18:44 JM added 250 ul solution C2 to the sample 3 and BR vortexed for 5 sec</li>
+<li>18:44 JM added 250 ul solution C2 to the sample 4 and BR vortexed for 5 sec</li>
+<li>18:44 JM added 250 ul solution C2 to the sample 5 and BR vortexed for 5 sec *JM noticed that the 1000 ul pipette was taking up a bubble each time and the white stem part was detaching from the base; NM had also noticed that it was getting increasingly more difficult to dispose of tips. JM switched to the smaller pipette which only goes up to 200 ul pipette. She is switching it between 200 and 50 ul each sample.</li>
+<li>18:49 JM added 250 ul solution C2 to the sample 6 and BR vortexed for 5 sec *JM could not remember if she added 50 ul to sample 7, we put it aside and will use a pippetter from the PCR station to measure if there is 750 ul in there. We decided to use the 1000ul pippetter from the PCR station which had been sterilized earlier with the other materials. While this is not standard, we feel that these extenuating circumstances called for it and making do with the smaller pippetter was introducing unnecessary error.</li>
+<li>18:52 JM added 250 ul solution C2 to the sample 8 and BR vortexed for 5 sec</li>
+<li>18:52 JM added 250 ul solution C2 to the sample 9 and BR vortexed for 5 sec</li>
+<li>18:53 JM added 250 ul solution C2 to the sample 10 and BR vortexed for 5 sec</li>
+<li>18:53 JM added 250 ul solution C2 to the sample 11 and BR vortexed for 5 sec *JM measured sample 7 and found that there was less than 750 ul so she will add remaining 50ul</li>
+<li>18:55 JM added 50 ul solution C2 to the sample 7 and BR vortexed for 5 sec *Put into 4 degrees celcius fridge at 18:56 and pulled at 19:56</li>
+</ul></li>
+</ul>
+</section>
+<section id="protocol-step-9" class="level3">
+<h3 class="anchored" data-anchor-id="protocol-step-9">Protocol Step 9</h3>
+<ul>
+<li><p><strong>Centrifuge</strong> the tubes at 10,000 g (rcf) for 1 min. <br></p>
+<p>*19:10 NM centrifuged the samples and checked pellets were formed. Sample 8 had a very small pellet compared to the rest.</p></li>
+</ul>
+</section>
+<section id="protocol-step-10" class="level3">
+<h3 class="anchored" data-anchor-id="protocol-step-10">Protocol Step 10</h3>
+<ul>
+<li><p>Transfer up to 600 𝜇l of supernatant to a clean <em>2 ml Collection Tube</em> (make sure to only transfer the liquid – none of the pellet here!). <br></p></li>
+<li><p>Note: The pellet at this point contains non-DNA organic and inorganic material, including humic acid, cell debris and proteins. For best DNA yields and quality, avoid transferring any of the pellet. <br></p>
+<ul>
+<li>19:11 JM transferred 600 ul supernatant from sample CL to a clean 2 ml collection tube</li>
+<li>19:12 JM transferred 600 ul supernatant from sample 01 to a clean 2 ml collection tube</li>
+<li>19:12 JM transferred 600 ul supernatant from sample 02 to a clean 2 ml collection tube</li>
+<li>19:13 JM transferred 600 ul supernatant from sample 03 to a clean 2 ml collection tube</li>
+<li>19:13 JM transferred 600 ul supernatant from sample 04 to a clean 2 ml collection tube</li>
+<li>19:14 JM transferred 600 ul supernatant from sample 05 to a clean 2 ml collection tube</li>
+<li>19:14 JM transferred 600 ul supernatant from sample 06 to a clean 2 ml collection tube</li>
+<li>19:14 JM transferred 600 ul supernatant from sample 07 to a clean 2 ml collection tube</li>
+<li>19:15 JM transferred 600 ul supernatant from sample 08 to a clean 2 ml collection tube</li>
+<li>19:15 JM transferred 600 ul supernatant from sample 09 to a clean 2 ml collection tube</li>
+<li>19:15 JM transferred 600 ul supernatant from sample 10 to a clean 2 ml collection tube</li>
+<li>19:16 JM transferred 600 ul supernatant from sample 11 to a clean 2 ml collection tube</li>
+</ul></li>
+</ul>
+</section>
+<section id="protocol-step-11" class="level3">
+<h3 class="anchored" data-anchor-id="protocol-step-11">Protocol Step 11</h3>
+<ul>
+<li><p>Add 200 𝜇l of <em>Solution C3</em> to the tubes and <strong>vortex</strong> briefly. Incubate at 4ºC for 10 min (use the old mini-fridge for this step, below the PCR Workstation). <br></p></li>
+<li><p>Note: <em>Solution C3</em> has Inhibitor Removal Technology (IRT) and is a second reagent to precipitate additional non-DNA organic and inorganic material including humic acid, cell debris and proteins. It is important to remove contaminating organic and inorganic matter that may reduce DNA purity and inhibit downstream DNA applications. <br></p>
+<ul>
+<li>19:19 BR added 100</li>
+<li>19:21 BR dropped sample CL on bench, possible leakage</li>
+<li>19:21 BR transferred 200 ul of Solution C3 to sample CL a clean 2 ml collection tube</li>
+<li>19:21 BR transferred 200 ul of Solution C3 to sample 01 a clean 2 ml collection tube</li>
+<li>19:22 BR transferred 200 ul of Solution C3 to sample 02 a clean 2 ml collection tube</li>
+<li>19:23 BR transferred 200 ul of Solution C3 to sample 03 a clean 2 ml collection tube</li>
+<li>19:23 BR transferred 200 ul of Solution C3 to sample 04 a clean 2 ml collection tube</li>
+<li>19:24 BR transferred 200 ul of Solution C3 to sample 05 a clean 2 ml collection tube</li>
+<li>19:24 BR transferred 200 ul of Solution C3 to sample 06 a clean 2 ml collection tube</li>
+<li>19:24 BR transferred 200 ul of Solution C3 to sample 07 a clean 2 ml collection tube</li>
+<li>19:25 BR transferred 200 ul of Solution C3 to sample 08 a clean 2 ml collection tube</li>
+<li>19:25 BR transferred 200 ul of Solution C3 to sample 09 a clean 2 ml collection tube</li>
+<li>19:26 BR transferred 200 ul of Solution C3 to sample 10 a clean 2 ml collection tube</li>
+<li>19:26 BR transferred 200 ul of Solution C3 to sample 11 a clean 2 ml collection tube *Started incubation at 4ºC 19:26 for 10 minutes. Pulled at 19:36.</li>
+</ul></li>
+</ul>
+</section>
+<section id="protocol-step-12" class="level3">
+<h3 class="anchored" data-anchor-id="protocol-step-12">Protocol Step 12</h3>
+<ul>
+<li><p><strong>Centrifuge</strong> the tubes at 10,000 g (rcf) for 1 min. <br></p>
+<ul>
+<li>19:39 All samples centrifuged for 1 min</li>
+</ul></li>
+</ul>
+</section>
+<section id="protocol-step-13" class="level3">
+<h3 class="anchored" data-anchor-id="protocol-step-13">Protocol Step 13</h3>
+<ul>
+<li><p>Transfer up to 750 𝜇l of supernatant to a clean <em>2 ml Collection Tube</em>. Once again, be careful to avoid the pellet!</p></li>
+<li><p>Note: The pellet at this point contains non-DNA organic and inorganic material including humic acid, cell debris and proteins. For best DNA yields and quality, avoid transferring any of the pellet.</p>
+<p>NM notes that ALL samples have less than 750 supernatant in tube.</p>
+<ul>
+<li>Started new 2ml collection tube</li>
+<li>19:44 NM transferred 750 ul supernatant from sample CL to a clean 2 ml collection tube</li>
+<li>19:45 NM transferred 750 ul supernatant from sample 01 to a clean 2 ml collection tube</li>
+<li>19:46 NM transferred 750 ul supernatant from sample 02 to a clean 2 ml collection tube</li>
+<li>19:47 NM transferred 750 ul supernatant from sample 03 to a clean 2 ml collection tube</li>
+<li>19:48 NM transferred 750 ul supernatant from sample 04 to a clean 2 ml collection tube</li>
+<li>19:49 NM transferred 750 ul supernatant from sample 05 to a clean 2 ml collection tube</li>
+<li>19:51 NM transferred 750 ul supernatant from sample 06 to a clean 2 ml collection tube</li>
+<li>NM breaks top off of new collection tube- BR hands her a new tube- NM labels and uses new tube</li>
+<li>19:52 NM transferred 750 ul supernatant from sample 07 to a clean 2 ml collection tube</li>
+<li>19:53 NM transferred 750 ul supernatant from sample 08 to a clean 2 ml collection tube</li>
+<li>19:54 NM transferred 750 ul supernatant from sample 09 to a clean 2 ml collection tube</li>
+<li>19:54 NM transferred 750 ul supernatant from sample 10 to a clean 2 ml collection tube</li>
+<li>19:55 NM transferred 750 ul supernatant from sample 11 to a clean 2 ml collection tube</li>
+<li>NM tipped over sample 11, pellet intact (no movement).</li>
+</ul></li>
+</ul>
+</section>
+<section id="protocol-step-14" class="level3">
+<h3 class="anchored" data-anchor-id="protocol-step-14">Protocol Step 14</h3>
+<ul>
+<li><p>Add 1.2 ml of <em>Solution C4</em> to the supernatant and <strong>vortex</strong> for 5 s. Shake <em>Solution C4</em> by hand to mix prior to adding. Also, this will fill the <em>Collection Tube</em> to the brim, so be prepared. <br></p></li>
+<li><p>Note: This contains guanidine salts, which is highly reactive. Do not mix or clean with bleach!!! <br></p></li>
+<li><p>Note: <em>Solution C4</em> is a high-concentration salt solution. Since DNA binds tightly to silica at high salt concentrations, this will adjust the DNA solution salt concentrations to allow binding of DNA, but not non-DNA organic and inorganic material that may still be present at low levels, to the <em>Spin Filter</em>. <br></p></li>
+<li><p>19:57 NM</p></li>
+</ul>
+</section>
+<section id="protocol-step-15" class="level3">
+<h3 class="anchored" data-anchor-id="protocol-step-15">Protocol Step 15</h3>
+<p>Three washes of supernatant in <em>Spin Filter</em> <br></p>
+<!-- -->
+<ol type="a">
+<li>First wash: Pipette 675 𝜇l of the supernatant to a <em>Spin Filter</em> and <strong>centrifuge</strong> at 10,000 g (rcf) for 1 min. Discard the liquid flow through. Repeat until all supernatant has passed through the column. (This will take 3x washes through the column). <br></li>
+</ol>
+<ul>
+<li>Note: DNA is selectively bound to the silica membrane in the <em>MB Spin Column</em> device in the high salt solution. Contaminants pass through the filter membrane, leaving only DNA bound to the membrane. <br></li>
+</ul>
+<ol start="2" type="a">
+<li>Second Wash: Pipette 675 𝜇l of the supernatant to the same <em>Spin Filter</em> and <strong>centrifuge</strong> at 10,000 g (rcf) for 1 min. Discard the liquid flow through. <br></li>
+<li>Third Wash: Pipette 675 𝜇l of the supernatant to the same <em>Spin Filter</em> and <strong>centrifuge</strong> at 10,000 g (rcf) for 1 min. Discard the liquid flow through. <br></li>
+</ol>
+<!-- -->
+</section>
+<section id="protocol-step-16" class="level3">
+<h3 class="anchored" data-anchor-id="protocol-step-16">Protocol Step 16</h3>
+<ul>
+<li><p>Add 500 𝜇l of <em>Solution C5</em> to the filter and <strong>centrifuge</strong> at 10,000 g (rcf) for 30 s. Discard the liquid flow through. <br></p></li>
+<li><p>Note: <em>Solution C5</em> is an ethanol-based wash solution used to further clean the DNA that is bound to the silica filter membrane in the <em>Spin Filter</em>. This wash solution removes residual salt, humic acid, and other contaminants while allowing the DNA to stay bound to the silica membrane. <br></p></li>
+</ul>
+</section>
+<section id="protocol-step-17" class="level3">
+<h3 class="anchored" data-anchor-id="protocol-step-17">Protocol Step 17</h3>
+<ul>
+<li><p><strong>Centrifuge</strong> the <em>Spin Filter</em> column a second time at 10,000 g (rcf) for 1 min. <br></p></li>
+<li><p>Note: This flow-through fraction is non-DNA organic and inorganic waste removed from the silica <em>Spin Filter</em> membrane by the ethanol wash solution. The second spin removes residual <em>Solution C5</em> (ethanol wash solution). It is critical to remove all traces of wash solution because the ethanol in <em>Solution C5</em> can interfere with many downstream DNA applications, such as PCR and gel electrophoresis. <br></p></li>
+</ul>
+</section>
+<section id="protocol-step-18" class="level3">
+<h3 class="anchored" data-anchor-id="protocol-step-18">Protocol Step 18</h3>
+<ul>
+<li>Place <em>Spin Filter</em> into a clean and labeled <em>2 ml Collection Tube</em> (this is the tube going into the freezer, so make sure it’s labeled appropriately). Avoid splashing any <em>Solution C5</em> onto the <em>Spin Filter</em>.<br></li>
+<li>This is the final tube so it should be a low bind tube</li>
+</ul>
+</section>
+<section id="protocol-step-19" class="level3">
+<h3 class="anchored" data-anchor-id="protocol-step-19">Protocol Step 19</h3>
+<ul>
+<li><p>Incubate <em>Solution C6</em> for 5 minutes at 65ºC. Then, add 100 𝜇l of <em>Solution C6</em> to the center of the filter membrane. <br></p></li>
+<li><p>Note: Placing <em>Solution C6</em> in the center of the small white membrane will make sure the entire membrane is wet. This will result in a more efficient and complete release of the DNA from the Spin Filter membrane. As <em>Solution C6</em> passes through the silica membrane, DNA that was bound in the presence of high salt is selectively released by <em>Solution C6</em> (which is actually 10 mM Tris), which lacks salt. <br></p></li>
+</ul>
+</section>
+<section id="protocol-step-20" class="level3">
+<h3 class="anchored" data-anchor-id="protocol-step-20">Protocol Step 20</h3>
+<ul>
+<li>Incubate samples at room temperature for 25 minutes. Then <strong>centrifuge</strong> at 10,000 g (rcf) for 30 sec, and finally discard the spin filter. <br> Your DNA is ready for use! <br></li>
+</ul>
+</section>
+<section id="protocol-step-21" class="level3">
+<h3 class="anchored" data-anchor-id="protocol-step-21">Protocol Step 21</h3>
+<ul>
+<li>Measure the dsDNA concentration using the <strong>Quantus</strong>, and sample A260/A280 using the <strong>NanoDrop</strong> <strong>[Quantitation Workstation]</strong>. Record these details in your lab notebook. <br> Place the properly labeled DNA elutions in the <strong>-20ºC freezer</strong>. Be sure to record where in the freezer you’ve placed them, and that they are all together in a single, clearly labeled container/rack.</li>
+</ul>
+</section>
 </section>
 
 </main>

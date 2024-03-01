@@ -258,7 +258,9 @@ c.  Third Wash: Pipette 675 𝜇l of the supernatant to the same *Spin Filter* a
 -   Note: This flow-through fraction is non-DNA organic and inorganic waste removed from the silica *Spin Filter* membrane by the ethanol wash solution. The second spin removes residual *Solution C5* (ethanol wash solution). It is critical to remove all traces of wash solution because the ethanol in *Solution C5* can interfere with many downstream DNA applications, such as PCR and gel electrophoresis. <br>
 
 18. Place *Spin Filter* into a clean and labeled *2 ml Collection Tube* (this is the tube going into the freezer, so make sure it's labeled appropriately). Avoid splashing any *Solution C5* onto the *Spin Filter*.<br>
-- This is the final tube so it should be a low bind tube
+
+-   This is the final tube so it should be a low bind tube
+
 19. Incubate *Solution C6* for 5 minutes at 65ºC. Then, add 100 𝜇l of *Solution C6* to the center of the filter membrane. <br>
 
 -   Note: Placing *Solution C6* in the center of the small white membrane will make sure the entire membrane is wet. This will result in a more efficient and complete release of the DNA from the Spin Filter membrane. As *Solution C6* passes through the silica membrane, DNA that was bound in the presence of high salt is selectively released by *Solution C6* (which is actually 10 mM Tris), which lacks salt. <br>
@@ -272,259 +274,289 @@ NOTES: Please record by each step, above, who has done which step and when. Chec
 
 Sample ID Label Final concentration (ng/uL) A260/A280 value Notes
 
-
 ## Extraction Done 28Feb2024
 
-- Group members present: JM, BR, NM
-- Documented by NM
+-   Group members present: JM, BR, NM
+-   Documented by NM
 
 ### Prep at 13:50
 
-- 500 mL bleach spray (with DI water) prepared by BR
-- Heat block turned on
-- Centrifuge cleaned by JM
-- Bleach water alcohol the BSC by BR and JM
-- Made sure there were enough tubes (NM)
-- UV light tubes and tips in PCR hood started at 14:25
-- UV light pipettes in PCR hood started 14:40 (JM)
+-   500 mL bleach spray (with DI water) prepared by BR
+-   Heat block turned on
+-   Centrifuge cleaned by JM
+-   Bleach water alcohol the BSC by BR and JM
+-   Made sure there were enough tubes (NM)
+-   UV light tubes and tips in PCR hood started at 14:25
+-   UV light pipettes in PCR hood started 14:40 (JM)
 
 ### Sample reconciliation at 15:40
-- Chris entering the original sample labels into the protocol table. Samples are on ice
-- Jess and Brooke thawed the samples in hand and vortexed them. All samples were thawed as of 16:05. Nicole labeled the first collection tubes. Jess double checked that the tubes were lined up in order.
+
+-   Chris entering the original sample labels into the protocol table. Samples are on ice
+-   Jess and Brooke thawed the samples in hand and vortexed them. All samples were thawed as of 16:05. Nicole labeled the first collection tubes. Jess double checked that the tubes were lined up in order.
 
 ### Reminders:
 
-- Do not reach over open tubes
-- Work from clean to dirty
-- Do not swing dirty pipettes over tubes
-- Hold sample tube cap in your hand and do not touch inside of cap
-- close solution bottles in between samples
-- do not put anything down without putting the cap back
-- Put caps on kimwipes if setting them down
-- Write sample name on side of the tube before bead beater step
+-   Do not reach over open tubes
+-   Work from clean to dirty
+-   Do not swing dirty pipettes over tubes
+-   Hold sample tube cap in your hand and do not touch inside of cap
+-   close solution bottles in between samples
+-   do not put anything down without putting the cap back
+-   Put caps on kimwipes if setting them down
+-   Write sample name on side of the tube before bead beater step
 
 ### Protocol Step 1:
 
-- Add 0.25 g of fecal matter to the *PowerBead Tubes*
+-   Add 0.25 g of fecal matter to the *PowerBead Tubes*
 
-    * 16:18 JM and Chris added 250 ul of water to the control Powerbead Tube
-    * 16:20 JM added 250 ul of sample 01 to the 01 Powerbead Tube
-    * 16:31 Rearranged the BSC for the direction of dirty to clean right to left.
-    * 16:33 For sample 02, it was coming up chunky. Discarded tip. Tip missed discard. Clean up initiated.
-    * 16:36 cleaned a razor blade with bleach in the BSC and Chris trimmed a pipette tip
-    * 16:38 Chris added 250 ul of sample 02 to the 02 powerbead tube using the trimmed pipette tip
-    * 16:42 Jess added ~250 ul sample 03 to the 03 powerbead tube
-    - Voyt-18-017 (sample MB03) full volume was not drawn in so less starting volume than the other samples
-    * 16:44 Sample 04 was chunky. discarded tip. Will now trim all tips
-    * 16:45 cleaned razor blade with bleach and trimmed tip. Jess added 250 ul of sample 04 to powerbead tube
-    *Samples are being returned to ice after being aliquoted.
-    * 16:47 Blade cleaned w/bleach, trimmed tip, JM added 250 ul of sample 05 to the 05 powerbead tube. Sample 05 is the one that looks a little red
-    * 16:48 Blade cleaned w/bleach, trimmed tip, JM added 250 ul of sample 06 to the 06 powerbead tube.
-    * 16:49 Blade cleaned w/bleach, trimmed tip, JM added 250 ul of sample 07 to the 07 powerbead tube.
-    * 16:51 Blade cleaned w/bleach, trimmed tip, JM added 250 ul of sample 08 to the 08 powerbead tube.
-    * 16:52 Blade cleaned w/bleach, trimmed tip, JM added 250 ul of sample 09 to the 09 powerbead tube.
-    * 16:53 Blade cleaned w/bleach, trimmed tip, JM added 250 ul of sample 10 to the 10 powerbead tube.
-    * 16:54 Blade cleaned w/bleach, trimmed tip, JM added 250 ul of sample 11 to the 11 powerbead tube.
-- Original samples went back into the bottom shelf of the -20 freezer at 16:50. They were at room temperature from 16:05 to 16:50.
+    -   16:18 JM and Chris added 250 ul of water to the control Powerbead Tube
+    -   16:20 JM added 250 ul of sample 01 to the 01 Powerbead Tube
+    -   16:31 Rearranged the BSC for the direction of dirty to clean right to left.
+    -   16:33 For sample 02, it was coming up chunky. Discarded tip. Tip missed discard. Clean up initiated.
+    -   16:36 cleaned a razor blade with bleach in the BSC and Chris trimmed a pipette tip
+    -   16:38 Chris added 250 ul of sample 02 to the 02 powerbead tube using the trimmed pipette tip
+    -   16:42 Jess added \~250 ul sample 03 to the 03 powerbead tube
+    -   Voyt-18-017 (sample MB03) full volume was not drawn in so less starting volume than the other samples
+    -   16:44 Sample 04 was chunky. discarded tip. Will now trim all tips
+    -   16:45 cleaned razor blade with bleach and trimmed tip. Jess added 250 ul of sample 04 to powerbead tube \*Samples are being returned to ice after being aliquoted.
+    -   16:47 Blade cleaned w/bleach, trimmed tip, JM added 250 ul of sample 05 to the 05 powerbead tube. Sample 05 is the one that looks a little red
+    -   16:48 Blade cleaned w/bleach, trimmed tip, JM added 250 ul of sample 06 to the 06 powerbead tube.
+    -   16:49 Blade cleaned w/bleach, trimmed tip, JM added 250 ul of sample 07 to the 07 powerbead tube.
+    -   16:51 Blade cleaned w/bleach, trimmed tip, JM added 250 ul of sample 08 to the 08 powerbead tube.
+    -   16:52 Blade cleaned w/bleach, trimmed tip, JM added 250 ul of sample 09 to the 09 powerbead tube.
+    -   16:53 Blade cleaned w/bleach, trimmed tip, JM added 250 ul of sample 10 to the 10 powerbead tube.
+    -   16:54 Blade cleaned w/bleach, trimmed tip, JM added 250 ul of sample 11 to the 11 powerbead tube.
+
+-   Original samples went back into the bottom shelf of the -20 freezer at 16:50. They were at room temperature from 16:05 to 16:50.
 
 ### Protocol Step 2:
 
-- Add 750 𝜇l of *PowerBead Solution* to the *PowerBead Tubes*.
+-   Add 750 𝜇l of *PowerBead Solution* to the *PowerBead Tubes*.
 
-    * 17:00 put Solution C1 on the heat block to warm up in anticipaton of step 3
-    * 17:00 JM put 750 ul of powerbead solution into sample CL
-    * 17:01 JM put 750 ul of powerbead solution into sample 01
-    * 17:02 JM put 750 ul of powerbead solution into sample 02
-    * 17:02 JM put 750 ul of powerbead solution into sample 03
-    * 17:03 JM put 750 ul of powerbead solution into sample 04
-    * 17:03 JM put 750 ul of powerbead solution into sample 05
-    * 17:04 JM put 750 ul of powerbead solution into sample 06
-    * 17:05 JM put 750 ul of powerbead solution into sample 07
-    * 17:05 JM glove ripped, NM stepped in to screw sample 08 cap back on while JM regloved
-    * 17:06 JM put 750 ul of powerbead solution into sample 08
-    * 17:06 JM put 750 ul of powerbead solution into sample 09
-    * 17:07 JM put 750 ul of powerbead solution into sample 10
-    * 17:07 JM put 750 ul of powerbead solution into sample 11
+    -   17:00 put Solution C1 on the heat block to warm up in anticipaton of step 3
+    -   17:00 JM put 750 ul of powerbead solution into sample CL
+    -   17:01 JM put 750 ul of powerbead solution into sample 01
+    -   17:02 JM put 750 ul of powerbead solution into sample 02
+    -   17:02 JM put 750 ul of powerbead solution into sample 03
+    -   17:03 JM put 750 ul of powerbead solution into sample 04
+    -   17:03 JM put 750 ul of powerbead solution into sample 05
+    -   17:04 JM put 750 ul of powerbead solution into sample 06
+    -   17:05 JM put 750 ul of powerbead solution into sample 07
+    -   17:05 JM glove ripped, NM stepped in to screw sample 08 cap back on while JM regloved
+    -   17:06 JM put 750 ul of powerbead solution into sample 08
+    -   17:06 JM put 750 ul of powerbead solution into sample 09
+    -   17:07 JM put 750 ul of powerbead solution into sample 10
+    -   17:07 JM put 750 ul of powerbead solution into sample 11
 
-### Protocol Step 3   
+### Protocol Step 3
 
-- Add 60 𝜇l of *Solution C1* to tubes and **vortex** briefly. If Solution C1 has precipitated, heat to 60ºC until precipitate has dissolved (in heat block or water bath). <br>
+-   Add 60 𝜇l of *Solution C1* to tubes and **vortex** briefly. If Solution C1 has precipitated, heat to 60ºC until precipitate has dissolved (in heat block or water bath). <br>
 
-- Note: Vortexing mixes the components in the *PowerBead Tube* and begins to disperse the sample.
+-   Note: Vortexing mixes the components in the *PowerBead Tube* and begins to disperse the sample.
 
-    * 17:11 BR put 60 ul of Solution C1 into sample CL and vortexed
-    * 17:13 BR put 60 ul of Solution C1 into sample 01 and JM vortexed
-    * 17:14 BR put 60 ul of Solution C1 into sample 02 and JM vortexed
-    * 17:15 BR put 60 ul of Solution C1 into sample 03 and JM vortexed
-    * 17:16 BR put 60 ul of Solution C1 into sample 04 and JM vortexed
-    * 17:17 BR put 60 ul of Solution C1 into sample 05 and JM vortexed
-    * 17:18 BR put 60 ul of Solution C1 into sample 06 and JM vortexed
-    * 17:19 BR put 60 ul of Solution C1 into sample 07 and JM vortexed
-    * 17:20 BR put 60 ul of Solution C1 into sample 08 and JM vortexed
-    * 17:21 BR put 60 ul of Solution C1 into sample 09 and JM vortexed
-    * BR cleaned surface with bleach, water, alcohol after sample 09 cap made contact with surface
-    * 17:22 BR put 60 ul of Solution C1 into sample 10 and JM vortexed
-    * 17:23 BR put 60 ul of Solution C1 into sample 11 and JM vortexed
+    -   17:11 BR put 60 ul of Solution C1 into sample CL and vortexed
+    -   17:13 BR put 60 ul of Solution C1 into sample 01 and JM vortexed
+    -   17:14 BR put 60 ul of Solution C1 into sample 02 and JM vortexed
+    -   17:15 BR put 60 ul of Solution C1 into sample 03 and JM vortexed
+    -   17:16 BR put 60 ul of Solution C1 into sample 04 and JM vortexed
+    -   17:17 BR put 60 ul of Solution C1 into sample 05 and JM vortexed
+    -   17:18 BR put 60 ul of Solution C1 into sample 06 and JM vortexed
+    -   17:19 BR put 60 ul of Solution C1 into sample 07 and JM vortexed
+    -   17:20 BR put 60 ul of Solution C1 into sample 08 and JM vortexed
+    -   17:21 BR put 60 ul of Solution C1 into sample 09 and JM vortexed
+    -   BR cleaned surface with bleach, water, alcohol after sample 09 cap made contact with surface
+    -   17:22 BR put 60 ul of Solution C1 into sample 10 and JM vortexed
+    -   17:23 BR put 60 ul of Solution C1 into sample 11 and JM vortexed
 
 ### Protocol Step 4
 
-- Incubate *PowerBead Tubes* at 65ºC for 30 min in **heat block** or **water bath**.
+-   Incubate *PowerBead Tubes* at 65ºC for 30 min in **heat block** or **water bath**.
 
-- This may be done by adding the **Extraction Workstation** dry block to the **BSC**; if you choose to do this, please clean it and add it to the BSC while preparing the BSC prior to beginning the protocol\].
+-   This may be done by adding the **Extraction Workstation** dry block to the **BSC**; if you choose to do this, please clean it and add it to the BSC while preparing the BSC prior to beginning the protocol\].
 
-    * 17:26 tubes added to heat block and set a 30 minute timer
-    * 17:56 tubes pulled from hear block
-    
+    -   17:26 tubes added to heat block and set a 30 minute timer
+    -   17:56 tubes pulled from hear block
+
 ### Protocol Step 5
 
-- Secure tubes in the **Bead Beater** **\[BSC\]** and run for 5 minutes at 2000 RPM, pause for 30 seconds, and run again for 5 minutes at 2000 RPM. You may run these in evenly divided batches to initiate the subsequent centrifuge step with balanced samples.
+-   Secure tubes in the **Bead Beater** **\[BSC\]** and run for 5 minutes at 2000 RPM, pause for 30 seconds, and run again for 5 minutes at 2000 RPM. You may run these in evenly divided batches to initiate the subsequent centrifuge step with balanced samples.
 
-    * 17:58 All samples start in the Bead Beater
-    * 18:03 All samples rest for 30 seconds
-    * 18:04 All samples start in the Bead Beater
-    
-    *Sample 08 looked odd because it had more foam and less liquid than the other samples.
+    -   17:58 All samples start in the Bead Beater
+    -   18:03 All samples rest for 30 seconds
+    -   18:04 All samples start in the Bead Beater
+
+    \*Sample 08 looked odd because it had more foam and less liquid than the other samples.
 
 ### Protocol Step 6
 
-- **Centrifuge** tubes at 10,000 g (rcf) for 30 s. Make sure the *PowerBead Tubes* rotate freely in the centrifuge without rubbing.
+-   **Centrifuge** tubes at 10,000 g (rcf) for 30 s. Make sure the *PowerBead Tubes* rotate freely in the centrifuge without rubbing.
 
-- If 30 s is not long enough to pellet the sample, you may run for 3 min at the same speed.
+-   If 30 s is not long enough to pellet the sample, you may run for 3 min at the same speed.
 
-    * 18:12 All samples spun in the centrifuge for 30 seconds
-    * Check for pellet showed that 30 seconds was not long enough
-    * 18:13 All samples spun in the centrifuge for 2 more minutes
-    * Check for pellet showed that 2 minutes was not long enough (The solids were at the bottom but beads still appeared to move freely)
-    * 18:16 All samples spun in the centrifuge for 1 more minute
+    -   18:12 All samples spun in the centrifuge for 30 seconds
+    -   Check for pellet showed that 30 seconds was not long enough
+    -   18:13 All samples spun in the centrifuge for 2 more minutes
+    -   Check for pellet showed that 2 minutes was not long enough (The solids were at the bottom but beads still appeared to move freely)
+    -   18:16 All samples spun in the centrifuge for 1 more minute
 
 ### Protocol Step 7
 
-- Transfer supernatant (\~400-500 𝜇l) to clean *2 ml Collection Tube* (you may still have chunks of poo at this point in the supernatant). <br>
+-   Transfer supernatant (\~400-500 𝜇l) to clean *2 ml Collection Tube* (you may still have chunks of poo at this point in the supernatant). <br>
 
-    * Using a pipet set to 500 ul
-    * 18:26 NM transferred supernatant from CL (400 + 100 pipet)
-    * 18:27 NM transferred supernatant from 01
-    * 18:29 NM transferred supernatant from 02
-    * 18:30 NM transferred supernatant from 03
-    * 18:31 NM transferred supernatant from 04
-    * 18:32 NM transferred supernatant from 05
-    * 18:33 NM transferred supernatant from 06
-    * 18:34 NM transferred supernatant from 07
-    * 18:35 NM transferred supernatant from 08
-    * 18:36 NM transferred supernatant from 09
-    * 18:37 NM transferred supernatant from 10
-    * 18:38 NM transferred supernatant from 11
-    
-    * 11 looked like the pellet was a little broken up before supernatant was taken up 
+    -   Using a pipet set to 500 ul
+
+    -   18:26 NM transferred supernatant from CL (400 + 100 pipet)
+
+    -   18:27 NM transferred supernatant from 01
+
+    -   18:29 NM transferred supernatant from 02
+
+    -   18:30 NM transferred supernatant from 03
+
+    -   18:31 NM transferred supernatant from 04
+
+    -   18:32 NM transferred supernatant from 05
+
+    -   18:33 NM transferred supernatant from 06
+
+    -   18:34 NM transferred supernatant from 07
+
+    -   18:35 NM transferred supernatant from 08
+
+    -   18:36 NM transferred supernatant from 09
+
+    -   18:37 NM transferred supernatant from 10
+
+    -   18:38 NM transferred supernatant from 11
+
+    -   11 looked like the pellet was a little broken up before supernatant was taken up
 
 ### Protocol Step 8
 
-- Add 250 𝜇l of *Solution C2* to tubes and **vortex** for 5 s. Incubate at 4ºC for 10 min. <br>
+-   Add 250 𝜇l of *Solution C2* to tubes and **vortex** for 5 s. Incubate at 4ºC for 10 min. <br>
 
-- Note: *Solution C2* has Inhibitor Removal Technology (IRT). It contains a reagent that can precipitate non-DNA organic and inorganic material, including humic substances, cell debris and proteins. It is important to remove contaminating organic and inorganic matter that may reduce DNA purity and inhibit downstream DNA applications. <br>
+-   Note: *Solution C2* has Inhibitor Removal Technology (IRT). It contains a reagent that can precipitate non-DNA organic and inorganic material, including humic substances, cell debris and proteins. It is important to remove contaminating organic and inorganic matter that may reduce DNA purity and inhibit downstream DNA applications. <br>
 
-    * 18:42 JM added 250 ul solution C2 to the sample CL and BR vortexed for 5 sec
-    * 18:43 JM added 250 ul solution C2 to the sample 1 and BR vortexed for 5 sec
-    * 18:43 JM added 250 ul solution C2 to the sample 2 and BR vortexed for 5 sec
-    * 18:44 JM added 250 ul solution C2 to the sample 3 and BR vortexed for 5 sec
-    * 18:44 JM added 250 ul solution C2 to the sample 4 and BR vortexed for 5 sec
-    * 18:44 JM added 250 ul solution C2 to the sample 5 and BR vortexed for 5 sec
-    *JM noticed that the 1000 ul pipette was taking up a bubble each time and the white stem part was detaching from the base; NM had also noticed that it was getting increasingly more difficult to dispose of tips. JM switched to the smaller pipette which only goes up to 200 ul pipette. She is switching it between 200 and 50 ul each sample.
-    * 18:49 JM added 250 ul solution C2 to the sample 6 and BR vortexed for 5 sec
-    *JM could not remember if she added 50 ul to sample 7, we put it aside and will use a pippetter from the PCR station to measure if there is 750 ul in there. We decided to use the 1000ul pippetter from the PCR station which had been sterilized earlier with the other materials. While this is not standard, we feel that these extenuating circumstances called for it and making do with the smaller pippetter was introducing unnecessary error.
-    * 18:52 JM added 250 ul solution C2 to the sample 8 and BR vortexed for 5 sec
-    * 18:52 JM added 250 ul solution C2 to the sample 9 and BR vortexed for 5 sec
-    * 18:53 JM added 250 ul solution C2 to the sample 10 and BR vortexed for 5 sec
-    * 18:53 JM added 250 ul solution C2 to the sample 11 and BR vortexed for 5 sec
-    *JM measured sample 7 and found that there was less than 750 ul so she will add remaining 50ul
-    * 18:55 JM added 50 ul solution C2 to the sample 7 and BR vortexed for 5 sec
-    *Put into 4 degrees celcius fridge at 18:56 and pulled at 19:56
+    -   18:42 JM added 250 ul solution C2 to the sample CL and BR vortexed for 5 sec
+    -   18:43 JM added 250 ul solution C2 to the sample 1 and BR vortexed for 5 sec
+    -   18:43 JM added 250 ul solution C2 to the sample 2 and BR vortexed for 5 sec
+    -   18:44 JM added 250 ul solution C2 to the sample 3 and BR vortexed for 5 sec
+    -   18:44 JM added 250 ul solution C2 to the sample 4 and BR vortexed for 5 sec
+    -   18:44 JM added 250 ul solution C2 to the sample 5 and BR vortexed for 5 sec \*JM noticed that the 1000 ul pipette was taking up a bubble each time and the white stem part was detaching from the base; NM had also noticed that it was getting increasingly more difficult to dispose of tips. JM switched to the smaller pipette which only goes up to 200 ul pipette. She is switching it between 200 and 50 ul each sample.
+    -   18:49 JM added 250 ul solution C2 to the sample 6 and BR vortexed for 5 sec \*JM could not remember if she added 50 ul to sample 7, we put it aside and will use a pippetter from the PCR station to measure if there is 750 ul in there. We decided to use the 1000ul pippetter from the PCR station which had been sterilized earlier with the other materials. While this is not standard, we feel that these extenuating circumstances called for it and making do with the smaller pippetter was introducing unnecessary error.
+    -   18:52 JM added 250 ul solution C2 to the sample 8 and BR vortexed for 5 sec
+    -   18:52 JM added 250 ul solution C2 to the sample 9 and BR vortexed for 5 sec
+    -   18:53 JM added 250 ul solution C2 to the sample 10 and BR vortexed for 5 sec
+    -   18:53 JM added 250 ul solution C2 to the sample 11 and BR vortexed for 5 sec \*JM measured sample 7 and found that there was less than 750 ul so she will add remaining 50ul
+    -   18:55 JM added 50 ul solution C2 to the sample 7 and BR vortexed for 5 sec \*Put into 4 degrees celcius fridge at 18:56 and pulled at 19:56
 
 ### Protocol Step 9
 
-- **Centrifuge** the tubes at 10,000 g (rcf) for 1 min. <br>
+-   **Centrifuge** the tubes at 10,000 g (rcf) for 1 min. <br>
 
-    *19:10 NM centrifuged the samples and checked pellets were formed. Sample 8 had a very small pellet compared to the rest.
-    
+    \*19:10 NM centrifuged the samples and checked pellets were formed. Sample 8 had a very small pellet compared to the rest.
+
 ### Protocol Step 10
 
-- Transfer up to 600 𝜇l of supernatant to a clean *2 ml Collection Tube* (make sure to only transfer the liquid -- none of the pellet here!). <br>
+-   Transfer up to 600 𝜇l of supernatant to a clean *2 ml Collection Tube* (make sure to only transfer the liquid -- none of the pellet here!). <br>
 
-- Note: The pellet at this point contains non-DNA organic and inorganic material, including humic acid, cell debris and proteins. For best DNA yields and quality, avoid transferring any of the pellet. <br>
+-   Note: The pellet at this point contains non-DNA organic and inorganic material, including humic acid, cell debris and proteins. For best DNA yields and quality, avoid transferring any of the pellet. <br>
 
-    * 19:11 JM transferred 600 ul supernatant from sample CL to a clean 2 ml collection tube 
-    * 19:12 JM transferred 600 ul supernatant from sample 01 to a clean 2 ml collection tube 
-    * 19:12 JM transferred 600 ul supernatant from sample 02 to a clean 2 ml collection tube
-    * 19:13 JM transferred 600 ul supernatant from sample 03 to a clean 2 ml collection tube 
-    * 19:13 JM transferred 600 ul supernatant from sample 04 to a clean 2 ml collection tube
-    * 19:14 JM transferred 600 ul supernatant from sample 05 to a clean 2 ml collection tube
-    * 19:14 JM transferred 600 ul supernatant from sample 06 to a clean 2 ml collection tube 
-    * 19:14 JM transferred 600 ul supernatant from sample 07 to a clean 2 ml collection tube 
-    * 19:15 JM transferred 600 ul supernatant from sample 08 to a clean 2 ml collection tube
-    * 19:15 JM transferred 600 ul supernatant from sample 09 to a clean 2 ml collection tube
-    * 19:15 JM transferred 600 ul supernatant from sample 10 to a clean 2 ml collection tube 
-    * 19:16 JM transferred 600 ul supernatant from sample 11 to a clean 2 ml collection tube 
+    -   19:11 JM transferred 600 ul supernatant from sample CL to a clean 2 ml collection tube
+    -   19:12 JM transferred 600 ul supernatant from sample 01 to a clean 2 ml collection tube
+    -   19:12 JM transferred 600 ul supernatant from sample 02 to a clean 2 ml collection tube
+    -   19:13 JM transferred 600 ul supernatant from sample 03 to a clean 2 ml collection tube
+    -   19:13 JM transferred 600 ul supernatant from sample 04 to a clean 2 ml collection tube
+    -   19:14 JM transferred 600 ul supernatant from sample 05 to a clean 2 ml collection tube
+    -   19:14 JM transferred 600 ul supernatant from sample 06 to a clean 2 ml collection tube
+    -   19:14 JM transferred 600 ul supernatant from sample 07 to a clean 2 ml collection tube
+    -   19:15 JM transferred 600 ul supernatant from sample 08 to a clean 2 ml collection tube
+    -   19:15 JM transferred 600 ul supernatant from sample 09 to a clean 2 ml collection tube
+    -   19:15 JM transferred 600 ul supernatant from sample 10 to a clean 2 ml collection tube
+    -   19:16 JM transferred 600 ul supernatant from sample 11 to a clean 2 ml collection tube
 
 ### Protocol Step 11
 
-- Add 200 𝜇l of *Solution C3* to the tubes and **vortex** briefly. Incubate at 4ºC for 10 min (use the old mini-fridge for this step, below the PCR Workstation). <br>
+-   Add 200 𝜇l of *Solution C3* to the tubes and **vortex** briefly. Incubate at 4ºC for 10 min (use the old mini-fridge for this step, below the PCR Workstation). <br>
 
-- Note: *Solution C3* has Inhibitor Removal Technology (IRT) and is a second reagent to precipitate additional non-DNA organic and inorganic material including humic acid, cell debris and proteins. It is important to remove contaminating organic and inorganic matter that may reduce DNA purity and inhibit downstream DNA applications. <br>
+-   Note: *Solution C3* has Inhibitor Removal Technology (IRT) and is a second reagent to precipitate additional non-DNA organic and inorganic material including humic acid, cell debris and proteins. It is important to remove contaminating organic and inorganic matter that may reduce DNA purity and inhibit downstream DNA applications. <br>
 
-    * 19:19 BR added 100 
-    * 19:21 BR dropped sample CL on bench, possible leakage
-    * 19:21 BR transferred 200 ul of Solution C3 to sample CL a clean 2 ml collection tube
-    * 19:21 BR transferred 200 ul of Solution C3 to sample 01 a clean 2 ml collection tube
-    * 19:22 BR transferred 200 ul of Solution C3 to sample 02 a clean 2 ml collection tube
-    * 19:23 BR transferred 200 ul of Solution C3 to sample 03 a clean 2 ml collection tube
-    * 19:23 BR transferred 200 ul of Solution C3 to sample 04 a clean 2 ml collection tube
-    * 19:24 BR transferred 200 ul of Solution C3 to sample 05 a clean 2 ml collection tube
-    * 19:24 BR transferred 200 ul of Solution C3 to sample 06 a clean 2 ml collection tube
-    * 19:24 BR transferred 200 ul of Solution C3 to sample 07 a clean 2 ml collection tube
-    * 19:25 BR transferred 200 ul of Solution C3 to sample 08 a clean 2 ml collection tube
-    * 19:25 BR transferred 200 ul of Solution C3 to sample 09 a clean 2 ml collection tube
-    * 19:26 BR transferred 200 ul of Solution C3 to sample 10 a clean 2 ml collection tube
-    * 19:26 BR transferred 200 ul of Solution C3 to sample 11 a clean 2 ml collection tube
-    *Started incubation at 4ºC 19:26 for 10 minutes. Pulled at 19:36.
+    -   19:19 BR added 100
+    -   19:21 BR dropped sample CL on bench, possible leakage
+    -   19:21 BR transferred 200 ul of Solution C3 to sample CL a clean 2 ml collection tube
+    -   19:21 BR transferred 200 ul of Solution C3 to sample 01 a clean 2 ml collection tube
+    -   19:22 BR transferred 200 ul of Solution C3 to sample 02 a clean 2 ml collection tube
+    -   19:23 BR transferred 200 ul of Solution C3 to sample 03 a clean 2 ml collection tube
+    -   19:23 BR transferred 200 ul of Solution C3 to sample 04 a clean 2 ml collection tube
+    -   19:24 BR transferred 200 ul of Solution C3 to sample 05 a clean 2 ml collection tube
+    -   19:24 BR transferred 200 ul of Solution C3 to sample 06 a clean 2 ml collection tube
+    -   19:24 BR transferred 200 ul of Solution C3 to sample 07 a clean 2 ml collection tube
+    -   19:25 BR transferred 200 ul of Solution C3 to sample 08 a clean 2 ml collection tube
+    -   19:25 BR transferred 200 ul of Solution C3 to sample 09 a clean 2 ml collection tube
+    -   19:26 BR transferred 200 ul of Solution C3 to sample 10 a clean 2 ml collection tube
+    -   19:26 BR transferred 200 ul of Solution C3 to sample 11 a clean 2 ml collection tube \*Started incubation at 4ºC 19:26 for 10 minutes. Pulled at 19:36.
 
 ### Protocol Step 12
 
-- **Centrifuge** the tubes at 10,000 g (rcf) for 1 min. <br>
+-   **Centrifuge** the tubes at 10,000 g (rcf) for 1 min. <br>
 
-    * 19:39 All samples centrifuged for 1 min
+    -   19:39 All samples centrifuged for 1 min
 
 ### Protocol Step 13
 
-- Transfer up to 750 𝜇l of supernatant to a clean *2 ml Collection Tube*. Once again, be careful to avoid the pellet!
+-   Transfer up to 750 𝜇l of supernatant to a clean *2 ml Collection Tube*. Once again, be careful to avoid the pellet!
 
 -   Note: The pellet at this point contains non-DNA organic and inorganic material including humic acid, cell debris and proteins. For best DNA yields and quality, avoid transferring any of the pellet.
 
     NM notes that ALL samples have less than 750 supernatant in tube.
 
-    * Started new 2ml collection tube
-    * 19:44 NM transferred 750 ul supernatant from sample CL to a clean 2 ml collection tube
-    * 19:45 NM transferred 750 ul supernatant from sample 01 to a clean 2 ml collection tube
-    * 19:46 NM transferred 750 ul supernatant from sample 02 to a clean 2 ml collection tube
-    * 19:47 NM transferred 750 ul supernatant from sample 03 to a clean 2 ml collection tube
-    * 19:48 NM transferred 750 ul supernatant from sample 04 to a clean 2 ml collection tube
-    * 19:49 NM transferred 750 ul supernatant from sample 05 to a clean 2 ml collection tube
-    * 19:51 NM transferred 750 ul supernatant from sample 06 to a clean 2 ml collection tube
-    * NM breaks top off of new collection tube- BR hands her a new tube- NM labels and uses new tube
-    * 19:52 NM transferred 750 ul supernatant from sample 07 to a clean 2 ml collection tube
-    * 19:53 NM transferred 750 ul supernatant from sample 08 to a clean 2 ml collection tube
-    * 19:54 NM transferred 750 ul supernatant from sample 09 to a clean 2 ml collection tube
-    * 19:54 NM transferred 750 ul supernatant from sample 10 to a clean 2 ml collection tube
-    * 19:55 NM transferred 750 ul supernatant from sample 11 to a clean 2 ml collection tube
-    * NM tipped over sample 11, pellet intact (no movement).
-  
+    -   Started new 2ml collection tube
+    -   19:44 NM transferred 750 ul supernatant from sample CL to a clean 2 ml collection tube
+    -   19:45 NM transferred 750 ul supernatant from sample 01 to a clean 2 ml collection tube
+    -   19:46 NM transferred 750 ul supernatant from sample 02 to a clean 2 ml collection tube
+    -   19:47 NM transferred 750 ul supernatant from sample 03 to a clean 2 ml collection tube
+    -   19:48 NM transferred 750 ul supernatant from sample 04 to a clean 2 ml collection tube
+    -   19:49 NM transferred 750 ul supernatant from sample 05 to a clean 2 ml collection tube
+    -   19:51 NM transferred 750 ul supernatant from sample 06 to a clean 2 ml collection tube
+    -   NM breaks top off of new collection tube- BR hands her a new tube- NM labels and uses new tube
+    -   19:52 NM transferred 750 ul supernatant from sample 07 to a clean 2 ml collection tube
+    -   19:53 NM transferred 750 ul supernatant from sample 08 to a clean 2 ml collection tube
+    -   19:54 NM transferred 750 ul supernatant from sample 09 to a clean 2 ml collection tube
+    -   19:54 NM transferred 750 ul supernatant from sample 10 to a clean 2 ml collection tube
+    -   19:55 NM transferred 750 ul supernatant from sample 11 to a clean 2 ml collection tube
+    -   NM tipped over sample 11, pellet intact (no movement).
+
 ### Protocol Step 14
 
-- Add 1.2 ml of *Solution C4* to the supernatant and **vortex** for 5 s. Shake *Solution C4* by hand to mix prior to adding. Also, this will fill the *Collection Tube* to the brim, so be prepared. <br>
+-   Add 1.2 ml of *Solution C4* to the supernatant and **vortex** for 5 s. Shake *Solution C4* by hand to mix prior to adding. Also, this will fill the *Collection Tube* to the brim, so be prepared. <br>
 
-- Note: This contains guanidine salts, which is highly reactive. Do not mix or clean with bleach!!! <br>
-- Note: *Solution C4* is a high-concentration salt solution. Since DNA binds tightly to silica at high salt concentrations, this will adjust the DNA solution salt concentrations to allow binding of DNA, but not non-DNA organic and inorganic material that may still be present at low levels, to the *Spin Filter*. <br>
+-   Note: This contains guanidine salts, which is highly reactive. Do not mix or clean with bleach!!! <br>
 
-* 19:57 NM 
+-   Note: *Solution C4* is a high-concentration salt solution. Since DNA binds tightly to silica at high salt concentrations, this will adjust the DNA solution salt concentrations to allow binding of DNA, but not non-DNA organic and inorganic material that may still be present at low levels, to the *Spin Filter*. <br>
+
+-   20:00 NM added 1200 ul of solution C4 to sample CL. JM vortexed.
+
+-   20:01 NM added 1200 ul of solution C4 to sample 01. JM vortexed.
+
+-   20:03 NM added 1200 ul of solution C4 to sample 02. BR vortexed.
+
+-   20:05 NM added 1200 ul of solution C4 to sample 03. BR vortexed.
+
+-   20:06 NM added 1200 ul of solution C4 to sample 04. BR vortexed.
+
+-   20:07 NM added 1200 ul of solution C4 to sample 05. BR vortexed.
+
+-   20:07 NM added 1200 ul of solution C4 to sample 06. BR vortexed.
+
+-   20:08 NM added 1200 ul of solution C4 to sample 07. BR vortexed.
+
+-   20:09 NM added 1200 ul of solution C4 to sample 08. BR vortexed.
+
+-   20:10 NM added 1200 ul of solution C4 to sample 09. BR vortexed.
+
+-   20:11 NM added 1200 ul of solution C4 to sample 10. BR vortexed.
+
+-   20:12 NM added 1200 ul of solution C4 to sample 11. BR vortexed.
 
 ### Protocol Step 15
 
@@ -532,42 +564,204 @@ Three washes of supernatant in *Spin Filter* <br>
 
 <!-- -->
 
-a.  First wash: Pipette 675 𝜇l of the supernatant to a *Spin Filter* and **centrifuge** at 10,000 g (rcf) for 1 min. Discard the liquid flow through. Repeat until all supernatant has passed through the column. (This will take 3x washes through the column). <br>
+a\. First wash: Pipette 675 𝜇l of the supernatant to a *Spin Filter* and **centrifuge** at 10,000 g (rcf) for 1 min. Discard the liquid flow through. Repeat until all supernatant has passed through the column. (This will take 3x washes through the column). <br>
 
 -   Note: DNA is selectively bound to the silica membrane in the *MB Spin Column* device in the high salt solution. Contaminants pass through the filter membrane, leaving only DNA bound to the membrane. <br>
 
-b.  Second Wash: Pipette 675 𝜇l of the supernatant to the same *Spin Filter* and **centrifuge** at 10,000 g (rcf) for 1 min. Discard the liquid flow through. <br>
-c.  Third Wash: Pipette 675 𝜇l of the supernatant to the same *Spin Filter* and **centrifuge** at 10,000 g (rcf) for 1 min. Discard the liquid flow through. <br>
+-   20:18 BR pipetted 675 ul of the sample CL supernatant to the CL spin filter
+
+-   20:19 BR pipetted 675 ul of the sample 01 supernatant to the 01 spin filter
+
+-   20:20 BR pipetted 675 ul of the sample 02 supernatant to the 02 spin filter
+
+-   20:21 BR pipetted 675 ul of the sample 03 supernatant to the 03 spin filter
+
+-   20:21 BR pipetted 675 ul of the sample 04 supernatant to the 04 spin filter
+
+-   20:22 BR pipetted 675 ul of the sample 05 supernatant to the 05 spin filter
+
+```{=html}
+<!-- -->
+```
+-   20:23 BR pipetted 675 ul of the sample 06 supernatant to the 06 spin filter
+
+-   20:23 BR pipetted 675 ul of the sample 07 supernatant to the 07 spin filter
+
+-   Finished one full box of 1000 ul filter tip pipette tips
+
+-   20:23 BR pipetted 675 ul of the sample 08 supernatant to the 08 spin filter
+
+-   20:25 BR pipetted 675 ul of the sample 09 supernatant to the 09 spin filter
+
+-   20:26 BR pipetted 675 ul of the sample 10 supernatant to the 10 spin filter
+
+-   20:27 BR pipetted 675 ul of the sample 11 supernatant to the 11 spin filter
+
+-   20:28 JM centrifued the samples for 1 minute at 10,000 g
+
+-   BR discarded flow through. We created a new liquid waste container beaker and labeled it "2/28/2024 JM NM BR Gut Microbiome Waste Container Do Not Mix with Bleach"
+
+b\. Second Wash: Pipette 675 𝜇l of the supernatant to the same *Spin Filter* and **centrifuge** at 10,000 g (rcf) for 1 min. Discard the liquid flow through. <br>
+
+-   20:37 BR pipetted 675 ul of the sample CL supernatant to the CL spin filter
+
+-   20:38 BR pipetted 675 ul of the sample 01 supernatant to the 01 spin filter
+
+-   20:39 BR pipetted 675 ul of the sample 02 supernatant to the 02 spin filter
+
+-   20:40 BR pipetted 675 ul of the sample 03 supernatant to the 03 spin filter
+
+-   20:40 BR pipetted 675 ul of the sample 04 supernatant to the 04 spin filter
+
+-   20:41 BR pipetted 675 ul of the sample 05 supernatant to the 05 spin filter
+
+-   20:41 BR pipetted 675 ul of the sample 06 supernatant to the 06 spin filter
+
+-   20:42 BR pipetted 675 ul of the sample 07 supernatant to the 07 spin filter
+
+-   20:43 BR pipetted 675 ul of the sample 08 supernatant to the 08 spin filter
+
+-   20:44 BR pipetted 675 ul of the sample 09 supernatant to the 09 spin filter
+
+-   20:45 BR pipetted 675 ul of the sample 10 supernatant to the 10 spin filter
+
+-   20:45 BR pipetted 675 ul of the sample 11 supernatant to the 11 spin filter
+
+-   20:47 JM Centrifuged samples for 1 min
+
+-   20:48 BR discarded the flow through of samples from second wash
+
+c\. Third Wash: Pipette 675 𝜇l of the supernatant to the same *Spin Filter* and **centrifuge** at 10,000 g (rcf) for 1 min. Discard the liquid flow through. <br>
+
+-   20:52 BR pipetted the remainder of the sample CL supernatant to the CL spin filter
+
+-   20:53 BR pipetted the remainder of sample 01 supernatant to the 01 spin filter
+
+-   20:54 BR pipetted the remainder of sample 02 supernatant to the 02 spin filter
+
+-   20:54 BR pipetted the remainder of sample 03 supernatant to the 03 spin filter
+
+-   20:55 BR pipetted the remainder of sample 04 supernatant to the 04 spin filter
+
+-   20:56 BR pipetted the remainder of sample 05 supernatant to the 04 spin filter
+
+-   20:57 BR pipetted the remainder of sample 06 supernatant to the 06 spin filter
+
+-   20:57 BR pipetted the remainder of sample 07 supernatant to the 07 spin filter
+
+-   20:58 BR pipetted the remainder of sample 08 supernatant to the 08 spin filter
+
+-   20:58 BR pipetted the remainder sample 09 supernatant to the 09 spin filter
+
+-   20:59 BR pipetted the remainder of sample 10 supernatant to the 10 spin filter
+
+-   20:59 BR pipetted the remainder of sample 11 supernatant to the 11 spin filter
+
+-   21:01 JM Centrifuged samples for 1 min
+
+-   21:03 JM discarded the flow through of samples from third wash
 
 <!-- -->
 
 ### Protocol Step 16
 
-- Add 500 𝜇l of *Solution C5* to the filter and **centrifuge** at 10,000 g (rcf) for 30 s. Discard the liquid flow through. <br>
+-   Add 500 𝜇l of *Solution C5* to the filter and **centrifuge** at 10,000 g (rcf) for 30 s. Discard the liquid flow through. <br>
 
-- Note: *Solution C5* is an ethanol-based wash solution used to further clean the DNA that is bound to the silica filter membrane in the *Spin Filter*. This wash solution removes residual salt, humic acid, and other contaminants while allowing the DNA to stay bound to the silica membrane. <br>
+-   Note: *Solution C5* is an ethanol-based wash solution used to further clean the DNA that is bound to the silica filter membrane in the *Spin Filter*. This wash solution removes residual salt, humic acid, and other contaminants while allowing the DNA to stay bound to the silica membrane. <br>
 
-### Protocol Step 17
+-   21:05 JM added 500 ul of C5 to CL
 
-- **Centrifuge** the *Spin Filter* column a second time at 10,000 g (rcf) for 1 min. <br>
+-   21:05 JM added 500 ul of C5 to 01
 
-- Note: This flow-through fraction is non-DNA organic and inorganic waste removed from the silica *Spin Filter* membrane by the ethanol wash solution. The second spin removes residual *Solution C5* (ethanol wash solution). It is critical to remove all traces of wash solution because the ethanol in *Solution C5* can interfere with many downstream DNA applications, such as PCR and gel electrophoresis. <br>
+-   21:06 JM added 500 ul of C5 to 02
+
+-   21:06 JM added 500 ul of C5 to 03
+
+-   21:06 JM added 500 ul of C5 to 04
+
+-   21:06 JM added 500 ul of C5 to 05
+
+-   21:06 JM added 500 ul of C5 to 06
+
+-   21:07 JM added 500 ul of C5 to 07
+
+-   21:07 JM added 500 ul of C5 to 09
+
+-   21:07 JM added 500 ul of C5 to 09
+
+-   21:08 JM added 500 ul of C5 to 10
+
+-   21:08 JM added 500 ul of C5 to 11
+
+-   21:09 NM centrifuged all the samples at 10,000 g (rcf) for 30 seconds
+
+-   21:11 NM discarded the flow through
+
+-   <div>
+
+    ### Protocol Step 17
+
+    </div>
+
+-   **Centrifuge** the *Spin Filter* column a second time at 10,000 g (rcf) for 1 min. <br>
+
+-   Note: This flow-through fraction is non-DNA organic and inorganic waste removed from the silica *Spin Filter* membrane by the ethanol wash solution. The second spin removes residual *Solution C5* (ethanol wash solution). It is critical to remove all traces of wash solution because the ethanol in *Solution C5* can interfere with many downstream DNA applications, such as PCR and gel electrophoresis. <br>
+
+-   21:14 NM re-emptied the flow through just to be sure
+
+-   21:16 NM centrifuged all the samples at 10,000 g (rcf) for 1 minute
 
 ### Protocol Step 18
 
-- Place *Spin Filter* into a clean and labeled *2 ml Collection Tube* (this is the tube going into the freezer, so make sure it's labeled appropriately). Avoid splashing any *Solution C5* onto the *Spin Filter*.<br>
-- This is the final tube so it should be a low bind tube
+-   Place *Spin Filter* into a clean and labeled *2 ml Collection Tube* (this is the tube going into the freezer, so make sure it's labeled appropriately). Avoid splashing any *Solution C5* onto the *Spin Filter*.<br>
+-   This is the final tube so it should be **a low bind tube**
+-   21:28 NM transferred the spin filters to low bind tubes.
+-   21:25 JM performed a test of centrifuging a spin filter with water in a low bind tube to see if it would leak. It did not leak.
 
 ### Protocol Step 19
 
-- Incubate *Solution C6* for 5 minutes at 65ºC. Then, add 100 𝜇l of *Solution C6* to the center of the filter membrane. <br>
+-   Incubate *Solution C6* for 5 minutes at 65ºC. Then, add 100 𝜇l of *Solution C6* to the center of the filter membrane. <br>
 
-- Note: Placing *Solution C6* in the center of the small white membrane will make sure the entire membrane is wet. This will result in a more efficient and complete release of the DNA from the Spin Filter membrane. As *Solution C6* passes through the silica membrane, DNA that was bound in the presence of high salt is selectively released by *Solution C6* (which is actually 10 mM Tris), which lacks salt. <br>
+-   Note: Placing *Solution C6* in the center of the small white membrane will make sure the entire membrane is wet. This will result in a more efficient and complete release of the DNA from the Spin Filter membrane. As *Solution C6* passes through the silica membrane, DNA that was bound in the presence of high salt is selectively released by *Solution C6* (which is actually 10 mM Tris), which lacks salt. <br>
+
+-   21:26 Began incubating Solution C6 at 65C on the heat block.
+
+-   21:31 Finished incubating Solution C6
+
+-   21:32 JM added 100 ul of Solution C6 to the filter membrane of 08
+
+-   21:33 JM added 100 ul of Solution C6 to the filter membrane of 07
+
+-   21:33 JM added 100 ul of Solution C6 to the filter membrane of 06
+
+-   21:33 JM added 100 ul of Solution C6 to the filter membrane of 05
+
+-   21:33 JM added 100 ul of Solution C6 to the filter membrane of 04
+
+-   21:33 JM added 100 ul of Solution C6 to the filter membrane of 03
+
+-   21:34 JM added 100 ul of Solution C6 to the filter membrane of 02
+
+-   21:34 JM added 100 ul of Solution C6 to the filter membrane of 10
+
+-   21:34 JM added 100 ul of Solution C6 to the filter membrane of CL
+
+-   21:34 JM added 100 ul of Solution C6 to the filter membrane of 09
+
+-   21:34 JM added 100 ul of Solution C6 to the filter membrane of 01
+
+-   21:35 JM added 100 ul of Solution C6 to the filter membrane of 11
 
 ### Protocol Step 20
 
-- Incubate samples at room temperature for 25 minutes. Then **centrifuge** at 10,000 g (rcf) for 30 sec, and finally discard the spin filter. <br> Your DNA is ready for use! <br>
+-   Incubate samples at room temperature for 25 minutes. Then **centrifuge** at 10,000 g (rcf) for 30 sec, and finally discard the spin filter. <br> Your DNA is ready for use! <br>
+-   21:36 Began incubating all samples at room temperature.
+-   22:05 We centrifuged the samples in a batch of 9 and a batch of 3 for a minute each. (We mistakenly set the centrifuge to 1 minute instead of 30 seconds.)
+-   22:13 JM placed the extracted samples on the bottom shelf of the -20C freezer
+-   22:13 NM discarded the used tubes in the biohazard waste.
+-   22:14 JM parafilmed the top of the waste beaker and left it in the BSC.
+-   22:20 We wiped down the BSC, extraction station, and centrifuge. We turned off the BSC and centrifuge.
 
 ### Protocol Step 21
 
-- Measure the dsDNA concentration using the **Quantus**, and sample A260/A280 using the **NanoDrop** **\[Quantitation Workstation\]**. Record these details in your lab notebook. <br> Place the properly labeled DNA elutions in the **-20ºC freezer**. Be sure to record where in the freezer you've placed them, and that they are all together in a single, clearly labeled container/rack.
+-   Measure the dsDNA concentration using the **Quantus**, and sample A260/A280 using the **NanoDrop** **\[Quantitation Workstation\]**. Record these details in your lab notebook. <br> Place the properly labeled DNA elutions in the **-20ºC freezer**. Be sure to record where in the freezer you've placed them, and that they are all together in a single, clearly labeled container/rack.

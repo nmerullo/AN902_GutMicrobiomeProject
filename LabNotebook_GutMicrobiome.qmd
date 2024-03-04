@@ -728,11 +728,7 @@ c\. Third Wash: Pipette 675 𝜇l of the supernatant to the same *Spin Filter* a
 
 -   21:11 NM discarded the flow through
 
--   <div>
-
     ### Protocol Step 17
-
-    </div>
 
 -   **Centrifuge** the *Spin Filter* column a second time at 10,000 g (rcf) for 1 min. <br>
 
@@ -745,9 +741,9 @@ c\. Third Wash: Pipette 675 𝜇l of the supernatant to the same *Spin Filter* a
 ### Protocol Step 18
 
 -   Place *Spin Filter* into a clean and labeled *2 ml Collection Tube* (this is the tube going into the freezer, so make sure it's labeled appropriately). Avoid splashing any *Solution C5* onto the *Spin Filter*.<br>
--   This is the final tube so it should be **a low bind tube**
--   21:28 NM transferred the spin filters to low bind tubes.
--   21:25 JM performed a test of centrifuging a spin filter with water in a low bind tube to see if it would leak. It did not leak.
+-   This is the final tube so it should be **a low-bind tube**
+-   21:28 NM transferred the spin filters to low-bind tubes.
+-   21:25 JM performed a test of centrifuging a spin filter with water in a low-bind tube to see if it would leak. It did not leak.
 
 ### Protocol Step 19
 
@@ -796,3 +792,95 @@ c\. Third Wash: Pipette 675 𝜇l of the supernatant to the same *Spin Filter* a
 ### Protocol Step 21
 
 -   Measure the dsDNA concentration using the **Quantus**, and sample A260/A280 using the **NanoDrop** **\[Quantitation Workstation\]**. Record these details in your lab notebook. <br> Place the properly labeled DNA elutions in the **-20ºC freezer**. Be sure to record where in the freezer you've placed them, and that they are all together in a single, clearly labeled container/rack.
+-   11:05 NM/JM cleaned blench w/ bleach, water, ETOH
+-   11:10 NM/RHS cleaned P1000 pipette with bleach, water, ETOH
+-   11:11 RHS made a working solution
+-   11:20 RHS opened a new 20ul tip box
+-   11:20 Dye taken out of box
+-   11:21 Dye added to a working solution
+-   11:22 Dye w/ working solution vortexed for 5s
+-   11:22 Dye is placed in the 4C freezer
+-   11:23 RHS makes blank
+-   11:25 RHS notices we do not have enough 0.5ml PCR tubes (only 4)- CS autoclaves roughly 50.
+-   11:28 RHS 1x TE buffer adding to 0.5ml PCR tube, add 200ul of the working solution = blank solution (labeled B), vortexed.
+-   11:29 RHS added 2ul of DNA standard solution, added 200ul of the working solution = standard solution (labeled S), vortexed.
+-   11:33 RHS prepares sample CL to be quantified (sample, dye working solution, vortex) and placed back on ice
+-   11:35 RHS prepares sample 01 to be quantified (sample, dye working solution, vortex) and placed back on ice
+-   11:36 RHS prepares sample 02 to be quantified (sample, dye working solution, vortex) and placed back on ice
+-   11:37 RHS Samples sitting at room temperature for 5 minutes
+-   11:42 RHS Ends time samples should be sitting at room temperature
+-   11:43 RHS Selects the dsDNA protocol
+-   11:43 RHS: Vortex, centrifuge, and wipe down sides of the tube (Sample CL)
+-   11:44 RHS: Vortex, centrifuge, and wipe down sides of the tube (Sample 01)
+-   11:44 RHS: Vortex, centrifuge, and wipe down sides of the tube (Sample 02)
+-   11:44 RHS: Vortex, centrifuge, and wipe down sides of the tube (Sample 03)
+-   11:45 RHS: Vortex, centrifuge, and wipe down sides of the tube (Sample 04)
+-   11:45 RHS: Vortex, centrifuge, and wipe down sides of the tube (Sample 05)
+-   11:45 RHS: Vortex, centrifuge, and wipe down sides of the tube (Sample 06)
+-   11:46 RHS: Vortex, centrifuge, and wipe down sides of the tube (Sample 07)
+-   11:46 RHS: Vortex, centrifuge, and wipe down sides of the tube (Sample 08)
+-   11:46 RHS: Vortex, centrifuge, and wipe down sides of the tube (Sample 09)
+-   11:47 RHS: Vortex, centrifuge, and wipe down sides of the tube (Sample 10)
+-   11:47 RHS: Vortex, centrifuge, and wipe down sides of the tube (Sample 11)
+-   11:48 RHS: Calibrates Quantus: Blank, Standard, Clicks "Save"
+-   11:49 RHS: Vortex, spins down/ wipe the outside of the tube with a kimwipe, measures fluorescence of the unknown sample. JM: records the final sample concentration of sample CL.
+-   11:49 RHS: Vortex, spins down/ wipe the outside of the tube with a kimwipe, measures fluorescence of the unknown sample. JM: records the final sample concentration of sample 01.
+-   11:49 RHS: Vortex, spins down/ wipe the outside of the tube with a kimwipe, measures fluorescence of the unknown sample. JM: records the final sample concentration of sample 02.
+
+**Quantus Final Concentrations:**
+
+Standard: 102 ng/ul
+
+Blank: 0.0057 ng/ul
+
+Sample CL: 0.0909 ng/ul
+
+Sample 01: 7.1 ng/ul
+
+Sample 02: 2.98 ng/ul
+
+Sample 03:
+
+Sample 04:
+
+Sample 05:
+
+Sample 06:
+
+Sample 07:
+
+Sample 08:
+
+Sample 09:
+
+Sample 10:
+
+Sample 11:
+
+12:17 NM loads Blank (DNAse-free water)
+
+**Nanodrop Final Concentrations:**
+
+12:19 NM Sample CL: 1.8 ng/ul, 260:0.36, A260/280: 1.61, A260/A230: 0.13
+
+12:20 NM Sample 01: 14.3 ng/ul, 260: 0.286, A260/280: 1.71, A260/A230: 1.03
+
+12:21 NM Sample 02: 6.5 ng/ul, 260: 0.130, A260/280: 1.71, A260/A230: 0.66
+
+12:22 NM Sample 03: 5.8 ng/ul, 260: 0.115, A260/280: 1.65, A260/A230: 0.64
+
+12:23 NM Sample 04: 11.3 ng/ul, 260: 0.226, A260/280: 1.86, A260/A230: 1.03
+
+12:24 NM Sample 05: 11.6 ng/ul, 260: 0.232, A260/280: 1.78, A260/A230: 0.91
+
+12:25 NM Sample 06: 29.5 ng/ul, 260: 0.590, A260/280: 1.79, A260/A230: 1.33
+
+12:26 NM Sample 07: 14.5 ng/ul, 260: 0.291, A260/280: 1.72, A260/A230: 1.02
+
+12:27 NM Sample 08: 12.5 ng/ul, 260: 0.249, A260/280: 1.78, A260/A230: 0.96
+
+12:28 NM Sample 09: 7.8 ng/ul, 260: 0.156, A260/280: 1.78, A260/A230: 0.70
+
+12:29 NM Sample 10: 18.9 ng/ul, 260: 0.377, A260/280: 1.77, A260/A230: 1.37
+
+12:30 NM Sample 11: 6.8 ng/ul, 260: 0.137, A260/280: 1.68, A260/A230: 0.70

@@ -83,6 +83,16 @@ kable(Reese_schedule, align = c('l', 'l', 'l'), caption = "<b style='font-size: 
 
 Note: Listed in alphabetical order, not in reading order.
 
+### **Noninvasive genetic sampling of endangered muriqui (Primates, Atelidae): efficiency of fecal DNA extraction.**
+
+**Chaves, P. B., Paes, M. F., Mendes, S. L., Strier, K. B., Louro, I. D., & Fagundes, V. (2006). Noninvasive genetic sampling of endangered muriqui (Primates, Atelidae): efficiency of fecal DNA extraction. *Genetics and Molecular Biology*, 29(4), 750--754.**
+
+**Background:** The genus *Brachyteles* represents the largest neotropical nonhuman primate with two endemic species found in the Brazilian Atlantic Rainforest: *B. hypoxanthus* (northern muriqui) and *B. arachnoides* (southern muriqui). Due to habitat fragmentation and deforestation, muriquis have been classified as endangered since 1982 and critically endangered since 2000. Molecular genetic analyses have been limited by sample availability, but recent advancements allow for DNA extraction from fecal samples.
+
+This study aimed to test the reliability of fecal DNA for PCR applications in muriquis. Fecal samples from 28 individually identified muriquis were collected and processed for DNA extraction. Various factors affecting PCR efficiency, such as DNA quality, quantity, and the influence of bovine serum albumin (BSA), were investigated. PCR amplification targeting a mitochondrial DNA segment was successful in most cases, indicating the potential of fecal DNA for genetic studies. Results showed that DNA quality and quantity significantly influenced PCR efficiency, with higher success rates observed in less degraded and higher quantity DNA samples. However, even degraded samples could yield positive results under optimal conditions. Interestingly, the addition of BSA did not significantly affect amplification efficiency in this study. This study also demonstrated the efficacy of using a cheaper DNA polymerase alternative and optimizing primer concentrations to minimize nonspecific PCR bands. The resulting PCR products were suitable for further analysis using Restriction Fragment Length Polymorphisms.
+
+**Conclusion:** This study provides valuable insights into optimizing PCR reactions using fecal DNA from endangered muriquis, potentially reducing costs and time in genetic studies. The protocol developed may also apply to a wide range of primate and non-primate mammals in future genetic research projects.
+
 ### **Associations Between Nutrition, Gut Microbiome, and Health in A Novel Nonhuman Primate Model**
 
 **Clayton, J.B., Al-Ghalith, G.A., Long, H.T., Tuan, B.V., Cabana, F., Huang, H., Vangay, P., Ward, T., Minh, V.V., Tam, N.A., Dat, N.T., Travis, D.A., Murtaugh, M.P., Covert, H., Glander, K.E., Nadler, T., Toddes, B., Sha, J.C.M., Singer, R., Knights, D., Johnson, T.J. (2018). Associations Between Nutrition, Gut Microbiome, and Health in A Novel Nonhuman Primate Model. *Sci Rep*, 8(1), 11159.**

@@ -750,7 +750,7 @@ c\. Third Wash: Pipette 675 𝜇l of the supernatant to the same *Spin Filter* a
 
 -   21:11 NM discarded the flow through
 
-    ### Protocol Step 17
+### Protocol Step 17
 
 -   **Centrifuge** the *Spin Filter* column a second time at 10,000 g (rcf) for 1 min. <br>
 
@@ -861,23 +861,54 @@ Sample 01: 7.1 ng/ul
 
 Sample 02: 2.98 ng/ul
 
-Sample 03:
+(03/08/2024)
 
-Sample 04:
+-   16:50 RHS/JM cleaned blench w/ bleach, water, ETOH
+-   16:50 RHS/JM cleaned P1000 pipette with bleach, water, ETOH
+-   16:55 RHS made a working solution
+-   16:56 Dye taken out of box
+-   16:57 Dye added to a working solution
+-   16:57 Dye w/ working solution vortexed for 5s
+-   16:57 Dye is placed in the 4C freezer
+-   17:00 JM makes blank
+-   17:01 JM 1x TE buffer adding to 0.5ml PCR tube, add 200ul of the working solution = blank solution (labeled B), vortexed.
+-   17:03 JM added 2ul of DNA standard solution, added 200ul of the working solution = standard solution (labeled S), vortexed.
+-   17:09 RHS prepares sample 03 to be quantified (sample, dye working solution, vortex) and placed back on ice
+-   17:12 JM prepares sample 04 to be quantified (sample, dye working solution, vortex) and placed back on ice
+-   17:15 BR prepares sample 05 to be quantified (sample, dye working solution, vortex) and placed back on ice
+-   17:18 RHS prepares sample 06 to be quantified (sample, dye working solution, vortex) and placed back on ice
+-   17:20 RHS prepares sample 07 to be quantified (sample, dye working solution, vortex) and placed back on ice
+-   17:21 JM prepares sample 08 to be quantified (sample, dye working solution, vortex) and placed back on ice
+-   17:23 JM prepares sample 09 to be quantified (sample, dye working solution, vortex) and placed back on ice
+-   17:25 BR prepares sample 10 to be quantified (sample, dye working solution, vortex) and placed back on ice
+-   17:29 BR prepares sample 11 to be quantified (sample, dye working solution, vortex) and placed back on ice
+-   17:31 RHS: Vortex, spins down/ wipe the outside of the tube with a kimwipe, measures fluorescence of the unknown sample. : records the final sample concentration of sample 03.
+-   17:33 RHS: Vortex, spins down/ wipe the outside of the tube with a kimwipe, measures fluorescence of the unknown sample. : records the final sample concentration of sample 04.
+-   17:34 RHS: Vortex, spins down/ wipe the outside of the tube with a kimwipe, measures fluorescence of the unknown sample. : records the final sample concentration of sample 05.
+-   17:35 RHS: Vortex, spins down/ wipe the outside of the tube with a kimwipe, measures fluorescence of the unknown sample. : records the final sample concentration of sample 06.
+-   17:36 RHS: Vortex, spins down/ wipe the outside of the tube with a kimwipe, measures fluorescence of the unknown sample. : records the final sample concentration of sample 07.
+-   17:37 RHS: Vortex, spins down/ wipe the outside of the tube with a kimwipe, measures fluorescence of the unknown sample. : records the final sample concentration of sample 08.
+-   17:38: Vortex, spins down/ wipe the outside of the tube with a kimwipe, measures fluorescence of the unknown sample. : records the final sample concentration of sample 09.
+-   17:39 RHS: Vortex, spins down/ wipe the outside of the tube with a kimwipe, measures fluorescence of the unknown sample. : records the final sample concentration of sample 10.
+-   17:40 RHS: Vortex, spins down/ wipe the outside of the tube with a kimwipe, measures fluorescence of the unknown sample. : records the final sample concentration of sample 11.
 
-Sample 05:
+Sample 03: 5.2 ng/ul
 
-Sample 06:
+Sample 04: 15 ng/ul
 
-Sample 07:
+Sample 05: 14 ng/ul
 
-Sample 08:
+Sample 06: 21 ng/ul
 
-Sample 09:
+Sample 07: 15 ng/ul
 
-Sample 10:
+Sample 08: 8.3 ng/ul
 
-Sample 11:
+Sample 09: 6.1 ng/ul
+
+Sample 10: 19 ng/ul
+
+Sample 11: 3.97 ng/ul
 
 12:17 NM loads Blank (DNAse-free water)
 

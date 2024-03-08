@@ -322,8 +322,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>           <span class="st">"12:00p-1:00a"</span>, <span class="st">"2:30p-3:20p"</span>, </span>
 <span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>           <span class="st">"9:30a-10:45a"</span>, <span class="st">"11:00a-12:15p"</span>,  </span>
 <span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>           <span class="st">"11:15a-2:00p"</span>, <span class="st">"2:30p-3:20p"</span>),</span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>  <span class="at">Event =</span> <span class="fu">c</span>(<span class="st">"AN902 Class"</span>, <span class="st">"LS211 Class"</span>, <span class="st">"SMAGL Lab Meeting"</span>, <span class="st">"WM Eboard Meeting"</span>,</span>
-<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>            <span class="st">"AR210 Class"</span>, <span class="st">"WS233 Class"</span>, <span class="st">"Meeting w/ Chris"</span>, <span class="st">"WS233 Discussion"</span>, <span class="st">"Rehearsal"</span>,</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>  <span class="at">Event =</span> <span class="fu">c</span>(<span class="st">"Genetic Internship"</span>, <span class="st">"LS211 Class"</span>, <span class="st">"SMAGL Lab Meeting"</span>, <span class="st">"WM Eboard Meeting"</span>,</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>            <span class="st">"AR210 Class"</span>, <span class="st">"WS233 Class"</span>, <span class="st">"Meeting with Chris"</span>, <span class="st">"WS233 Discussion"</span>, <span class="st">"Rehearsal"</span>,</span>
 <span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>            <span class="st">"Meeting"</span>, <span class="st">"LS211 Class"</span>, </span>
 <span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>            <span class="st">"AR210 Class"</span>, <span class="st">"WS233 Class"</span>,  </span>
 <span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>            <span class="st">"AN555 Class"</span>, <span class="st">"LS211 Class"</span>)</span>
@@ -345,7 +345,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <tr class="odd">
 <td style="text-align: left;">Monday</td>
 <td style="text-align: left;">10:00a-12:00p</td>
-<td style="text-align: left;">AN902 Class</td>
+<td style="text-align: left;">Genetic Internship</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Monday</td>
@@ -375,7 +375,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <tr class="odd">
 <td style="text-align: left;">Tuesday</td>
 <td style="text-align: left;">1:30p-2:00p</td>
-<td style="text-align: left;">Meeting w/ Chris</td>
+<td style="text-align: left;">Meeting with Chris</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Tuesday</td>
@@ -420,6 +420,101 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tbody>
 </table>
 </div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create Brooke's schedule data frame</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>Brooke_schedule <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">Day =</span> <span class="fu">c</span>(<span class="st">"Monday"</span>, <span class="st">"Monday"</span>, <span class="st">"Monday"</span>, </span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>          <span class="st">"Tuesday"</span>, <span class="st">"Tuesday"</span>, </span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>          <span class="st">"Wednesday"</span>, <span class="st">"Wednesday"</span>, </span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>          <span class="st">"Thursday"</span>, <span class="st">"Thursday"</span>, </span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>          <span class="st">"Friday"</span>, <span class="st">"Friday"</span>, <span class="st">"Friday"</span>),</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">Time =</span> <span class="fu">c</span>(<span class="st">"10:00a-12:00p"</span>, <span class="st">"12:00p-4:00p"</span>, <span class="st">"4:00p-5:00p"</span>, </span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>           <span class="st">"1:00p-3:00p"</span>, <span class="st">"3:35p-4:25p"</span>, </span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>           <span class="st">"8:00a-10:45a"</span>, <span class="st">"12:20p-1:10p"</span>, </span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>           <span class="st">"10:00a-11:00a"</span>, <span class="st">"1:00p-3:00p"</span>, </span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>           <span class="st">"10:00a-1:30p"</span>, <span class="st">"2:30p-3:20p"</span>, <span class="st">"3:30p-5:00p"</span>),</span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>  <span class="at">Event =</span> <span class="fu">c</span>(<span class="st">"AN902 Class"</span>, <span class="st">"Meetings and Office Hours"</span>, <span class="st">"SMAGL Lab Meeting"</span>, </span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>            <span class="st">"Human Ev and Health Class"</span>, <span class="st">"TF Discussion Section"</span>, </span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>            <span class="st">"AN510 Class"</span>, <span class="st">"Anthro Dept Event of the Week"</span>, </span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>            <span class="st">"Meeting"</span>, <span class="st">"Human Ev and Health Class"</span>, </span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>            <span class="st">"BS 845 Class"</span>, <span class="st">"TF Discussion Section"</span>, <span class="st">"TF Meeting"</span>)</span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a><span class="co"># Print Brooke's Table</span></span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(Brooke_schedule, <span class="at">align =</span> <span class="fu">c</span>(<span class="st">'l'</span>, <span class="st">'l'</span>, <span class="st">'l'</span>), <span class="at">caption =</span> <span class="st">"&lt;b style='font-size: 20px;'&gt;Brooke's Weekly Schedule&lt;/b&gt;"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<table class="table table-sm table-striped small">
+<caption><b style="font-size: 20px;">Brooke’s Weekly Schedule</b></caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Day</th>
+<th style="text-align: left;">Time</th>
+<th style="text-align: left;">Event</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Monday</td>
+<td style="text-align: left;">10:00a-12:00p</td>
+<td style="text-align: left;">AN902 Class</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Monday</td>
+<td style="text-align: left;">12:00p-4:00p</td>
+<td style="text-align: left;">Meetings and Office Hours</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Monday</td>
+<td style="text-align: left;">4:00p-5:00p</td>
+<td style="text-align: left;">SMAGL Lab Meeting</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Tuesday</td>
+<td style="text-align: left;">1:00p-3:00p</td>
+<td style="text-align: left;">Human Ev and Health Class</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Tuesday</td>
+<td style="text-align: left;">3:35p-4:25p</td>
+<td style="text-align: left;">TF Discussion Section</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Wednesday</td>
+<td style="text-align: left;">8:00a-10:45a</td>
+<td style="text-align: left;">AN510 Class</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Wednesday</td>
+<td style="text-align: left;">12:20p-1:10p</td>
+<td style="text-align: left;">Anthro Dept Event of the Week</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Thursday</td>
+<td style="text-align: left;">10:00a-11:00a</td>
+<td style="text-align: left;">Meeting</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Thursday</td>
+<td style="text-align: left;">1:00p-3:00p</td>
+<td style="text-align: left;">Human Ev and Health Class</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Friday</td>
+<td style="text-align: left;">10:00a-1:30p</td>
+<td style="text-align: left;">BS 845 Class</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Friday</td>
+<td style="text-align: left;">2:30p-3:20p</td>
+<td style="text-align: left;">TF Discussion Section</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Friday</td>
+<td style="text-align: left;">3:30p-5:00p</td>
+<td style="text-align: left;">TF Meeting</td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 </section>
 <section id="background" class="level2">
@@ -428,28 +523,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="project-specific-papers" class="level2">
 <h2 class="anchored" data-anchor-id="project-specific-papers">Project Specific Papers</h2>
 <p>Note: Listed in alphabetical order, not in reading order.</p>
-<section id="noninvasive-genetic-sampling-of-endangered-muriqui-primates-atelidae-efficiency-of-fecal-dna-extraction." class="level3">
-<h3 class="anchored" data-anchor-id="noninvasive-genetic-sampling-of-endangered-muriqui-primates-atelidae-efficiency-of-fecal-dna-extraction."><strong>Noninvasive genetic sampling of endangered muriqui (Primates, Atelidae): efficiency of fecal DNA extraction.</strong></h3>
-<p><strong>Chaves, P. B., Paes, M. F., Mendes, S. L., Strier, K. B., Louro, I. D., &amp; Fagundes, V. (2006). Noninvasive genetic sampling of endangered muriqui (Primates, Atelidae): efficiency of fecal DNA extraction.&nbsp;<em>Genetics and Molecular Biology</em>,&nbsp;29(4), 750–754.</strong></p>
-<p><strong>Background:</strong> The genus <em>Brachyteles</em> represents the largest neotropical nonhuman primate with two endemic species found in the Brazilian Atlantic Rainforest: <em>B. hypoxanthus</em> (northern muriqui) and <em>B. arachnoides</em> (southern muriqui). Due to habitat fragmentation and deforestation, muriquis have been classified as endangered since 1982 and critically endangered since 2000. Molecular genetic analyses have been limited by sample availability, but recent advancements allow for DNA extraction from fecal samples.</p>
-<p>This study aimed to test the reliability of fecal DNA for PCR applications in muriquis. Fecal samples from 28 individually identified muriquis were collected and processed for DNA extraction. Various factors affecting PCR efficiency, such as DNA quality, quantity, and the influence of bovine serum albumin (BSA), were investigated. PCR amplification targeting a mitochondrial DNA segment was successful in most cases, indicating the potential of fecal DNA for genetic studies. Results showed that DNA quality and quantity significantly influenced PCR efficiency, with higher success rates observed in less degraded and higher quantity DNA samples. However, even degraded samples could yield positive results under optimal conditions. Interestingly, the addition of BSA did not significantly affect amplification efficiency in this study. This study also demonstrated the efficacy of using a cheaper DNA polymerase alternative and optimizing primer concentrations to minimize nonspecific PCR bands. The resulting PCR products were suitable for further analysis using Restriction Fragment Length Polymorphisms.</p>
-<p><strong>Conclusion:</strong> This study provides valuable insights into optimizing PCR reactions using fecal DNA from endangered muriquis, potentially reducing costs and time in genetic studies. The protocol developed may also apply to a wide range of primate and non-primate mammals in future genetic research projects.</p>
-</section>
-<section id="associations-between-nutrition-gut-microbiome-and-health-in-a-novel-nonhuman-primate-model" class="level3">
-<h3 class="anchored" data-anchor-id="associations-between-nutrition-gut-microbiome-and-health-in-a-novel-nonhuman-primate-model"><strong>Associations Between Nutrition, Gut Microbiome, and Health in A Novel Nonhuman Primate Model</strong></h3>
-<p><strong>Clayton, J.B., Al-Ghalith, G.A., Long, H.T., Tuan, B.V., Cabana, F., Huang, H., Vangay, P., Ward, T., Minh, V.V., Tam, N.A., Dat, N.T., Travis, D.A., Murtaugh, M.P., Covert, H., Glander, K.E., Nadler, T., Toddes, B., Sha, J.C.M., Singer, R., Knights, D., Johnson, T.J. (2018). Associations Between Nutrition, Gut Microbiome, and Health in A Novel Nonhuman Primate Model. <em>Sci Rep</em>, 8(1), 11159.</strong></p>
-<p>This study examines the fecal microbiomes of different populations of red-shanked doucs (<em>Pygathrix nemaeus</em>), a colobine primate species, living under various lifestyle conditions (wild, semi-wild, semi-captive, captive). This study aims to understand how lifestyle factors (diet and environment), influence the gut microbial communities of these primates, and how these microbial changes may relate to their health.</p>
-<p><strong>Background:</strong> The GI tract of primates, including humans, hosts trillions of bacteria that play crucial roles in various aspects of host health and behavior. While there has been considerable research on the human microbiome and microbiome studies in non-primate animals, less attention has been given to nonhuman primates, particularly concerning their lifestyle, diet, and gut microbiomes. The red-shanked douc is of particular interest due to its digestive characteristics, which combine foregut fermentation and hindgut digestion, resembling both humans and ruminant livestock. Additionally, doucs are endangered, and their failure to thrive in captivity, primarily due to severe gastrointestinal disease, presents a challenge.</p>
-<p><strong>Methods:</strong> Fecal samples were collected from doucs across all four populations. Samples were analyzed using DNA extraction, 16S rRNA PCR amplification, and Illumina MiSeq sequencing to characterize the fecal microbiomes.</p>
-<p><strong>Results:</strong></p>
-<p>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Microbiome Diversity Decline: This study found a decline in fecal microbiome diversity from wild to captive environments, with the highest diversity observed in wild doucs and the lowest in captive doucs. Semi-wild and semi-captive doucs showed intermediate levels of diversity.</p>
-<p>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Alpha Diversity: Alpha diversity measures (e.g., Shannon diversity index), revealed that wild doucs had the most even microbiomes compared to semi-wild, semi-captive, and captive doucs.</p>
-<p>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Beta Diversity: Beta diversity analysis showed significant differences in gut microbiome composition between douc populations, indicating that each population had a unique microbiome influenced by their lifestyle.</p>
-<p>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Taxonomic Abundance Analysis: The fecal microbiomes of all douc populations were dominated by the phylum <em>Firmicutes</em>. However, there were differences in the abundance of certain taxa, with <em>Bacteroidetes</em> being more abundant in semi-captive and captive populations. Taxa such as <em>Bacteroides</em> and <em>Prevotella</em> showed a positive correlation with captivity level, while others like <em>Adlercreutzia</em> and <em>Anaerostipes</em> decreased with increasing captivity.</p>
-<p>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Firmicutes to Bacteroidetes Ratio: The ratio of <em>Firmicutes</em> to <em>Bacteroidetes</em> was highest in wild doucs and decreased with increasing captivity, suggesting a relationship between lifestyle and the microbial community’s energy harvest capacity.</p>
-<p>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Functional Analysis: Functional analysis using PICRUSt revealed shifts in microbial functions in captive doucs, with increased protein metabolism and decreased fatty acid metabolism compared to wild doucs. Certain pathways related to antibiotics and xenobiotic degradation were also associated with captivity.</p>
-<p><strong>Conclusion:</strong> This study provides valuable insights into the complex interplay between lifestyle, gut microbial composition, and health in doucs, with potential implications for understanding similar relationships in humans and other animal species.</p>
-</section>
 <section id="the-gut-microbiome-of-nonhuman-primates-lessons-in-ecology-and-evolution" class="level3">
 <h3 class="anchored" data-anchor-id="the-gut-microbiome-of-nonhuman-primates-lessons-in-ecology-and-evolution"><strong>The gut microbiome of nonhuman primates: Lessons in ecology and evolution</strong></h3>
 <p><strong>Clayton, J.B., Gomez, A., Amato, K., Knights, D., Travis, D.A., Blekhman, R., Knight, R., Leigh, S., Stumpf, R., Wolf, T., Glander, K.E., Cabana, F., Johnson, T.J. (2018). The gut microbiome of nonhuman primates: Lessons in ecology and evolution. <em>Am J Primatol</em>, 80(6).</strong></p>
@@ -467,15 +540,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h3 class="anchored" data-anchor-id="comparison-of-dna-extraction-methods-for-16s-rrna-gene-sequencing-in-the-analysis-of-the-human-gut-microbiome"><strong>Comparison&nbsp;of&nbsp;DNA extraction methods&nbsp;for&nbsp;16S rRNA gene sequencing&nbsp;in the&nbsp;analysis&nbsp;of the&nbsp;human gut microbiome</strong></h3>
 <p><strong>Elie, C., Perret, M., Hage, H., Sentausa, E., Hesketh, A., Louis, K., Fritah-Lafont, A., Leissner, P., Vachon, C., Rostaing, H., Reynier, F., Gervasi, G., &amp; Saliou, A. (2023). Comparison of DNA extraction methods for 16S rRNA gene sequencing in the analysis of the human gut microbiome.&nbsp;<em>Scientific Reports</em>,&nbsp;13(1), 10279.</strong></p>
 <p>The reliability of metagenomics methods crucial for studying these microbial communities is often compromised by errors at various workflow stages, including sample collection, DNA extraction, library preparation, sequencing, and data analysis. To overcome these challenges and facilitate the integration of metagenomics methods into clinical practice, standardized procedures are urgently needed. Although some standardized protocols exist, the field of nucleic acid preparation is rapidly evolving, requiring regular protocol benchmarking. The choice of DNA extraction method significantly impacts bacterial community detection, making it a pivotal step in metagenomic studies.</p>
-<p>This study evaluated four commercially available DNA extraction methods using 16S rRNA amplicon sequencing. These protocols underwent assessment based on both wet-lab and dry-lab criteria, including DNA yield, fragment size, purity, observed microbial diversity, accuracy in extracting Gram-positive bacteria, protocol repeatability, and overall performance. This study encompassed fecal samples from healthy volunteers, patients with Clostridium difficile infection (CDI), and a defined mixture of bacterial species (mock community) for accuracy assessment.</p>
+<p>This study evaluated four commercially available DNA extraction methods using 16S rRNA amplicon sequencing. These protocols underwent assessment based on both wet-lab and dry-lab criteria, including DNA yield, fragment size, purity, observed microbial diversity, accuracy in extracting Gram-positive bacteria, protocol repeatability, and overall performance. The study encompassed fecal samples from healthy volunteers, patients with Clostridium difficile infection (CDI), and a defined mixture of bacterial species (mock community) for accuracy assessment.</p>
 <p>Results revealed significant variability in DNA extraction yield, fragment size, and purity among the tested protocols. Notably, the use of an upstream stool preprocessing device (SPD) improved DNA yield for some protocols and enhanced DNA purity for most. Additionally, combining SPD with DNA extraction protocols increased microbial diversity, particularly in recovering Gram-positive bacteria, as indicated by the <em>Firmicutes</em>/<em>Bacteroidetes</em> ratio. The accuracy of extraction protocols was further validated using a mock community, with improved predictions observed when SPD was employed. Protocol repeatability was also enhanced with SPD integration.</p>
-<p>Overall, this study identified the DNeasy PowerLyzer PowerSoil kit (S-DQ) as the top-performing protocol, demonstrating superior performance across multiple criteria. While other protocols showed similarly good results for specific criteria, S-DQ consistently stood out as the most effective. These findings underscore the critical role of protocol selection in metagenomic studies and highlight the potential benefits of incorporating standardized preprocessing methods, such as SPD, to enhance DNA extraction efficiency and microbial community analysis.</p>
+<p>Overall, the study identified the DNeasy PowerLyzer PowerSoil kit (S-DQ) as the top-performing protocol, demonstrating superior performance across multiple criteria. While other protocols showed similarly good results for specific criteria, S-DQ consistently stood out as the most effective. These findings underscore the critical role of protocol selection in metagenomic studies and highlight the potential benefits of incorporating standardized preprocessing methods, such as SPD, to enhance DNA extraction efficiency and microbial community analysis.</p>
 </section>
 <section id="improving-the-standards-for-gut-microbiome-analysis-of-fecal-samples-insights-from-the-field-biology-of-japanese-macaques-on-yakushima-island" class="level3">
 <h3 class="anchored" data-anchor-id="improving-the-standards-for-gut-microbiome-analysis-of-fecal-samples-insights-from-the-field-biology-of-japanese-macaques-on-yakushima-island"><strong>Improving&nbsp;the&nbsp;standards&nbsp;for&nbsp;gut microbiome analysis&nbsp;of&nbsp;fecal samples:&nbsp;insights&nbsp;from the&nbsp;field biology&nbsp;of&nbsp;Japanese macaques&nbsp;on&nbsp;Yakushima Island</strong></h3>
 <p><strong>Hayakawa, T., Sawada, A., Tanabe, A. S., Fukuda, S., Kishida, T., Kurihara, Y., Matsushima, K., Liu, J., Akomo-Okoue, E.-F., Gravena, W., Kashima, M., Suzuki, M., Kadowaki, K., Suzumura, T., Inoue, E., Sugiura, H., Hanya, G., &amp; Agata, K. (2018). Improving the standards for gut microbiome analysis of fecal samples: insights from the field biology of Japanese macaques on Yakushima Island.&nbsp;<em>Primates</em>,&nbsp;59(5), 423-436.</strong></p>
-<p>This study explores optimizing the analysis of gut microbiomes in wild Japanese macaques (<em>Macaca fuscata</em>) and captive ones, recognizing the significant impact of gut microbiome adaptation on various aspects of host biology. Employing next-generation sequencing based on the bacterial 16S ribosomal RNA (rRNA) gene, the research aimed to address the challenges posed by traditional fecal microbiome analysis techniques, which may not be directly applicable to wild nonhuman primates due to sample degradation, bacterial growth, and lack of laboratory facilities in remote habitats.</p>
-<p>To tackle these challenges, this study explored various methods of sample storage, including freezing, stabilization solutions like RNAlater, and lysis buffer, to preserve fecal DNA effectively. By collecting fecal samples from both captive and wild Japanese macaques, this study compared different storage methods’ effectiveness in preserving fecal DNA. DNA extraction, purification, library preparation, and amplicon sequencing were conducted following established protocols, with operational taxonomic unit (OTU) picking and taxonomic identification characterizing the gut microbiome composition.</p>
+<p>The study explores optimizing the analysis of gut microbiomes in wild Japanese macaques (<em>Macaca fuscata</em>) and captive ones, recognizing the significant impact of gut microbiome adaptation on various aspects of host biology. Employing next-generation sequencing based on the bacterial 16S ribosomal RNA (rRNA) gene, the research aimed to address the challenges posed by traditional fecal microbiome analysis techniques, which may not be directly applicable to wild nonhuman primates due to sample degradation, bacterial growth, and lack of laboratory facilities in remote habitats.</p>
+<p>To tackle these challenges, the study explored various methods of sample storage, including freezing, stabilization solutions like RNAlater, and lysis buffer, to preserve fecal DNA effectively. By collecting fecal samples from both captive and wild Japanese macaques, the study compared different storage methods’ effectiveness in preserving fecal DNA. DNA extraction, purification, library preparation, and amplicon sequencing were conducted following established protocols, with operational taxonomic unit (OTU) picking and taxonomic identification characterizing the gut microbiome composition.</p>
 <p><strong>Results:</strong></p>
 <p>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <em>Experiment 1</em>: Evaluated the effects of various sample storage and DNA extraction methods on captive Japanese macaque fecal samples, revealing some differences in OTU numbers and alpha diversity between storage methods but overall consistency in bacterial composition.</p>
 <p>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <em>Experiment 2</em>: Extended these findings to wild Japanese macaque fecal samples, observing slight variations across different storage methods but consistent microbiome profiles overall.</p>
@@ -495,12 +568,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="stool-sampling-and-dna-isolation-kits-affect-dna-quality-and-bacterial-composition-following-16s-rrna-gene-sequencing-using-miseq-illumina-platform" class="level3">
 <h3 class="anchored" data-anchor-id="stool-sampling-and-dna-isolation-kits-affect-dna-quality-and-bacterial-composition-following-16s-rrna-gene-sequencing-using-miseq-illumina-platform"><strong>Stool sampling&nbsp;and&nbsp;DNA isolation kits affect DNA quality&nbsp;and&nbsp;bacterial composition following 16S rRNA gene sequencing using MiSeq Illumina platform</strong></h3>
-<p><strong>Videnska, P., Smerkova, K., Zwinsova, B., Popovici, V., Micenkova, L., Sedlar, K., &amp; Budinska, E. (2019). Stool sampling and DNA isolation kits affect DNA quality and bacterial composition following 16S rRNA gene sequencing using MiSeq Illumina platform.&nbsp;<em>Sci Rep</em>,&nbsp;9(1), 13837.</strong></p>
+<p><strong>Videnska, P., Smerkova, K., Zwinsova, B., Popovici, V., Micenkova, L., Sedlar, K., &amp; Budinska, E. (2019). Stool sampling and DNA isolation kits affect DNA quality and bacterial composition following 16S rRNA gene sequencing using MiSeq Illumina platform.&nbsp;<em>Scientific Reports</em>,&nbsp;9(1), 13837.</strong></p>
 <p>Large cohort studies are essential for comprehensively understanding the microbiome’s role, but they encounter obstacles related to sampling procedures and methodological variability. User-friendly sampling protocols are crucial for participant compliance, while methodological differences across studies can hinder cross-study comparisons.</p>
 <p>To address these challenges, this study systematically assessed the effects of sampling and DNA isolation kits on bacterial DNA quality, diversity, and composition while considering user acceptance. Sixteen volunteers used three different sampling kits: stool container, flocked swabs, and cotton swabs. DNA was extracted using two isolation kits: PowerLyzer PowerSoil DNA Isolation Kit (PS) and QIAamp DNA Stool Mini Kit (QS).</p>
 <p>The stool container emerged as the most acceptable sampling option, while the QS kit yielded significantly higher DNA yields compared to the PS kit. However, the PS kit produced DNA of better integrity. The addition of a bead-beating step to the QS protocol did not improve DNA integrity, suggesting other factors at play.</p>
-<p>The presence of PCR inhibitors persisted in DNA samples after isolation with both kits, with stool container samples exhibiting lower proportions, indicating potential advantages for certain applications. Bacterial diversity analysis revealed that the PS kit yielded a higher number of observed OTUs, particularly when combined with the stool container sampling kit. The final bacterial composition was more influenced by the DNA isolation kit than the sampling kit, with the PS kit showing a preference for Gram-positive bacteria. This study underscores the importance of considering batch effects arising from the choice of isolation and sampling kits when comparing results between studies.</p>
-<p>This study highlights the significant effects of DNA isolation and sampling kits on DNA quality and bacterial composition, emphasizing the need for standardized methodologies and careful consideration of batch effects in microbiome research.</p>
+<p>Presence of PCR inhibitors persisted in DNA samples after isolation with both kits, with stool container samples exhibiting lower proportions, indicating potential advantages for certain applications. Bacterial diversity analysis revealed that the PS kit yielded a higher number of observed OTUs, particularly when combined with the stool container sampling kit.</p>
+<p>Final bacterial composition was more influenced by the DNA isolation kit than the sampling kit, with the PS kit showing a preference for Gram-positive bacteria. This study underscores the importance of considering batch effects arising from the choice of isolation and sampling kits when comparing results between studies.</p>
+<p>This study highlights significant effects of DNA isolation and sampling kits on DNA quality and bacterial composition, emphasizing the need for standardized methodologies and careful consideration of batch effects in microbiome research.</p>
 </section>
 </section>
 <section id="extraction-protocol" class="level2">
@@ -579,7 +653,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Transfer up to 750 𝜇l of supernatant to a clean <em>2 ml Collection Tube</em>. Once again, be careful to avoid the pellet! <br></li>
 </ol>
 <ul>
-<li>Note: The pellet at this point contains non-DNA organic and inorganic material including humic acid, cell debris and proteins. For best DNA yields and quality, avoid transferring any of the pellet. <br></li>
+<li>Note: The pellet at this point contains non-DNA organic and inorganic material including humic acid, cell debris and proteins. For best DNA yields and quality, avoid transferring any of the pellet. <br><br>
+</li>
 </ul>
 <ol start="14" type="1">
 <li>Add 1.2 ml of <em>Solution C4</em> to the supernatant and <strong>vortex</strong> for 5 s. Shake <em>Solution C4</em> by hand to mix prior to adding. Also, this will fill the <em>Collection Tube</em> to the brim, so be prepared. <br></li>
@@ -643,13 +718,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="extraction-done-28feb2024">Extraction Done 28Feb2024</h2>
 <ul>
 <li>Group members present: JM, BR, NM</li>
-<li>Documented by NM, JM, BR</li>
+<li>Documented by NM</li>
 </ul>
-<section id="lab-preparation-at-1350" class="level3">
-<h3 class="anchored" data-anchor-id="lab-preparation-at-1350">Lab Preparation at 13:50</h3>
+<section id="prep-at-1350" class="level3">
+<h3 class="anchored" data-anchor-id="prep-at-1350">Prep at 13:50</h3>
 <ul>
 <li>500 mL bleach spray (with DI water) prepared by BR</li>
-<li>Heat block turned on by JM</li>
+<li>Heat block turned on</li>
 <li>Centrifuge cleaned by JM</li>
 <li>Bleach water alcohol the BSC by BR and JM</li>
 <li>Made sure there were enough tubes (NM)</li>
@@ -658,10 +733,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ul>
 </section>
 <section id="sample-reconciliation-at-1540" class="level3">
-<h3 class="anchored" data-anchor-id="sample-reconciliation-at-1540">Sample Reconciliation at 15:40</h3>
+<h3 class="anchored" data-anchor-id="sample-reconciliation-at-1540">Sample reconciliation at 15:40</h3>
 <ul>
-<li>Chris entered the original sample labels into the protocol table. Samples placed on ice.</li>
-<li>JM and BR thawed the samples in hand and vortexed them. All samples were thawed as of 16:05. NM labeled the first collection tubes. JM double checked that the tubes were lined up in order.</li>
+<li>Chris entering the original sample labels into the protocol table. Samples are on ice</li>
+<li>Jess and Brooke thawed the samples in hand and vortexed them. All samples were thawed as of 16:05. Nicole labeled the first collection tubes. Jess double checked that the tubes were lined up in order.</li>
 </ul>
 </section>
 <section id="reminders" class="level3">
@@ -671,8 +746,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Work from clean to dirty</li>
 <li>Do not swing dirty pipettes over tubes</li>
 <li>Hold sample tube cap in your hand and do not touch inside of cap</li>
-<li>Close solution bottles in between samples</li>
-<li>Do not put anything down without putting the cap back</li>
+<li>close solution bottles in between samples</li>
+<li>do not put anything down without putting the cap back</li>
 <li>Put caps on kimwipes if setting them down</li>
 <li>Write sample name on side of the tube before bead beater step</li>
 </ul>
@@ -682,23 +757,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ul>
 <li><p>Add 0.25 g of fecal matter to the <em>PowerBead Tubes</em></p>
 <ul>
-<li>16:18 JM and Chris added 250 ul of water to the control Powerbead Tube.</li>
-<li>16:20 JM added 250 ul of sample 01 to the 01 Powerbead Tube.</li>
+<li>16:18 JM and Chris added 250 ul of water to the control Powerbead Tube</li>
+<li>16:20 JM added 250 ul of sample 01 to the 01 Powerbead Tube</li>
 <li>16:31 Rearranged the BSC for the direction of dirty to clean right to left.</li>
 <li>16:33 For sample 02, it was coming up chunky. Discarded tip. Tip missed discard. Clean up initiated.</li>
-<li>16:36 Cleaned a razor blade with bleach in the BSC and Chris trimmed a pipette tip.</li>
-<li>16:38 Chris added 250 ul of sample 02 to the 02 powerbead tube using the trimmed pipette tip.</li>
-<li>16:42 JM added ~250 ul sample 03 to the 03 powerbead tube.</li>
-<li>Voyt-18-017 (sample MB03) full volume was not drawn in, so possibly less starting volume than the other samples.</li>
-<li>16:44 Sample 04 was chunky. Discarded tip. Will now trim all tips.</li>
-<li>16:45 Cleaned razor blade with bleach and trimmed tip. JM added 250 ul of sample 04 to powerbead tube *Samples are being returned to ice after being aliquoted.</li>
-<li>16:47 Blade cleaned w/ bleach, trimmed tip, JM added 250 ul of sample 05 to the 05 powerbead tube. Sample 05 is the one that looks a little red (potentially blood).</li>
-<li>16:48 Blade cleaned w/ bleach, trimmed tip, JM added 250 ul of sample 06 to the 06 powerbead tube.</li>
-<li>16:49 Blade cleaned w/ bleach, trimmed tip, JM added 250 ul of sample 07 to the 07 powerbead tube.</li>
-<li>16:51 Blade cleaned w/ bleach, trimmed tip, JM added 250 ul of sample 08 to the 08 powerbead tube.</li>
-<li>16:52 Blade cleaned w/ bleach, trimmed tip, JM added 250 ul of sample 09 to the 09 powerbead tube.</li>
+<li>16:36 cleaned a razor blade with bleach in the BSC and Chris trimmed a pipette tip</li>
+<li>16:38 Chris added 250 ul of sample 02 to the 02 powerbead tube using the trimmed pipette tip</li>
+<li>16:42 Jess added ~250 ul sample 03 to the 03 powerbead tube</li>
+<li>Voyt-18-017 (sample MB03) full volume was not drawn in so less starting volume than the other samples</li>
+<li>16:44 Sample 04 was chunky. discarded tip. Will now trim all tips</li>
+<li>16:45 cleaned razor blade with bleach and trimmed tip. Jess added 250 ul of sample 04 to powerbead tube *Samples are being returned to ice after being aliquoted.</li>
+<li>16:47 Blade cleaned w/bleach, trimmed tip, JM added 250 ul of sample 05 to the 05 powerbead tube. Sample 05 is the one that looks a little red</li>
+<li>16:48 Blade cleaned w/bleach, trimmed tip, JM added 250 ul of sample 06 to the 06 powerbead tube.</li>
+<li>16:49 Blade cleaned w/bleach, trimmed tip, JM added 250 ul of sample 07 to the 07 powerbead tube.</li>
+<li>16:51 Blade cleaned w/bleach, trimmed tip, JM added 250 ul of sample 08 to the 08 powerbead tube.</li>
+<li>16:52 Blade cleaned w/bleach, trimmed tip, JM added 250 ul of sample 09 to the 09 powerbead tube.</li>
 <li>16:53 Blade cleaned w/bleach, trimmed tip, JM added 250 ul of sample 10 to the 10 powerbead tube.</li>
-<li>16:54 Blade cleaned w/ bleach, trimmed tip, JM added 250 ul of sample 11 to the 11 powerbead tube.</li>
+<li>16:54 Blade cleaned w/bleach, trimmed tip, JM added 250 ul of sample 11 to the 11 powerbead tube.</li>
 </ul></li>
 <li><p>Original samples went back into the bottom shelf of the -20 freezer at 16:50. They were at room temperature from 16:05 to 16:50.</p></li>
 </ul>
@@ -789,7 +864,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ul>
 <li><p>Transfer supernatant (~400-500 𝜇l) to clean <em>2 ml Collection Tube</em> (you may still have chunks of poo at this point in the supernatant). <br></p>
 <ul>
-<li><p>Using a pipette set to 500 ul</p></li>
+<li><p>Using a pipet set to 500 ul</p></li>
 <li><p>18:26 NM transferred supernatant from CL (400 + 100 pipet)</p></li>
 <li><p>18:27 NM transferred supernatant from 01</p></li>
 <li><p>18:29 NM transferred supernatant from 02</p></li>
@@ -817,13 +892,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>18:43 JM added 250 ul solution C2 to the sample 2 and BR vortexed for 5 sec</li>
 <li>18:44 JM added 250 ul solution C2 to the sample 3 and BR vortexed for 5 sec</li>
 <li>18:44 JM added 250 ul solution C2 to the sample 4 and BR vortexed for 5 sec</li>
-<li>18:44 JM added 250 ul solution C2 to sample 5 and BR vortexed for 5 sec *JM noticed that the 1000 ul pipette was taking up a bubble each time and the white stem part was detaching from the base; NM had also noticed that it was getting increasingly more difficult to dispose of tips. JM switched to the smaller pipette which only goes up to 200 ul pipette. She is switching it between 200 and 50 ul for each sample.</li>
-<li>18:49 JM added 250 ul solution C2 to sample 6 and BR vortexed for 5 sec *JM could not remember if she added 50 ul to sample 7, we put it aside and will use a pipette from the PCR station to measure if there is 750 ul in there. We decided to use the 1000ul pipette from the PCR station which had been sterilized earlier with the other materials. While this is not standard, we feel that these extenuating circumstances called for it, and making do with the smaller pipette was introducing unnecessary errors.</li>
-<li>18:52 JM added 250 ul solution C2 to sample 8 and BR vortexed for 5 sec</li>
-<li>18:52 JM added 250 ul solution C2 to sample 9 and BR vortexed for 5 sec</li>
-<li>18:53 JM added 250 ul solution C2 to sample 10 and BR vortexed for 5 sec</li>
-<li>18:53 JM added 250 ul solution C2 to sample 11 and BR vortexed for 5 sec *JM measured sample 7 and found that there was less than 750 ul so she will add the remaining 50ul</li>
-<li>18:55 JM added 50 ul solution C2 to sample 7 and BR vortexed for 5 sec *Put into 4 degrees celsius fridge at 18:56 and pulled at 19:56</li>
+<li>18:44 JM added 250 ul solution C2 to the sample 5 and BR vortexed for 5 sec *JM noticed that the 1000 ul pipette was taking up a bubble each time and the white stem part was detaching from the base; NM had also noticed that it was getting increasingly more difficult to dispose of tips. JM switched to the smaller pipette which only goes up to 200 ul pipette. She is switching it between 200 and 50 ul each sample.</li>
+<li>18:49 JM added 250 ul solution C2 to the sample 6 and BR vortexed for 5 sec *JM could not remember if she added 50 ul to sample 7, we put it aside and will use a pippetter from the PCR station to measure if there is 750 ul in there. We decided to use the 1000ul pippetter from the PCR station which had been sterilized earlier with the other materials. While this is not standard, we feel that these extenuating circumstances called for it and making do with the smaller pippetter was introducing unnecessary error.</li>
+<li>18:52 JM added 250 ul solution C2 to the sample 8 and BR vortexed for 5 sec</li>
+<li>18:52 JM added 250 ul solution C2 to the sample 9 and BR vortexed for 5 sec</li>
+<li>18:53 JM added 250 ul solution C2 to the sample 10 and BR vortexed for 5 sec</li>
+<li>18:53 JM added 250 ul solution C2 to the sample 11 and BR vortexed for 5 sec *JM measured sample 7 and found that there was less than 750 ul so she will add remaining 50ul</li>
+<li>18:55 JM added 50 ul solution C2 to the sample 7 and BR vortexed for 5 sec *Put into 4 degrees celcius fridge at 18:56 and pulled at 19:56</li>
 </ul></li>
 </ul>
 </section>
@@ -862,19 +937,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><p>Note: <em>Solution C3</em> has Inhibitor Removal Technology (IRT) and is a second reagent to precipitate additional non-DNA organic and inorganic material including humic acid, cell debris and proteins. It is important to remove contaminating organic and inorganic matter that may reduce DNA purity and inhibit downstream DNA applications. <br></p>
 <ul>
 <li>19:19 BR added 100</li>
-<li>19:21 BR dropped sample CL on the bench, possible leakage</li>
-<li>19:21 BR transferred 200 ul of Solution C3 to sample CL into a clean 2 ml collection tube</li>
-<li>19:21 BR transferred 200 ul of Solution C3 to sample 01 into a clean 2 ml collection tube</li>
-<li>19:22 BR transferred 200 ul of Solution C3 to sample 02 into a clean 2 ml collection tube</li>
-<li>19:23 BR transferred 200 ul of Solution C3 to sample 03 into a clean 2 ml collection tube</li>
-<li>19:23 BR transferred 200 ul of Solution C3 to sample 04 into a clean 2 ml collection tube</li>
-<li>19:24 BR transferred 200 ul of Solution C3 to sample 05 into a clean 2 ml collection tube</li>
-<li>19:24 BR transferred 200 ul of Solution C3 to sample 06 into a clean 2 ml collection tube</li>
-<li>19:24 BR transferred 200 ul of Solution C3 to sample 07 into a clean 2 ml collection tube</li>
-<li>19:25 BR transferred 200 ul of Solution C3 to sample 08into a clean 2 ml collection tube</li>
-<li>19:25 BR transferred 200 ul of Solution C3 to sample 09 into a clean 2 ml collection tube</li>
-<li>19:26 BR transferred 200 ul of Solution C3 to sample 10 into a clean 2 ml collection tube</li>
-<li>19:26 BR transferred 200 ul of Solution C3 to sample 11 into a clean 2 ml collection tube *Started incubation at 4ºC 19:26 for 10 minutes. Pulled at 19:36.</li>
+<li>19:21 BR dropped sample CL on bench, possible leakage</li>
+<li>19:21 BR transferred 200 ul of Solution C3 to sample CL a clean 2 ml collection tube</li>
+<li>19:21 BR transferred 200 ul of Solution C3 to sample 01 a clean 2 ml collection tube</li>
+<li>19:22 BR transferred 200 ul of Solution C3 to sample 02 a clean 2 ml collection tube</li>
+<li>19:23 BR transferred 200 ul of Solution C3 to sample 03 a clean 2 ml collection tube</li>
+<li>19:23 BR transferred 200 ul of Solution C3 to sample 04 a clean 2 ml collection tube</li>
+<li>19:24 BR transferred 200 ul of Solution C3 to sample 05 a clean 2 ml collection tube</li>
+<li>19:24 BR transferred 200 ul of Solution C3 to sample 06 a clean 2 ml collection tube</li>
+<li>19:24 BR transferred 200 ul of Solution C3 to sample 07 a clean 2 ml collection tube</li>
+<li>19:25 BR transferred 200 ul of Solution C3 to sample 08 a clean 2 ml collection tube</li>
+<li>19:25 BR transferred 200 ul of Solution C3 to sample 09 a clean 2 ml collection tube</li>
+<li>19:26 BR transferred 200 ul of Solution C3 to sample 10 a clean 2 ml collection tube</li>
+<li>19:26 BR transferred 200 ul of Solution C3 to sample 11 a clean 2 ml collection tube *Started incubation at 4ºC 19:26 for 10 minutes. Pulled at 19:36.</li>
 </ul></li>
 </ul>
 </section>
@@ -956,7 +1031,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><p>20:26 BR pipetted 675 ul of the sample 10 supernatant to the 10 spin filter</p></li>
 <li><p>20:27 BR pipetted 675 ul of the sample 11 supernatant to the 11 spin filter</p></li>
 <li><p>20:28 JM centrifued the samples for 1 minute at 10,000 g</p></li>
-<li><p>BR discarded flow through. We created a new liquid waste container beaker and labeled it “2/28/2024 JM/NM/BR Gut Microbiome Waste Container Do Not Mix with Bleach”</p></li>
+<li><p>BR discarded flow through. We created a new liquid waste container beaker and labeled it “2/28/2024 JM NM BR Gut Microbiome Waste Container Do Not Mix with Bleach”</p></li>
 </ul>
 <p>b. Second Wash: Pipette 675 𝜇l of the supernatant to the same <em>Spin Filter</em> and <strong>centrifuge</strong> at 10,000 g (rcf) for 1 min. Discard the liquid flow through. <br></p>
 <ul>
@@ -999,20 +1074,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ul>
 <li><p>Add 500 𝜇l of <em>Solution C5</em> to the filter and <strong>centrifuge</strong> at 10,000 g (rcf) for 30 s. Discard the liquid flow through. <br></p></li>
 <li><p>Note: <em>Solution C5</em> is an ethanol-based wash solution used to further clean the DNA that is bound to the silica filter membrane in the <em>Spin Filter</em>. This wash solution removes residual salt, humic acid, and other contaminants while allowing the DNA to stay bound to the silica membrane. <br></p></li>
-<li><p>21:05 JM added 500 ul of C5 to sample CL</p></li>
-<li><p>21:05 JM added 500 ul of C5 to sample 01</p></li>
-<li><p>21:06 JM added 500 ul of C5 to sample 02</p></li>
-<li><p>21:06 JM added 500 ul of C5 to sample 03</p></li>
-<li><p>21:06 JM added 500 ul of C5 to sample 04</p></li>
-<li><p>21:06 JM added 500 ul of C5 to sample 05</p></li>
-<li><p>21:06 JM added 500 ul of C5 to sample 06</p></li>
-<li><p>21:07 JM added 500 ul of C5 to sample 07</p></li>
-<li><p>21:07 JM added 500 ul of C5 to sample 09</p></li>
-<li><p>21:08 JM added 500 ul of C5 to sample 10</p></li>
-<li><p>21:08 JM added 500 ul of C5 to sample 11</p></li>
+<li><p>21:05 JM added 500 ul of C5 to CL</p></li>
+<li><p>21:05 JM added 500 ul of C5 to 01</p></li>
+<li><p>21:06 JM added 500 ul of C5 to 02</p></li>
+<li><p>21:06 JM added 500 ul of C5 to 03</p></li>
+<li><p>21:06 JM added 500 ul of C5 to 04</p></li>
+<li><p>21:06 JM added 500 ul of C5 to 05</p></li>
+<li><p>21:06 JM added 500 ul of C5 to 06</p></li>
+<li><p>21:07 JM added 500 ul of C5 to 07</p></li>
+<li><p>21:07 JM added 500 ul of C5 to 09</p></li>
+<li><p>21:07 JM added 500 ul of C5 to 09</p></li>
+<li><p>21:08 JM added 500 ul of C5 to 10</p></li>
+<li><p>21:08 JM added 500 ul of C5 to 11</p></li>
 <li><p>21:09 NM centrifuged all the samples at 10,000 g (rcf) for 30 seconds</p></li>
-<li><p>21:11 NM discarded the flow through</p>
-<h3 id="protocol-step-17" class="anchored">Protocol Step 17</h3></li>
+<li><p>21:11 NM discarded the flow through</p></li>
+<li><div>
+<h3 id="protocol-step-17" class="anchored">Protocol Step 17</h3>
+</div></li>
 <li><p><strong>Centrifuge</strong> the <em>Spin Filter</em> column a second time at 10,000 g (rcf) for 1 min. <br></p></li>
 <li><p>Note: This flow-through fraction is non-DNA organic and inorganic waste removed from the silica <em>Spin Filter</em> membrane by the ethanol wash solution. The second spin removes residual <em>Solution C5</em> (ethanol wash solution). It is critical to remove all traces of wash solution because the ethanol in <em>Solution C5</em> can interfere with many downstream DNA applications, such as PCR and gel electrophoresis. <br></p></li>
 <li><p>21:14 NM re-emptied the flow through just to be sure</p></li>
@@ -1023,9 +1101,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h3 class="anchored" data-anchor-id="protocol-step-18">Protocol Step 18</h3>
 <ul>
 <li>Place <em>Spin Filter</em> into a clean and labeled <em>2 ml Collection Tube</em> (this is the tube going into the freezer, so make sure it’s labeled appropriately). Avoid splashing any <em>Solution C5</em> onto the <em>Spin Filter</em>.<br></li>
-<li>This is the final tube so it should be <strong>a low-bind tube</strong></li>
-<li>21:28 NM transferred the spin filters to low-bind tubes.</li>
-<li>21:25 JM performed a test of centrifuging a spin filter with water in a low-bind tube to see if it would leak. It did not leak.</li>
+<li>This is the final tube so it should be <strong>a low bind tube</strong></li>
+<li>21:28 NM transferred the spin filters to low bind tubes.</li>
+<li>21:25 JM performed a test of centrifuging a spin filter with water in a low bind tube to see if it would leak. It did not leak.</li>
 </ul>
 </section>
 <section id="protocol-step-19" class="level3">
@@ -1035,18 +1113,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><p>Note: Placing <em>Solution C6</em> in the center of the small white membrane will make sure the entire membrane is wet. This will result in a more efficient and complete release of the DNA from the Spin Filter membrane. As <em>Solution C6</em> passes through the silica membrane, DNA that was bound in the presence of high salt is selectively released by <em>Solution C6</em> (which is actually 10 mM Tris), which lacks salt. <br></p></li>
 <li><p>21:26 Began incubating Solution C6 at 65C on the heat block.</p></li>
 <li><p>21:31 Finished incubating Solution C6</p></li>
-<li><p>21:32 JM added 100 ul of Solution C6 to the filter membrane of sample 08</p></li>
-<li><p>21:33 JM added 100 ul of Solution C6 to the filter membrane of sample 07</p></li>
-<li><p>21:33 JM added 100 ul of Solution C6 to the filter membrane of sample 06</p></li>
-<li><p>21:33 JM added 100 ul of Solution C6 to the filter membrane of sample 05</p></li>
-<li><p>21:33 JM added 100 ul of Solution C6 to the filter membrane of sample 04</p></li>
-<li><p>21:33 JM added 100 ul of Solution C6 to the filter membrane of sample 03</p></li>
-<li><p>21:34 JM added 100 ul of Solution C6 to the filter membrane of sample 02</p></li>
-<li><p>21:34 JM added 100 ul of Solution C6 to the filter membrane of sample 10</p></li>
-<li><p>21:34 JM added 100 ul of Solution C6 to the filter membrane of sample CL</p></li>
-<li><p>21:34 JM added 100 ul of Solution C6 to the filter membrane of sample 09</p></li>
-<li><p>21:34 JM added 100 ul of Solution C6 to the filter membrane of sample 01</p></li>
-<li><p>21:35 JM added 100 ul of Solution C6 to the filter membrane of sample 11</p></li>
+<li><p>21:32 JM added 100 ul of Solution C6 to the filter membrane of 08</p></li>
+<li><p>21:33 JM added 100 ul of Solution C6 to the filter membrane of 07</p></li>
+<li><p>21:33 JM added 100 ul of Solution C6 to the filter membrane of 06</p></li>
+<li><p>21:33 JM added 100 ul of Solution C6 to the filter membrane of 05</p></li>
+<li><p>21:33 JM added 100 ul of Solution C6 to the filter membrane of 04</p></li>
+<li><p>21:33 JM added 100 ul of Solution C6 to the filter membrane of 03</p></li>
+<li><p>21:34 JM added 100 ul of Solution C6 to the filter membrane of 02</p></li>
+<li><p>21:34 JM added 100 ul of Solution C6 to the filter membrane of 10</p></li>
+<li><p>21:34 JM added 100 ul of Solution C6 to the filter membrane of CL</p></li>
+<li><p>21:34 JM added 100 ul of Solution C6 to the filter membrane of 09</p></li>
+<li><p>21:34 JM added 100 ul of Solution C6 to the filter membrane of 01</p></li>
+<li><p>21:35 JM added 100 ul of Solution C6 to the filter membrane of 11</p></li>
 </ul>
 </section>
 <section id="protocol-step-20" class="level3">
@@ -1065,70 +1143,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h3 class="anchored" data-anchor-id="protocol-step-21">Protocol Step 21</h3>
 <ul>
 <li>Measure the dsDNA concentration using the <strong>Quantus</strong>, and sample A260/A280 using the <strong>NanoDrop</strong> <strong>[Quantitation Workstation]</strong>. Record these details in your lab notebook. <br> Place the properly labeled DNA elutions in the <strong>-20ºC freezer</strong>. Be sure to record where in the freezer you’ve placed them, and that they are all together in a single, clearly labeled container/rack.</li>
-<li>11:05 NM/JM cleaned blench w/ bleach, water, ETOH</li>
-<li>11:10 NM/RHS cleaned P1000 pipette with bleach, water, ETOH</li>
-<li>11:11 RHS made a working solution</li>
-<li>11:20 RHS opened a new 20ul tip box</li>
-<li>11:20 Dye taken out of box</li>
-<li>11:21 Dye added to a working solution</li>
-<li>11:22 Dye w/ working solution vortexed for 5s</li>
-<li>11:22 Dye is placed in the 4C freezer</li>
-<li>11:23 RHS makes blank</li>
-<li>11:25 RHS notices we do not have enough 0.5ml PCR tubes (only 4)- CS autoclaves roughly 50.</li>
-<li>11:28 RHS 1x TE buffer adding to 0.5ml PCR tube, add 200ul of the working solution = blank solution (labeled B), vortexed.</li>
-<li>11:29 RHS added 2ul of DNA standard solution, added 200ul of the working solution = standard solution (labeled S), vortexed.</li>
-<li>11:33 RHS prepares sample CL to be quantified (sample, dye working solution, vortex) and placed back on ice</li>
-<li>11:35 RHS prepares sample 01 to be quantified (sample, dye working solution, vortex) and placed back on ice</li>
-<li>11:36 RHS prepares sample 02 to be quantified (sample, dye working solution, vortex) and placed back on ice</li>
-<li>11:37 RHS Samples sitting at room temperature for 5 minutes</li>
-<li>11:42 RHS Ends time samples should be sitting at room temperature</li>
-<li>11:43 RHS Selects the dsDNA protocol</li>
-<li>11:43 RHS: Vortex, centrifuge, and wipe down sides of the tube (Sample CL)</li>
-<li>11:44 RHS: Vortex, centrifuge, and wipe down sides of the tube (Sample 01)</li>
-<li>11:44 RHS: Vortex, centrifuge, and wipe down sides of the tube (Sample 02)</li>
-<li>11:44 RHS: Vortex, centrifuge, and wipe down sides of the tube (Sample 03)</li>
-<li>11:45 RHS: Vortex, centrifuge, and wipe down sides of the tube (Sample 04)</li>
-<li>11:45 RHS: Vortex, centrifuge, and wipe down sides of the tube (Sample 05)</li>
-<li>11:45 RHS: Vortex, centrifuge, and wipe down sides of the tube (Sample 06)</li>
-<li>11:46 RHS: Vortex, centrifuge, and wipe down sides of the tube (Sample 07)</li>
-<li>11:46 RHS: Vortex, centrifuge, and wipe down sides of the tube (Sample 08)</li>
-<li>11:46 RHS: Vortex, centrifuge, and wipe down sides of the tube (Sample 09)</li>
-<li>11:47 RHS: Vortex, centrifuge, and wipe down sides of the tube (Sample 10)</li>
-<li>11:47 RHS: Vortex, centrifuge, and wipe down sides of the tube (Sample 11)</li>
-<li>11:48 RHS: Calibrates Quantus: Blank, Standard, Clicks “Save”</li>
-<li>11:49 RHS: Vortex, spins down/ wipe the outside of the tube with a kimwipe, measures fluorescence of the unknown sample. JM: records the final sample concentration of sample CL.</li>
-<li>11:49 RHS: Vortex, spins down/ wipe the outside of the tube with a kimwipe, measures fluorescence of the unknown sample. JM: records the final sample concentration of sample 01.</li>
-<li>11:49 RHS: Vortex, spins down/ wipe the outside of the tube with a kimwipe, measures fluorescence of the unknown sample. JM: records the final sample concentration of sample 02.</li>
 </ul>
-<p><strong>Quantus Final Concentrations:</strong></p>
-<p>Standard: 102 ng/ul</p>
-<p>Blank: 0.0057 ng/ul</p>
-<p>Sample CL: 0.0909 ng/ul</p>
-<p>Sample 01: 7.1 ng/ul</p>
-<p>Sample 02: 2.98 ng/ul</p>
-<p>Sample 03:</p>
-<p>Sample 04:</p>
-<p>Sample 05:</p>
-<p>Sample 06:</p>
-<p>Sample 07:</p>
-<p>Sample 08:</p>
-<p>Sample 09:</p>
-<p>Sample 10:</p>
-<p>Sample 11:</p>
-<p>12:17 NM loads Blank (DNAse-free water)</p>
-<p><strong>Nanodrop Final Concentrations:</strong></p>
-<p>12:19 NM Sample CL: 1.8 ng/ul, 260:0.36, A260/280: 1.61, A260/A230: 0.13</p>
-<p>12:20 NM Sample 01: 14.3 ng/ul, 260: 0.286, A260/280: 1.71, A260/A230: 1.03</p>
-<p>12:21 NM Sample 02: 6.5 ng/ul, 260: 0.130, A260/280: 1.71, A260/A230: 0.66</p>
-<p>12:22 NM Sample 03: 5.8 ng/ul, 260: 0.115, A260/280: 1.65, A260/A230: 0.64</p>
-<p>12:23 NM Sample 04: 11.3 ng/ul, 260: 0.226, A260/280: 1.86, A260/A230: 1.03</p>
-<p>12:24 NM Sample 05: 11.6 ng/ul, 260: 0.232, A260/280: 1.78, A260/A230: 0.91</p>
-<p>12:25 NM Sample 06: 29.5 ng/ul, 260: 0.590, A260/280: 1.79, A260/A230: 1.33</p>
-<p>12:26 NM Sample 07: 14.5 ng/ul, 260: 0.291, A260/280: 1.72, A260/A230: 1.02</p>
-<p>12:27 NM Sample 08: 12.5 ng/ul, 260: 0.249, A260/280: 1.78, A260/A230: 0.96</p>
-<p>12:28 NM Sample 09: 7.8 ng/ul, 260: 0.156, A260/280: 1.78, A260/A230: 0.70</p>
-<p>12:29 NM Sample 10: 18.9 ng/ul, 260: 0.377, A260/280: 1.77, A260/A230: 1.37</p>
-<p>12:30 NM Sample 11: 6.8 ng/ul, 260: 0.137, A260/280: 1.68, A260/A230: 0.70</p>
 </section>
 </section>
 

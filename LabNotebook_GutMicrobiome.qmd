@@ -328,7 +328,7 @@ c.  Third Wash: Pipette 675 𝜇l of the supernatant to the same *Spin Filter* a
 
 NOTES: Please record by each step, above, who has done which step and when. Check with Prof. Schmitt prior to beginning regarding which samples should be extracted. ALWAYS make sure that there are sufficient reagents and equipment before beginning a protocol!
 
-Sample ID Label Final concentration (ng/uL) A260/A280 value Notes
+Sample ID Label: Final concentration (ng/uL) A260/A280 value
 
 ## Extraction Done 28Feb2024
 
@@ -338,12 +338,12 @@ Sample ID Label Final concentration (ng/uL) A260/A280 value Notes
 ### Lab Preparation at 13:50
 
 -   500 mL bleach spray (with DI water) prepared by BR
--   Heat block turned on by JM
+-   Heat block was turned on by JM
 -   Centrifuge cleaned by JM
 -   Bleach water alcohol the BSC by BR and JM
 -   Made sure there were enough tubes (NM)
 -   UV light tubes and tips in PCR hood started at 14:25
--   UV light pipettes in PCR hood started 14:40 (JM)
+-   UV light pipettes in PCR hood started at 14:40 (JM)
 
 ### Sample Reconciliation at 15:40
 
@@ -368,13 +368,13 @@ Sample ID Label Final concentration (ng/uL) A260/A280 value Notes
     -   16:18 JM and Chris added 250 ul of water to the control Powerbead Tube.
     -   16:20 JM added 250 ul of sample 01 to the 01 Powerbead Tube.
     -   16:31 Rearranged the BSC for the direction of dirty to clean right to left.
-    -   16:33 For sample 02, it was coming up chunky. Discarded tip. Tip missed discard. Clean up initiated.
+    -   16:33 For sample 02, it was coming up chunky. Discarded tip. Tip missed discard. Clean-up initiated.
     -   16:36 Cleaned a razor blade with bleach in the BSC and Chris trimmed a pipette tip.
     -   16:38 Chris added 250 ul of sample 02 to the 02 powerbead tube using the trimmed pipette tip.
     -   16:42 JM added \~250 ul sample 03 to the 03 powerbead tube.
     -   Voyt-18-017 (sample MB03) full volume was not drawn in, so possibly less starting volume than the other samples.
     -   16:44 Sample 04 was chunky. Discarded tip. Will now trim all tips.
-    -   16:45 Cleaned razor blade with bleach and trimmed tip. JM added 250 ul of sample 04 to powerbead tube \*Samples are being returned to ice after being aliquoted.
+    -   16:45 Cleaned razor blade with bleach and trimmed tip. JM added 250 ul of sample 04 to powerbead tube \*Samples were placed on ice after being aliquoted.
     -   16:47 Blade cleaned w/ bleach, trimmed tip, JM added 250 ul of sample 05 to the 05 powerbead tube. Sample 05 is the one that looks a little red (potentially blood).
     -   16:48 Blade cleaned w/ bleach, trimmed tip, JM added 250 ul of sample 06 to the 06 powerbead tube.
     -   16:49 Blade cleaned w/ bleach, trimmed tip, JM added 250 ul of sample 07 to the 07 powerbead tube.
@@ -389,7 +389,7 @@ Sample ID Label Final concentration (ng/uL) A260/A280 value Notes
 
 -   Add 750 𝜇l of *PowerBead Solution* to the *PowerBead Tubes*.
 
-    -   17:00 put Solution C1 on the heat block to warm up in anticipaton of step 3
+    -   17:00 put Solution C1 on the heat block to warm up in anticipation of step 3
     -   17:00 JM put 750 ul of powerbead solution into sample CL
     -   17:01 JM put 750 ul of powerbead solution into sample 01
     -   17:02 JM put 750 ul of powerbead solution into sample 02
@@ -410,7 +410,7 @@ Sample ID Label Final concentration (ng/uL) A260/A280 value Notes
 
 -   Note: Vortexing mixes the components in the *PowerBead Tube* and begins to disperse the sample.
 
-    -   17:11 BR put 60 ul of Solution C1 into sample CL and vortexed
+    -   17:11 BR put 60 ul of Solution C1 into sample CL and JM vortexed
     -   17:13 BR put 60 ul of Solution C1 into sample 01 and JM vortexed
     -   17:14 BR put 60 ul of Solution C1 into sample 02 and JM vortexed
     -   17:15 BR put 60 ul of Solution C1 into sample 03 and JM vortexed
@@ -420,7 +420,7 @@ Sample ID Label Final concentration (ng/uL) A260/A280 value Notes
     -   17:19 BR put 60 ul of Solution C1 into sample 07 and JM vortexed
     -   17:20 BR put 60 ul of Solution C1 into sample 08 and JM vortexed
     -   17:21 BR put 60 ul of Solution C1 into sample 09 and JM vortexed
-    -   BR cleaned surface with bleach, water, alcohol after sample 09 cap made contact with surface
+    -   BR cleaned surface with bleach, water, alcohol after sample 09 cap made contact with the surface
     -   17:22 BR put 60 ul of Solution C1 into sample 10 and JM vortexed
     -   17:23 BR put 60 ul of Solution C1 into sample 11 and JM vortexed
 
@@ -430,18 +430,18 @@ Sample ID Label Final concentration (ng/uL) A260/A280 value Notes
 
 -   This may be done by adding the **Extraction Workstation** dry block to the **BSC**; if you choose to do this, please clean it and add it to the BSC while preparing the BSC prior to beginning the protocol\].
 
-    -   17:26 tubes added to heat block and set a 30 minute timer
-    -   17:56 tubes pulled from hear block
+    -   17:26 JM added tubes to the heat block and set a 30 minute timer
+    -   17:56 JM pulled tubes from the heat block
 
 ### Protocol Step 5
 
 -   Secure tubes in the **Bead Beater** **\[BSC\]** and run for 5 minutes at 2000 RPM, pause for 30 seconds, and run again for 5 minutes at 2000 RPM. You may run these in evenly divided batches to initiate the subsequent centrifuge step with balanced samples.
 
-    -   17:58 All samples start in the Bead Beater
+    -   17:58 All samples run on the Bead Beater for 5 minutes (JM)
     -   18:03 All samples rest for 30 seconds
-    -   18:04 All samples start in the Bead Beater
+    -   18:04 All samples run on the Bead Beater for 5 minutes (NM)
 
-    \*Sample 08 looked odd because it had more foam and less liquid than the other samples.
+    \*18:09 NM noted that sample 08 looked odd- it had more foam and less liquid than the other samples.
 
 ### Protocol Step 6
 
@@ -457,7 +457,7 @@ Sample ID Label Final concentration (ng/uL) A260/A280 value Notes
 
 ### Protocol Step 7
 
--   Transfer supernatant (\~400-500 𝜇l) to clean *2 ml Collection Tube* (you may still have chunks of poo at this point in the supernatant). <br>
+-   Transfer supernatant (\~400-500 𝜇l) to clean *2 ml Collection Tube* (you may still have chunks of poop at this point in the supernatant). <br>
 
     -   Using a pipette set to 500 ul
 
@@ -485,7 +485,7 @@ Sample ID Label Final concentration (ng/uL) A260/A280 value Notes
 
     -   18:38 NM transferred supernatant from 11
 
-    -   11 looked like the pellet was a little broken up before supernatant was taken up
+    -   NM noted that sample 11 looked like the pellet was a little broken up before supernatant was taken up
 
 ### Protocol Step 8
 
@@ -494,23 +494,36 @@ Sample ID Label Final concentration (ng/uL) A260/A280 value Notes
 -   Note: *Solution C2* has Inhibitor Removal Technology (IRT). It contains a reagent that can precipitate non-DNA organic and inorganic material, including humic substances, cell debris and proteins. It is important to remove contaminating organic and inorganic matter that may reduce DNA purity and inhibit downstream DNA applications. <br>
 
     -   18:42 JM added 250 ul solution C2 to the sample CL and BR vortexed for 5 sec
+
     -   18:43 JM added 250 ul solution C2 to the sample 1 and BR vortexed for 5 sec
+
     -   18:43 JM added 250 ul solution C2 to the sample 2 and BR vortexed for 5 sec
+
     -   18:44 JM added 250 ul solution C2 to the sample 3 and BR vortexed for 5 sec
+
     -   18:44 JM added 250 ul solution C2 to the sample 4 and BR vortexed for 5 sec
+
     -   18:44 JM added 250 ul solution C2 to sample 5 and BR vortexed for 5 sec \*JM noticed that the 1000 ul pipette was taking up a bubble each time and the white stem part was detaching from the base; NM had also noticed that it was getting increasingly more difficult to dispose of tips. JM switched to the smaller pipette which only goes up to 200 ul pipette. She is switching it between 200 and 50 ul for each sample.
-    -   18:49 JM added 250 ul solution C2 to sample 6 and BR vortexed for 5 sec \*JM could not remember if she added 50 ul to sample 7, we put it aside and will use a pipette from the PCR station to measure if there is 750 ul in there. We decided to use the 1000ul pipette from the PCR station which had been sterilized earlier with the other materials. While this is not standard, we feel that these extenuating circumstances called for it, and making do with the smaller pipette was introducing unnecessary errors.
+
+    -   18:49 JM added 250 ul solution C2 to sample 6 and BR vortexed for 5 sec \*JM could not remember if she added 50 ul to sample 7, NM/JM/BR put it aside and used the pipette from the PCR station to measure if there is 750 ul in the tube. NM/JM/BR decided to use the 1000ul pipette from the PCR station, which had been sterilized earlier with the other materials. While this is not standard, NM/JM/BR agreed that these extenuating circumstances called for it, and making do with the smaller pipette was introducing unnecessary errors.
+
     -   18:52 JM added 250 ul solution C2 to sample 8 and BR vortexed for 5 sec
+
     -   18:52 JM added 250 ul solution C2 to sample 9 and BR vortexed for 5 sec
+
     -   18:53 JM added 250 ul solution C2 to sample 10 and BR vortexed for 5 sec
-    -   18:53 JM added 250 ul solution C2 to sample 11 and BR vortexed for 5 sec \*JM measured sample 7 and found that there was less than 750 ul so she will add the remaining 50ul
-    -   18:55 JM added 50 ul solution C2 to sample 7 and BR vortexed for 5 sec \*Put into 4 degrees celsius fridge at 18:56 and pulled at 19:56
+
+    -   18:53 JM added 250 ul solution C2 to sample 11 and BR vortexed for 5 sec \*JM measured sample 7 and found that there was less than 750 ul, so she will add the remaining 50 ul
+
+    -   18:55 JM added 50 ul solution C2 to sample 7 and BR vortexed for 5 sec
+
+        \*Put into 4 degrees celsius fridge at 18:56 and pulled at 19:56
 
 ### Protocol Step 9
 
 -   **Centrifuge** the tubes at 10,000 g (rcf) for 1 min. <br>
 
-    \*19:10 NM centrifuged the samples and checked pellets were formed. Sample 8 had a very small pellet compared to the rest.
+    \*19:10 NM centrifuged the samples and checked pellets were formed. NM noted that sample 8 had a very small pellet compared to the rest.
 
 ### Protocol Step 10
 
@@ -537,26 +550,39 @@ Sample ID Label Final concentration (ng/uL) A260/A280 value Notes
 
 -   Note: *Solution C3* has Inhibitor Removal Technology (IRT) and is a second reagent to precipitate additional non-DNA organic and inorganic material including humic acid, cell debris and proteins. It is important to remove contaminating organic and inorganic matter that may reduce DNA purity and inhibit downstream DNA applications. <br>
 
-    -   19:19 BR added 100
     -   19:21 BR dropped sample CL on the bench, possible leakage
+
     -   19:21 BR transferred 200 ul of Solution C3 to sample CL into a clean 2 ml collection tube
+
     -   19:21 BR transferred 200 ul of Solution C3 to sample 01 into a clean 2 ml collection tube
+
     -   19:22 BR transferred 200 ul of Solution C3 to sample 02 into a clean 2 ml collection tube
+
     -   19:23 BR transferred 200 ul of Solution C3 to sample 03 into a clean 2 ml collection tube
+
     -   19:23 BR transferred 200 ul of Solution C3 to sample 04 into a clean 2 ml collection tube
+
     -   19:24 BR transferred 200 ul of Solution C3 to sample 05 into a clean 2 ml collection tube
+
     -   19:24 BR transferred 200 ul of Solution C3 to sample 06 into a clean 2 ml collection tube
+
     -   19:24 BR transferred 200 ul of Solution C3 to sample 07 into a clean 2 ml collection tube
+
     -   19:25 BR transferred 200 ul of Solution C3 to sample 08into a clean 2 ml collection tube
+
     -   19:25 BR transferred 200 ul of Solution C3 to sample 09 into a clean 2 ml collection tube
+
     -   19:26 BR transferred 200 ul of Solution C3 to sample 10 into a clean 2 ml collection tube
-    -   19:26 BR transferred 200 ul of Solution C3 to sample 11 into a clean 2 ml collection tube \*Started incubation at 4ºC 19:26 for 10 minutes. Pulled at 19:36.
+
+    -   19:26 BR transferred 200 ul of Solution C3 to sample 11 into a clean 2 ml collection tube
+
+        \*Started incubation at 4ºC 19:26 for 10 minutes. Pulled at 19:36.
 
 ### Protocol Step 12
 
 -   **Centrifuge** the tubes at 10,000 g (rcf) for 1 min. <br>
 
-    -   19:39 All samples centrifuged for 1 min
+    -   19:39 All samples centrifuged for 1 min (JM)
 
 ### Protocol Step 13
 
@@ -590,29 +616,29 @@ Sample ID Label Final concentration (ng/uL) A260/A280 value Notes
 
 -   Note: *Solution C4* is a high-concentration salt solution. Since DNA binds tightly to silica at high salt concentrations, this will adjust the DNA solution salt concentrations to allow binding of DNA, but not non-DNA organic and inorganic material that may still be present at low levels, to the *Spin Filter*. <br>
 
--   20:00 NM added 1200 ul of solution C4 to sample CL. JM vortexed.
+-   20:00 NM added 1200 ul of solution C4 to sample CL. JM vortexed sample.
 
--   20:01 NM added 1200 ul of solution C4 to sample 01. JM vortexed.
+-   20:01 NM added 1200 ul of solution C4 to sample 01. JM vortexed sample.
 
--   20:03 NM added 1200 ul of solution C4 to sample 02. BR vortexed.
+-   20:03 NM added 1200 ul of solution C4 to sample 02. BR vortexed sample.
 
--   20:05 NM added 1200 ul of solution C4 to sample 03. BR vortexed.
+-   20:05 NM added 1200 ul of solution C4 to sample 03. BR vortexed sample.
 
--   20:06 NM added 1200 ul of solution C4 to sample 04. BR vortexed.
+-   20:06 NM added 1200 ul of solution C4 to sample 04. BR vortexed sample.
 
--   20:07 NM added 1200 ul of solution C4 to sample 05. BR vortexed.
+-   20:07 NM added 1200 ul of solution C4 to sample 05. BR vortexed sample.
 
--   20:07 NM added 1200 ul of solution C4 to sample 06. BR vortexed.
+-   20:07 NM added 1200 ul of solution C4 to sample 06. BR vortexed sample.
 
--   20:08 NM added 1200 ul of solution C4 to sample 07. BR vortexed.
+-   20:08 NM added 1200 ul of solution C4 to sample 07. BR vortexed sample.
 
--   20:09 NM added 1200 ul of solution C4 to sample 08. BR vortexed.
+-   20:09 NM added 1200 ul of solution C4 to sample 08. BR vortexed sample.
 
--   20:10 NM added 1200 ul of solution C4 to sample 09. BR vortexed.
+-   20:10 NM added 1200 ul of solution C4 to sample 09. BR vortexed sample.
 
--   20:11 NM added 1200 ul of solution C4 to sample 10. BR vortexed.
+-   20:11 NM added 1200 ul of solution C4 to sample 10. BR vortexed sample.
 
--   20:12 NM added 1200 ul of solution C4 to sample 11. BR vortexed.
+-   20:12 NM added 1200 ul of solution C4 to sample 11. BR vortexed sample.
 
 ### Protocol Step 15
 
@@ -636,13 +662,11 @@ a\. First wash: Pipette 675 𝜇l of the supernatant to a *Spin Filter* and **ce
 
 -   20:22 BR pipetted 675 ul of the sample 05 supernatant to the 05 spin filter
 
-<!-- -->
-
 -   20:23 BR pipetted 675 ul of the sample 06 supernatant to the 06 spin filter
 
 -   20:23 BR pipetted 675 ul of the sample 07 supernatant to the 07 spin filter
 
--   Finished one full box of 1000 ul filter tip pipette tips
+-   Finished one full box of 1000 ul filter tip pipette tips- JM retrieved a new one
 
 -   20:23 BR pipetted 675 ul of the sample 08 supernatant to the 08 spin filter
 
@@ -652,9 +676,9 @@ a\. First wash: Pipette 675 𝜇l of the supernatant to a *Spin Filter* and **ce
 
 -   20:27 BR pipetted 675 ul of the sample 11 supernatant to the 11 spin filter
 
--   20:28 JM centrifued the samples for 1 minute at 10,000 g
+-   20:28 JM centrifuged the samples for 1 minute at 10,000 g
 
--   BR discarded flow through. We created a new liquid waste container beaker and labeled it "2/28/2024 JM/NM/BR Gut Microbiome Waste Container Do Not Mix with Bleach"
+-   BR discarded flow through. JM created a new liquid waste container beaker and labeled it "2/28/2024 JM/NM/BR Gut Microbiome Waste Container Do Not Mix with Bleach"
 
 b\. Second Wash: Pipette 675 𝜇l of the supernatant to the same *Spin Filter* and **centrifuge** at 10,000 g (rcf) for 1 min. Discard the liquid flow through. <br>
 
@@ -682,7 +706,7 @@ b\. Second Wash: Pipette 675 𝜇l of the supernatant to the same *Spin Filter* 
 
 -   20:45 BR pipetted 675 ul of the sample 11 supernatant to the 11 spin filter
 
--   20:47 JM Centrifuged samples for 1 min
+-   20:47 JM centrifuged samples for 1 min
 
 -   20:48 BR discarded the flow through of samples from second wash
 
@@ -712,7 +736,7 @@ c\. Third Wash: Pipette 675 𝜇l of the supernatant to the same *Spin Filter* a
 
 -   20:59 BR pipetted the remainder of sample 11 supernatant to the 11 spin filter
 
--   21:01 JM Centrifuged samples for 1 min
+-   21:01 JM centrifuged samples for 1 min
 
 -   21:03 JM discarded the flow through of samples from third wash
 
@@ -805,8 +829,8 @@ c\. Third Wash: Pipette 675 𝜇l of the supernatant to the same *Spin Filter* a
 
 -   Incubate samples at room temperature for 25 minutes. Then **centrifuge** at 10,000 g (rcf) for 30 sec, and finally discard the spin filter. <br> Your DNA is ready for use! <br>
 -   21:36 Began incubating all samples at room temperature.
--   22:05 We centrifuged the samples in a batch of 9 and a batch of 3 for a minute each. (We mistakenly set the centrifuge to 1 minute instead of 30 seconds.)
--   22:13 JM placed the extracted samples on the bottom shelf of the -20C freezer
+-   22:05 NM centrifuged the samples in a batch of 9 and a batch of 3 for a minute each. (NM mistakenly set the centrifuge to 1 minute instead of 30 seconds).
+-   22:13 JM placed the extracted samples on the bottom shelf of the -20C freezer.
 -   22:13 NM discarded the used tubes in the biohazard waste.
 -   22:14 JM parafilmed the top of the waste beaker and left it in the BSC.
 -   22:20 We wiped down the BSC, extraction station, and centrifuge. We turned off the BSC and centrifuge.
@@ -814,42 +838,35 @@ c\. Third Wash: Pipette 675 𝜇l of the supernatant to the same *Spin Filter* a
 ### Protocol Step 21
 
 -   Measure the dsDNA concentration using the **Quantus**, and sample A260/A280 using the **NanoDrop** **\[Quantitation Workstation\]**. Record these details in your lab notebook. <br> Place the properly labeled DNA elutions in the **-20ºC freezer**. Be sure to record where in the freezer you've placed them, and that they are all together in a single, clearly labeled container/rack.
+
+Group members present: JM, RHS, NM
+
+Documented by JM
+
 -   11:05 NM/JM cleaned blench w/ bleach, water, ETOH
 -   11:10 NM/RHS cleaned P1000 pipette with bleach, water, ETOH
 -   11:11 RHS made a working solution
 -   11:20 RHS opened a new 20ul tip box
--   11:20 Dye taken out of box
--   11:21 Dye added to a working solution
--   11:22 Dye w/ working solution vortexed for 5s
--   11:22 Dye is placed in the 4C freezer
--   11:23 RHS makes blank
--   11:25 RHS notices we do not have enough 0.5ml PCR tubes (only 4)- CS autoclaves roughly 50.
--   11:28 RHS 1x TE buffer adding to 0.5ml PCR tube, add 200ul of the working solution = blank solution (labeled B), vortexed.
--   11:29 RHS added 2ul of DNA standard solution, added 200ul of the working solution = standard solution (labeled S), vortexed.
+-   11:20 dye taken out of box
+-   11:21 dye added to a working solution
+-   11:22 dye w/ working solution vortexed for 5s
+-   11:22 dye is placed in the 4C freezer
+-   11:23 RHS makes the blank
+-   11:25 RHS notices we do not have enough 0.5ml PCR tubes (only 4)- CS autoclaves roughly 50 PCR tubes.
+-   11:28 RHS 1x TE buffer adding to 0.5ml PCR tube, add 200ul of the working solution = blank solution (labeled B), vortexed
+-   11:29 RHS added 2ul of DNA standard solution, added 200ul of the working solution = standard solution (labeled S), vortexed
 -   11:33 RHS prepares sample CL to be quantified (sample, dye working solution, vortex) and placed back on ice
 -   11:35 RHS prepares sample 01 to be quantified (sample, dye working solution, vortex) and placed back on ice
 -   11:36 RHS prepares sample 02 to be quantified (sample, dye working solution, vortex) and placed back on ice
--   11:37 RHS Samples sitting at room temperature for 5 minutes
--   11:42 RHS Ends time samples should be sitting at room temperature
--   11:43 RHS Selects the dsDNA protocol
--   11:43 RHS: Vortex, centrifuge, and wipe down sides of the tube (Sample CL)
--   11:44 RHS: Vortex, centrifuge, and wipe down sides of the tube (Sample 01)
--   11:44 RHS: Vortex, centrifuge, and wipe down sides of the tube (Sample 02)
--   11:44 RHS: Vortex, centrifuge, and wipe down sides of the tube (Sample 03)
--   11:45 RHS: Vortex, centrifuge, and wipe down sides of the tube (Sample 04)
--   11:45 RHS: Vortex, centrifuge, and wipe down sides of the tube (Sample 05)
--   11:45 RHS: Vortex, centrifuge, and wipe down sides of the tube (Sample 06)
--   11:46 RHS: Vortex, centrifuge, and wipe down sides of the tube (Sample 07)
--   11:46 RHS: Vortex, centrifuge, and wipe down sides of the tube (Sample 08)
--   11:46 RHS: Vortex, centrifuge, and wipe down sides of the tube (Sample 09)
--   11:47 RHS: Vortex, centrifuge, and wipe down sides of the tube (Sample 10)
--   11:47 RHS: Vortex, centrifuge, and wipe down sides of the tube (Sample 11)
--   11:48 RHS: Calibrates Quantus: Blank, Standard, Clicks "Save"
--   11:49 RHS: Vortex, spins down/ wipe the outside of the tube with a kimwipe, measures fluorescence of the unknown sample. JM: records the final sample concentration of sample CL.
--   11:49 RHS: Vortex, spins down/ wipe the outside of the tube with a kimwipe, measures fluorescence of the unknown sample. JM: records the final sample concentration of sample 01.
--   11:49 RHS: Vortex, spins down/ wipe the outside of the tube with a kimwipe, measures fluorescence of the unknown sample. JM: records the final sample concentration of sample 02.
+-   11:37 RHS samples sitting at room temperature for 5 minutes
+-   11:42 RHS ends time samples should be sitting at room temperature
+-   11:43 RHS selects the dsDNA protocol
+-   11:48 RHS calibrates Quantus: Blank, Standard, Clicks "Save"
+-   11:49 RHS vortex, spins down/ wipe the outside of the tube with a kimwipe, measures fluorescence of the unknown sample. JM records the final sample concentration of sample CL.
+-   11:49 RHS vortex, spins down/ wipe the outside of the tube with a kimwipe, measures fluorescence of the unknown sample. JM records the final sample concentration of sample 01.
+-   11:50 RHS vortex, spins down/ wipe the outside of the tube with a kimwipe, measures fluorescence of the unknown sample. JM records the final sample concentration of sample 02.
 
-**Quantus Final Concentrations:**
+**Quantus Final Concentrations (03/04/2024):**
 
 Standard: 102 ng/ul
 
@@ -861,36 +878,81 @@ Sample 01: 7.1 ng/ul
 
 Sample 02: 2.98 ng/ul
 
-(03/08/2024)
+**Quantus Final Concentrations (03/08/2024):**
+
+Group members present: JM, BR, RHS
+
+Documented by JM/BR
 
 -   16:50 RHS/JM cleaned blench w/ bleach, water, ETOH
+
 -   16:50 RHS/JM cleaned P1000 pipette with bleach, water, ETOH
+
 -   16:55 RHS made a working solution
+
 -   16:56 Dye taken out of box
+
 -   16:57 Dye added to a working solution
+
 -   16:57 Dye w/ working solution vortexed for 5s
+
 -   16:57 Dye is placed in the 4C freezer
--   17:00 JM makes blank
+
+-   17:00 JM makes the blank
+
 -   17:01 JM 1x TE buffer adding to 0.5ml PCR tube, add 200ul of the working solution = blank solution (labeled B), vortexed.
+
 -   17:03 JM added 2ul of DNA standard solution, added 200ul of the working solution = standard solution (labeled S), vortexed.
+
 -   17:09 RHS prepares sample 03 to be quantified (sample, dye working solution, vortex) and placed back on ice
+
 -   17:12 JM prepares sample 04 to be quantified (sample, dye working solution, vortex) and placed back on ice
+
 -   17:15 BR prepares sample 05 to be quantified (sample, dye working solution, vortex) and placed back on ice
+
 -   17:18 RHS prepares sample 06 to be quantified (sample, dye working solution, vortex) and placed back on ice
+
 -   17:20 RHS prepares sample 07 to be quantified (sample, dye working solution, vortex) and placed back on ice
+
 -   17:21 JM prepares sample 08 to be quantified (sample, dye working solution, vortex) and placed back on ice
+
 -   17:23 JM prepares sample 09 to be quantified (sample, dye working solution, vortex) and placed back on ice
+
 -   17:25 BR prepares sample 10 to be quantified (sample, dye working solution, vortex) and placed back on ice
+
 -   17:29 BR prepares sample 11 to be quantified (sample, dye working solution, vortex) and placed back on ice
--   17:31 RHS: Vortex, spins down/ wipe the outside of the tube with a kimwipe, measures fluorescence of the unknown sample. : records the final sample concentration of sample 03.
--   17:33 RHS: Vortex, spins down/ wipe the outside of the tube with a kimwipe, measures fluorescence of the unknown sample. : records the final sample concentration of sample 04.
--   17:34 RHS: Vortex, spins down/ wipe the outside of the tube with a kimwipe, measures fluorescence of the unknown sample. : records the final sample concentration of sample 05.
--   17:35 RHS: Vortex, spins down/ wipe the outside of the tube with a kimwipe, measures fluorescence of the unknown sample. : records the final sample concentration of sample 06.
--   17:36 RHS: Vortex, spins down/ wipe the outside of the tube with a kimwipe, measures fluorescence of the unknown sample. : records the final sample concentration of sample 07.
--   17:37 RHS: Vortex, spins down/ wipe the outside of the tube with a kimwipe, measures fluorescence of the unknown sample. : records the final sample concentration of sample 08.
--   17:38: Vortex, spins down/ wipe the outside of the tube with a kimwipe, measures fluorescence of the unknown sample. : records the final sample concentration of sample 09.
--   17:39 RHS: Vortex, spins down/ wipe the outside of the tube with a kimwipe, measures fluorescence of the unknown sample. : records the final sample concentration of sample 10.
--   17:40 RHS: Vortex, spins down/ wipe the outside of the tube with a kimwipe, measures fluorescence of the unknown sample. : records the final sample concentration of sample 11.
+
+-   17:30 JM samples sitting at room temperature for 5 minutes
+
+-   17:35 JM ends time samples should be sitting at room temperature
+
+-   17:35 RHS selects the dsDNA protocol
+
+-   17:36 RHS calibrates Quantus: Blank, Standard, Clicks "Save"
+
+-   17:36 RHS vortex, spins down/ wipe the outside of the tube with a kimwipe, measures fluorescence of the unknown sample. JM records the final sample concentration of sample 03.
+
+-   17:37 RHS vortex, spins down/ wipe the outside of the tube with a kimwipe, measures fluorescence of the unknown sample. JM records the final sample concentration of sample 04.
+
+-   17:38 RHS vortex, spins down/ wipe the outside of the tube with a kimwipe, measures fluorescence of the unknown sample. JM records the final sample concentration of sample 05.
+
+-   17:39 RHS vortex, spins down/ wipe the outside of the tube with a kimwipe, measures fluorescence of the unknown sample. JM records the final sample concentration of sample 06.
+
+-   17:39 RHS vortex, spins down/ wipe the outside of the tube with a kimwipe, measures fluorescence of the unknown sample. JM records the final sample concentration of sample 07.
+
+-   17:40 RHS vortex, spins down/ wipe the outside of the tube with a kimwipe, measures fluorescence of the unknown sample. JM records the final sample concentration of sample 08.
+
+-   17:41 RHS vortex, spins down/ wipe the outside of the tube with a kimwipe, measures fluorescence of the unknown sample. JM records the final sample concentration of sample 09.
+
+-   17:41 RHS vortex, spins down/ wipe the outside of the tube with a kimwipe, measures fluorescence of the unknown sample. JM records the final sample concentration of sample 10.
+
+-   17:42 JM vortex, spins down/ wipe the outside of the tube with a kimwipe, measures fluorescence of the unknown sample. JM records the final sample concentration of sample 11.
+
+-   17:44 JM/BR wiped down the bench w/ bleach, water, ETOH and turned the Quantus off.
+
+Standard: 100 ng/ul
+
+Blank: 0.0056 ng/ul
 
 Sample 03: 5.2 ng/ul
 
@@ -910,30 +972,36 @@ Sample 10: 19 ng/ul
 
 Sample 11: 3.97 ng/ul
 
-12:17 NM loads Blank (DNAse-free water)
+**Nanodrop Final Concentrations (03/04/2024):**
 
-**Nanodrop Final Concentrations:**
+Group members present: JM, NM
 
-12:19 NM Sample CL: 1.8 ng/ul, 260:0.36, A260/280: 1.61, A260/A230: 0.13
+Documented by JM
 
-12:20 NM Sample 01: 14.3 ng/ul, 260: 0.286, A260/280: 1.71, A260/A230: 1.03
+-   12:17 NM loads Blank (DNAse-free water)
 
-12:21 NM Sample 02: 6.5 ng/ul, 260: 0.130, A260/280: 1.71, A260/A230: 0.66
+-   12:19 NM Sample CL: 1.8 ng/ul, 260:0.36, A260/280: 1.61, A260/A230: 0.13
 
-12:22 NM Sample 03: 5.8 ng/ul, 260: 0.115, A260/280: 1.65, A260/A230: 0.64
+-   12:20 NM Sample 01: 14.3 ng/ul, 260: 0.286, A260/280: 1.71, A260/A230: 1.03
 
-12:23 NM Sample 04: 11.3 ng/ul, 260: 0.226, A260/280: 1.86, A260/A230: 1.03
+-   12:21 NM Sample 02: 6.5 ng/ul, 260: 0.130, A260/280: 1.71, A260/A230: 0.66
 
-12:24 NM Sample 05: 11.6 ng/ul, 260: 0.232, A260/280: 1.78, A260/A230: 0.91
+-   12:22 NM Sample 03: 5.8 ng/ul, 260: 0.115, A260/280: 1.65, A260/A230: 0.64
 
-12:25 NM Sample 06: 29.5 ng/ul, 260: 0.590, A260/280: 1.79, A260/A230: 1.33
+-   12:23 NM Sample 04: 11.3 ng/ul, 260: 0.226, A260/280: 1.86, A260/A230: 1.03
 
-12:26 NM Sample 07: 14.5 ng/ul, 260: 0.291, A260/280: 1.72, A260/A230: 1.02
+-   12:24 NM Sample 05: 11.6 ng/ul, 260: 0.232, A260/280: 1.78, A260/A230: 0.91
 
-12:27 NM Sample 08: 12.5 ng/ul, 260: 0.249, A260/280: 1.78, A260/A230: 0.96
+-   12:25 NM Sample 06: 29.5 ng/ul, 260: 0.590, A260/280: 1.79, A260/A230: 1.33
 
-12:28 NM Sample 09: 7.8 ng/ul, 260: 0.156, A260/280: 1.78, A260/A230: 0.70
+-   12:26 NM Sample 07: 14.5 ng/ul, 260: 0.291, A260/280: 1.72, A260/A230: 1.02
 
-12:29 NM Sample 10: 18.9 ng/ul, 260: 0.377, A260/280: 1.77, A260/A230: 1.37
+-   12:27 NM Sample 08: 12.5 ng/ul, 260: 0.249, A260/280: 1.78, A260/A230: 0.96
 
-12:30 NM Sample 11: 6.8 ng/ul, 260: 0.137, A260/280: 1.68, A260/A230: 0.70
+-   12:28 NM Sample 09: 7.8 ng/ul, 260: 0.156, A260/280: 1.78, A260/A230: 0.70
+
+-   12:29 NM Sample 10: 18.9 ng/ul, 260: 0.377, A260/280: 1.77, A260/A230: 1.37
+
+-   12:30 NM Sample 11: 6.8 ng/ul, 260: 0.137, A260/280: 1.68, A260/A230: 0.70
+
+-   12:32 JM/NM wiped down the bench with bleach, water, ETOH and turned the Nanodrop off.

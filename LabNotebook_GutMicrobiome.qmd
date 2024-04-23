@@ -225,6 +225,18 @@ The presence of PCR inhibitors persisted in DNA samples after isolation with bot
 
 This study highlights the significant effects of DNA isolation and sampling kits on DNA quality and bacterial composition, emphasizing the need for standardized methodologies and careful consideration of batch effects in microbiome research.
 
+### Host genetics influence the gut microbiome.
+
+**Cortes-Ortiz & Amato. 2021. Host genetics influence the gut microbiome. Science 373(6551): 159-160.**
+
+\[note: this publication is not the primary report of this study\]
+
+This study found some heritability of gut microbiome traits in yellow baboons (admixed with anubis baboons) living in Amboseli, Kenya. Such traits include the presence or relative abundance of certain taxa and the overall composition of the gut microbiome as measured from fecal samples. The researchers analyzed an unprecedented sample size of 858 individuals over 14 years, and they posited that previous studies have underestimated microbiome heritability due to small sample sizes. Nonetheless, more variation in gut microbiome traits was attributable to environmental factors. Heritability estimates also varied with environmental factors including season, diet, and host age.
+
+### Monitoring the variation in the gut microbiota of captive woolly monkeys related to changes in diet during a reintroduction process.
+
+**Quiroga-Gonzalez et al. 2021. Monitoring the variation in the gut microbiota of captive woolly monkeys related to changes in diet during a reintroduction process. Scientific Reports 11: 6522.**
+
 ## Extraction Protocol
 
 ### Important Notes

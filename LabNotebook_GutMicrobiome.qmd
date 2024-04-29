@@ -237,6 +237,10 @@ This study found some heritability of gut microbiome traits in yellow baboons (a
 
 **Quiroga-Gonzalez et al. 2021. Monitoring the variation in the gut microbiota of captive woolly monkeys related to changes in diet during a reintroduction process. Scientific Reports 11: 6522.**
 
+**Major Takeaway:** Site conditions affect intestinal microbiota, especially variation in the microbiome. This effect is largely via dietary changes.
+
+Three captive wooly monkeys were reintroduced to a wild habitat. Fecal samples from before and after release were used to measure the intestinal microbiome. Diversity (Shannon Index) was higher following release and lower again following recapture. The monkeys were supplemented food after release, and the more wild-origin food they consumed, the more diverse their intestinal microbiome was. Individual microbiome differences existing before release were maintained after release such that individuals had unique microbiomes regardless of site condition.
+
 ## Extraction Protocol
 
 ### Important Notes

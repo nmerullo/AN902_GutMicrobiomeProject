@@ -855,6 +855,8 @@ c\. Third Wash: Pipette 675 𝜇l of the supernatant to the same *Spin Filter* a
 
 -   Measure the dsDNA concentration using the **Quantus**, and sample A260/A280 using the **NanoDrop** **\[Quantitation Workstation\]**. Record these details in your lab notebook. <br> Place the properly labeled DNA elutions in the **-20ºC freezer**. Be sure to record where in the freezer you've placed them, and that they are all together in a single, clearly labeled container/rack.
 
+## Quantitation
+
 Group members present: JM, RHS, NM
 
 Documented by JM
@@ -1021,3 +1023,158 @@ Documented by JM
 -   12:30 NM Sample 11: 6.8 ng/ul, 260: 0.137, A260/280: 1.68, A260/A230: 0.70
 
 -   12:32 JM/NM wiped down the bench with bleach, water, ETOH and turned the Nanodrop off.
+
+## PCR 03 May 2024
+
+JM and NM present at 12:11 pm
+
+Sophia Weaver is here and walking us through the process. She is doing a PCR too so we are doing it concurrently.
+
+13 strip tubes are pulled from the autoclaved container for our samples (11 samples, 1 control, and a PCR control)
+
+Put everything (EXCEPT SAMPLES) into hood and UV
+
+### NEED 
+
+1.  Samples
+
+2.  Water
+
+3.  DreamTaq (in -20 freezer top shelf)
+
+4.  Primers
+
+5.  3 1.5 mL tubes - 2 for primers and 1 for master mix
+
+### Prep
+
+-   Spin down everything for the mastermix - water, dreamtaq, primer
+
+-   More amount to less: dreamtaq, water, primer
+
+-   Label tubes: primer name, conc, date (year, month, day)
+
+-   Label Master Mix tube
+
+-   200ul stock:
+
+    -   180ul water and 20ul forward primer of forward primer to forward primer tube
+
+    -   180ul water to reverse primer tube
+
+    -   20 ul of reverse primer to reverse primer tube
+
+    -   This makes a 10 micromolar stock for each primer
+
+-   vortex for 15 seconds
+
+-   micro centrifuge for 2-5 seconds
+
+-   Mastermix
+
+    -   220 ul of DramTaq to each MM tube
+
+    -   Add water (TBD amount) to each MM tube
+
+    -   Add primers (TBD amount) to each MM tube
+
+    -   Vortex and centrifuge
+
+-   Label the strip tubes accordingly
+
+-   Distribute 23 ul of mastermix into each strip tube
+
+-   Spin down all of the samples
+
+-   add 2 ul of DNA into each one (mix 10x when picking up then when putting in mix up)
+
+-   Cap them and add to the PCR!
+
+13:20 - BR and RHS arrive
+
+RHS figures out Mastermix recipe concentrations
+
+13:23 - JM micro centrifgues the dry primers for 10 seconds
+
+Based on the tube saying 25.38 nmol we put in 253.8 ul water into a tube with the primer. That will make a 100um sotck
+
+Vortex after adding water
+
+13:28 JM labeled the manufacturers tubes
+
+13:29 JM adds 253.8 ul of ultrapure disilled water to Forward and Reverse primers. They are now 100um stock
+
+13:31 RHS vortexed and spun it down for 3-5 seconds
+
+13:33 JM labels new tubes 16S 03May2024 10uM Forward/Reverse and a third for MasterMix
+
+13:36 JM adds 180 ul of water and 20 ul of primer stock into each Forward/Reverse primer tube. Vortexed and centrifuged
+
+13:40 RHS makes the mastermix starting from largest concentrations to smallest.
+
+13:45 NM figures out the Annealing temperature from the Thermifsher website. Thermofisher estimates it to be 68.7 C
+
+```{r}
+d <- read.csv("/Users/nmerullo/Documents/BU/AN_902/AN902_GutMicrobiomeProject/AnnealingTempCalculator.csv")
+head(d)
+```
+
+13:54 RHS adds both forward and reverse primers to mastermix (6.6 ul). Making it complete.
+
+13:54 JM vortex and spins down
+
+13:56 Samples taken out of freezer
+
+13:58 13 Strip tubes set up. Labeled C for water control, CL, samples 1-11
+
+14:02 NM adds 23 ul of mastermix to the strip tubes
+
+14:05 NM switches pipette tip
+
+14:10 BR adds 2ul of water to tube C, pipettes up and down 10 times, discards tip
+
+14:13 BR adds 2ul of sample CL (pipette up and down 10 times as you pull up) to tube CL (pipette up and down 10 times as you release), discards tip
+
+14:15 BR adds 2ul of sample 1 (pipette up and down 10 times as you pull up) to tube 1 (pipette up and down 10 times as you release), discards tip
+
+14:16 BR adds 2ul of sample 2 (pipette up and down 10 times as you pull up) to tube 2 (pipette up and down 10 times as you release), discards tip
+
+14:17 BR adds 2ul of sample 3 (pipette up and down 10 times as you pull up) to tube 3 (pipette up and down 10 times as you release), discards tip
+
+14:19 BR adds 2ul of sample 4 (pipette up and down 10 times as you pull up) to tube 4 (pipette up and down 10 times as you release), discards tip
+
+14:20 BR adds 2ul of sample 5 (pipette up and down 10 times as you pull up) to tube 5 (pipette up and down 10 times as you release), discards tip
+
+14:22 BR adds 2ul of sample 6 (pipette up and down 10 times as you pull up) to tube 6 (pipette up and down 10 times as you release), discards tip
+
+14:23 JM adds 2ul of sample 7 (pipette up and down 10 times as you pull up) to tube 7 (pipette up and down 10 times as you release), discards tip
+
+14:24 JM adds 2ul of sample 8 (pipette up and down 10 times as you pull up) to tube 8 (pipette up and down 10 times as you release), discards tip
+
+14:25 JM adds 2ul of sample 9 (pipette up and down 10 times as you pull up) to tube 9 (pipette up and down 10 times as you release), discards tip
+
+14:26 JM adds 2ul of sample 10 (pipette up and down 10 times as you pull up) to tube 10 (pipette up and down 10 times as you release), discards tip
+
+14:27 JM adds 2ul of sample 11 (pipette up and down 10 times as you pull up) to tube 11 (pipette up and down 10 times as you release), discards tip
+
+14:27 Centrifuge with strip tube attachment briefly
+
+14:29 Setting up the PCR.
+
+-   Initial denaturing at 95 c for 3 m x1
+
+-   Denaturation at 95 c x 5 for 15 s x5
+
+-   Annealing - 55 c for 15 s x5
+
+-   Extension 72 c at 30s x5
+
+-   Denaturing 95 c at 15s x 30
+
+-   We decided on 65 c for Annealing at 15s x30 (3 c below thermofisher recommended temp)
+
+-   Extension 72 c for 30 s x 5
+
+-   Final extention 72 c for 1 m x 5
+
+at 14:35 started PCR run!!
